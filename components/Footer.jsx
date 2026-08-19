@@ -9,7 +9,7 @@ export default function Footer() {
             © {new Date().getFullYear()} ResultHub BU Jhansi · Institute of Engineering & Technology (IET)
           </p>
           <p className="text-gray-500 mt-1">
-            Student-built analytical platform for Bundelkhand University B.Tech Department (CSE, ECE, ME, CE, EE, IT, BT).
+            Student-built analytical platform for Bundelkhand University B.Tech Departments (EIE, BME, ME, CSE, ECE, BT, FT).
           </p>
         </div>
 
@@ -18,8 +18,10 @@ export default function Footer() {
           <Link href="/leaderboard" className="hover:text-amber-400 transition-colors">Leaderboards</Link>
           <Link href="/analytics" className="hover:text-amber-400 transition-colors">Analytics</Link>
           <Link href="/compare" className="hover:text-amber-400 transition-colors">Compare</Link>
+          <Link href="/twin" className="hover:text-amber-400 transition-colors">Twin</Link>
           <Link href="/subjects" className="hover:text-amber-400 transition-colors">Subjects</Link>
           <Link href="/tools/cgpa" className="hover:text-amber-400 transition-colors">CGPA Calculator</Link>
+          <Link href="/about" className="hover:text-amber-400 transition-colors">About</Link>
         </div>
       </div>
     </footer>
