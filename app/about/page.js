@@ -1,6 +1,6 @@
 'use client';
 import Link from 'next/link';
-import { ArrowLeft, Github, Code2, Database, Cpu, BarChart3, Users, Zap, AlertTriangle, GraduationCap, Globe } from 'lucide-react';
+import { ArrowLeft, Code2, Database, Cpu, BarChart3, Users, Zap, AlertTriangle, GraduationCap, Globe } from 'lucide-react';
 
 export default function AboutPage() {
   const features = [
@@ -107,7 +107,6 @@ export default function AboutPage() {
               <h3 className="font-black text-lg text-white leading-tight">BU Jhansi IET Student</h3>
               <p className="text-sm text-slate-400 mt-0.5">Full-Stack Developer & Data Engineer</p>
               <div className="flex items-center justify-center gap-1.5 mt-2">
-                <span className="text-[10px] px-2 py-0.5 rounded-full font-bold bg-cyan-500/10 text-cyan-400 border border-cyan-500/30">EIE Branch</span>
                 <span className="text-[10px] px-2 py-0.5 rounded-full font-bold bg-violet-500/10 text-violet-400 border border-violet-500/30">2024 Batch</span>
               </div>
             </div>
@@ -124,22 +123,6 @@ export default function AboutPage() {
                 </li>
               ))}
             </ul>
-          </div>
-
-          {/* Connect */}
-          <div>
-            <p className="font-bold text-sm text-white mb-2">Source Code:</p>
-            <div className="flex items-center gap-2">
-              <a
-                href="https://github.com/adityak39l/BU-Result-HUB"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold border border-gray-700 text-slate-300 bg-gray-800/50 hover:bg-gray-800 hover:text-white transition-all"
-              >
-                <Github className="w-3.5 h-3.5" />
-                GitHub Repository
-              </a>
-            </div>
           </div>
         </div>
       </div>
