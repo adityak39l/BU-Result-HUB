@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation';
 import { useState, useEffect } from 'react';
 import { 
   GraduationCap, Award, BarChart3, Users, BookOpen, Calculator, 
-  Search, Menu, X, Sun, Moon 
+  Search, Menu, X, Sun, Moon, Info
 } from 'lucide-react';
 
 export default function Navbar() {
@@ -45,6 +45,7 @@ export default function Navbar() {
     { href: '/subjects', label: 'Subjects', icon: BookOpen },
     { href: '/twin', label: 'Twin', icon: Users, special: true },
     { href: '/tools/cgpa', label: 'CGPA Calc', icon: Calculator },
+    { href: '/about', label: 'About', icon: Info },
   ];
 
   return (
