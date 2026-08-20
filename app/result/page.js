@@ -14,6 +14,7 @@ export default function ResultsPage() {
   const [query, setQuery] = useState('');
   const [selectedBranches, setSelectedBranches] = useState(['ALL']);
   const [selectedYear, setSelectedYear] = useState('ALL');
+  const [activeSem, setActiveSem] = useState(null);
   
   // Default active student on load
   const [activeStudentRoll, setActiveStudentRoll] = useState(STUDENTS[0]?.rollNo || '231371028003');
@@ -110,8 +111,21 @@ export default function ResultsPage() {
   const semSum = semSgpas.reduce((acc, curr) => acc + curr, 0);
   const calculatedAvgCgpa = semCount > 0 ? (semSum / semCount).toFixed(2) : currentStudent?.cgpa;
 
-  // Calculate total credits
-  const totalCredits = currentStudent?.currentSemSubjects?.reduce((acc, curr) => acc + (curr.credit || 3), 0) || 24;
+  // Available semesters for current active student
+  const availableSems = currentStudent?.semesterSubjects 
+    ? Object.keys(currentStudent.semesterSubjects).map(Number).sort((a,b)=>a-b)
+    : (currentStudent?.semesters?.map(s => s.sem) || [5]);
+
+  const currentActiveSem = activeSem && availableSems.includes(activeSem)
+    ? activeSem
+    : (selectedYear === '2024' && availableSems.includes(3) ? 3 : (selectedYear === '2024' && availableSems.includes(4) ? 4 : availableSems[availableSems.length - 1]));
+
+  const displayedSubjects = (currentStudent?.semesterSubjects && currentStudent.semesterSubjects[currentActiveSem])
+    || currentStudent?.currentSemSubjects 
+    || [];
+
+  // Calculate total credits for displayed semester
+  const totalCredits = displayedSubjects.reduce((acc, curr) => acc + (curr.credit || 3), 0) || 24;
 
   // Calculate SVG Line Chart Coordinates for SGPA Trend Graph
   const semesters = currentStudent?.semesters || [];
@@ -432,12 +446,39 @@ export default function ResultsPage() {
                 </div>
               </div>
 
-              {/* Subject Marksheet Table with Visual Progress Bars */}
-              <div className="space-y-3">
-                <div className="flex items-center justify-between">
+              {/* Subject Marksheet Table with Visual Progress Bars & Semester Switcher */}
+              <div className="space-y-4">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 dark:border-gray-800 pb-3">
                   <h3 className="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-gray-400">
-                    Official BU Jhansi Subject Breakdown & Marks Visual Bar
+                    Official BU Jhansi Subject Breakdown & Marks
                   </h3>
+
+                  {/* Semester Switcher Tabs */}
+                  {availableSems.length > 1 && (
+                    <div className="flex items-center gap-1.5 flex-wrap">
+                      <span className="text-[11px] font-bold text-slate-500 dark:text-gray-400 mr-1">
+                        Select Semester:
+                      </span>
+                      {availableSems.map((sNum) => {
+                        const semObj = currentStudent?.semesters?.find(s => s.sem === sNum);
+                        const is2024 = sNum === 3 || sNum === 4;
+                        return (
+                          <button
+                            key={sNum}
+                            onClick={() => setActiveSem(sNum)}
+                            className={`px-3 py-1 rounded-lg text-xs font-black transition-all border ${
+                              currentActiveSem === sNum
+                                ? 'bg-gradient-to-r from-[#68c2e3] to-sky-600 text-slate-950 border-[#68c2e3] shadow-md scale-105'
+                                : 'bg-slate-100 dark:bg-gray-900 text-slate-600 dark:text-gray-400 border-slate-200 dark:border-gray-800 hover:text-white'
+                            }`}
+                          >
+                            Sem {sNum} {is2024 ? '(Batch 2024-25)' : '(Batch 2025-26)'}
+                            {semObj ? ` • ${semObj.sgpa} SGPA` : ''}
+                          </button>
+                        );
+                      })}
+                    </div>
+                  )}
                 </div>
 
                 <div className="overflow-x-auto rounded-xl border border-slate-200 dark:border-gray-800">
@@ -455,7 +496,7 @@ export default function ResultsPage() {
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-slate-200 dark:divide-gray-800/60 bg-white dark:bg-gray-950/40 font-medium">
-                      {currentStudent.currentSemSubjects.map((sub, idx) => {
+                      {displayedSubjects.map((sub, idx) => {
                         let obtNum = 0;
                         let maxNum = 150;
                         if (sub.totalStr && sub.totalStr.includes('/')) {

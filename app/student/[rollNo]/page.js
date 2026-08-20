@@ -16,7 +16,7 @@ export default function StudentDashboardPage() {
   const rollNo = params?.rollNo;
   
   const [copied, setCopied] = useState(false);
-  const [activeSemFilter, setActiveSemFilter] = useState('ALL');
+  const [activeSemFilter, setActiveSemFilter] = useState(null);
 
   const student = getStudentByRoll(rollNo) || STUDENTS[0];
 
@@ -133,9 +133,22 @@ export default function StudentDashboardPage() {
 
   if (parseFloat(afterDropCgpa) > 10.0) afterDropCgpa = '9.90';
 
-  // Total credits & subjects count
-  const totalCredits = student?.currentSemSubjects?.reduce((acc, curr) => acc + (curr.credit || 3), 0) || 24;
-  const totalSubjectsCount = student?.currentSemSubjects?.length || 6;
+  // Available semesters for student
+  const availableSems = student?.semesterSubjects 
+    ? Object.keys(student.semesterSubjects).map(Number).sort((a,b)=>a-b)
+    : (student?.semesters?.map(s => s.sem) || [5]);
+
+  const currentActiveSem = activeSemFilter && availableSems.includes(activeSemFilter)
+    ? activeSemFilter
+    : availableSems[availableSems.length - 1];
+
+  const displayedSubjects = (student?.semesterSubjects && student.semesterSubjects[currentActiveSem])
+    || student?.currentSemSubjects 
+    || [];
+
+  // Total credits & subjects count for displayed semester
+  const totalCredits = displayedSubjects.reduce((acc, curr) => acc + (curr.credit || 3), 0) || 24;
+  const totalSubjectsCount = displayedSubjects.length || 6;
 
   // Student Initials
   const initials = student?.name ? student.name.split(' ').map(n => n[0]).join('').slice(0, 2) : 'BU';
@@ -395,18 +408,31 @@ export default function StudentDashboardPage() {
           </div>
 
           {/* Semester Filter Pills */}
-          <div className="flex items-center gap-1.5 text-xs">
-            <button
-              onClick={() => setActiveSemFilter('ALL')}
-              className={`px-3 py-1 rounded-lg font-bold transition-all ${
-                activeSemFilter === 'ALL'
-                  ? 'bg-[#68c2e3] text-slate-950 shadow-sm'
-                  : 'bg-slate-100 dark:bg-gray-900 text-slate-600 dark:text-gray-400'
-              }`}
-            >
-              Latest Sem
-            </button>
-          </div>
+          {availableSems.length > 1 && (
+            <div className="flex items-center gap-1.5 text-xs flex-wrap">
+              <span className="text-[11px] font-bold text-slate-500 dark:text-gray-400 mr-1">
+                Semester:
+              </span>
+              {availableSems.map((sNum) => {
+                const semObj = student?.semesters?.find(s => s.sem === sNum);
+                const is2024 = sNum === 3 || sNum === 4;
+                return (
+                  <button
+                    key={sNum}
+                    onClick={() => setActiveSemFilter(sNum)}
+                    className={`px-3 py-1 rounded-lg font-black transition-all border ${
+                      currentActiveSem === sNum
+                        ? 'bg-gradient-to-r from-[#68c2e3] to-sky-600 text-slate-950 border-[#68c2e3] shadow-md scale-105'
+                        : 'bg-slate-100 dark:bg-gray-900 text-slate-600 dark:text-gray-400 border-slate-200 dark:border-gray-800 hover:text-white'
+                    }`}
+                  >
+                    Sem {sNum} {is2024 ? '(2024-25)' : '(2025-26)'}
+                    {semObj ? ` • ${semObj.sgpa} SGPA` : ''}
+                  </button>
+                );
+              })}
+            </div>
+          )}
         </div>
 
         {/* Subject Table */}
@@ -425,7 +451,7 @@ export default function StudentDashboardPage() {
               </tr>
             </thead>
             <tbody className="divide-y divide-slate-200 dark:divide-gray-800/60 bg-white dark:bg-gray-950/40 font-medium">
-              {student.currentSemSubjects.map((sub, idx) => {
+              {displayedSubjects.map((sub, idx) => {
                 let obtNum = 0;
                 let maxNum = 150;
                 if (sub.totalStr && sub.totalStr.includes('/')) {
