@@ -6,28 +6,44 @@ import { BRANCHES, STUDENTS } from '@/lib/data';
 import { getStudentByRoll } from '@/lib/utils';
 import { Search, Users, Sparkles, Activity, ExternalLink, ArrowRight, RefreshCw } from 'lucide-react';
 
-// Compute similarity score — cross-branch allowed
+// Helper to get latest semester for a student
+export function getLatestSemester(student) {
+  if (!student?.semesters || student.semesters.length === 0) {
+    return { sem: 6, sgpa: student?.cgpa || 7.5 };
+  }
+  return [...student.semesters].sort((a, b) => b.sem - a.sem)[0];
+}
+
+// Compute similarity score heavily prioritizing Latest Semester Result
 function computeTwinScore(studentA, studentB) {
   if (!studentA || !studentB || studentA.rollNo === studentB.rollNo) return -1;
 
-  // 1. CGPA closeness (max 40 points)
-  const cgpaDiff = Math.abs(studentA.cgpa - studentB.cgpa);
-  const cgpaScore = Math.max(0, 40 - cgpaDiff * 20);
+  const latestA = getLatestSemester(studentA);
+  const latestB = getLatestSemester(studentB);
 
-  // 2. SGPA per-semester closeness (max 50 points)
+  // 1. Latest Semester SGPA closeness (Highest Weight: 50 points)
+  const latestSgpaDiff = Math.abs(latestA.sgpa - latestB.sgpa);
+  const latestSgpaScore = Math.max(0, 50 - latestSgpaDiff * 30);
+
+  // 2. Overall CGPA closeness (25 points)
+  const cgpaDiff = Math.abs(studentA.cgpa - studentB.cgpa);
+  const cgpaScore = Math.max(0, 25 - cgpaDiff * 15);
+
+  // 3. Multi-semester trend similarity (15 points)
   const semsA = studentA.semesters || [];
   const semsB = studentB.semesters || [];
   const minLen = Math.min(semsA.length, semsB.length);
-  let sgpaScore = 0;
+  let trendScore = 0;
   for (let i = 0; i < minLen; i++) {
     const diff = Math.abs(semsA[i].sgpa - semsB[i].sgpa);
-    sgpaScore += Math.max(0, (50 / Math.max(minLen, 1)) - diff * (50 / Math.max(minLen, 1)) * 0.5);
+    trendScore += Math.max(0, (15 / Math.max(minLen, 1)) - diff * 3);
   }
 
-  // 3. Same branch bonus (max 10 points)
-  const branchBonus = studentA.branch === studentB.branch ? 10 : 0;
+  // 4. Same latest semester bonus & same branch bonus (10 points)
+  const sameSemBonus = latestA.sem === latestB.sem ? 5 : 0;
+  const branchBonus = studentA.branch === studentB.branch ? 5 : 0;
 
-  return parseFloat((cgpaScore + sgpaScore + branchBonus).toFixed(1));
+  return parseFloat((latestSgpaScore + cgpaScore + trendScore + sameSemBonus + branchBonus).toFixed(1));
 }
 
 export default function TwinPage() {
@@ -60,14 +76,23 @@ export default function TwinPage() {
     }
     setMyStudent(found);
 
+    const myLatest = getLatestSemester(found);
+
     const scoredTwins = STUDENTS
       .filter(s => s.rollNo !== found.rollNo)
-      .map(s => ({
-        ...s,
-        twinScore: computeTwinScore(found, s),
-        cgpaDiff: Math.abs(found.cgpa - s.cgpa).toFixed(2),
-        sameBranch: s.branch === found.branch,
-      }))
+      .map(s => {
+        const twinLatest = getLatestSemester(s);
+        const latestSgpaDiff = Math.abs(myLatest.sgpa - twinLatest.sgpa).toFixed(2);
+        return {
+          ...s,
+          myLatest,
+          twinLatest,
+          latestSgpaDiff,
+          twinScore: computeTwinScore(found, s),
+          cgpaDiff: Math.abs(found.cgpa - s.cgpa).toFixed(2),
+          sameBranch: s.branch === found.branch,
+        };
+      })
       .filter(s => s.twinScore > 0)
       .sort((a, b) => b.twinScore - a.twinScore)
       .slice(0, 8);
@@ -76,7 +101,8 @@ export default function TwinPage() {
     setSearched(true);
   };
 
-  const getTwinLabel = (score, sameBranch) => {
+  const getTwinLabel = (score, sameBranch, latestDiff) => {
+    if (parseFloat(latestDiff) <= 0.05 && score >= 80) return { label: '🎯 Exact Latest Match', color: 'text-emerald-400 bg-emerald-500/10 border-emerald-500/30' };
     if (score >= 80) return { label: '🧬 Identical Twin', color: 'text-emerald-500 bg-emerald-500/10 border-emerald-500/30' };
     if (score >= 60) return { label: sameBranch ? '💫 Academic Twin' : '🌐 Cross-Branch Twin', color: 'text-[#68c2e3] bg-[#68c2e3]/10 border-[#68c2e3]/30' };
     if (score >= 40) return { label: '👥 Close Match', color: 'text-blue-500 bg-blue-500/10 border-blue-500/30' };
@@ -103,7 +129,7 @@ export default function TwinPage() {
           Find Your <span className="text-[#68c2e3]">Academic Twin</span>
         </h1>
         <p className="text-xs text-slate-500 dark:text-gray-400 max-w-lg mx-auto">
-          Sabhi branches (EIE, BME, ME) mein se wo students dhundho jinka SGPA trend aur CGPA tumhare sabse zyada milta ho.
+          Sabhi branches (CSE, EIE, BME, ME) mein se wo students dhundho jinka <strong>Latest Semester Result & SGPA</strong> tumhare sabse zyada match karta ho.
         </p>
       </div>
 
@@ -116,7 +142,7 @@ export default function TwinPage() {
               type="text"
               value={query}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder="Roll No ya Naam likhो (e.g. 231391034021)..."
+              placeholder="Roll No ya Naam likho (e.g. 231381030001 / ABHINAV)..."
               className="w-full pl-9 pr-3 py-2.5 rounded-xl bg-slate-50 dark:bg-gray-950 border border-slate-200 dark:border-gray-800 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-gray-500 focus:outline-none focus:border-[#68c2e3] text-xs font-medium transition-colors"
             />
           </div>
@@ -144,7 +170,12 @@ export default function TwinPage() {
               {myStudent.name.split(' ').map(n => n[0]).join('').slice(0, 2)}
             </div>
             <div className="flex-1 min-w-0">
-              <div className="text-[10px] font-bold text-[#68c2e3] uppercase tracking-wider">Your Profile</div>
+              <div className="flex items-center gap-1.5">
+                <span className="text-[10px] font-bold text-[#68c2e3] uppercase tracking-wider">Your Profile</span>
+                <span className="text-[9px] font-bold px-1.5 py-0.2 rounded bg-sky-500/10 text-sky-400 border border-sky-500/30">
+                  Latest: Sem {getLatestSemester(myStudent).sem} ({getLatestSemester(myStudent).sgpa} SGPA)
+                </span>
+              </div>
               <div className="text-sm font-black text-slate-900 dark:text-white truncate">{myStudent.name}</div>
               <div className="flex items-center gap-1.5 text-[10px] font-mono text-slate-500 dark:text-gray-400">
                 <span>{myStudent.rollNo}</span>
@@ -154,7 +185,7 @@ export default function TwinPage() {
             </div>
             <div className="text-right shrink-0">
               <div className="text-xl font-black text-[#68c2e3]">{myStudent.cgpa}</div>
-              <div className="text-[9px] text-slate-500 dark:text-gray-400 font-bold">CGPA</div>
+              <div className="text-[9px] text-slate-500 dark:text-gray-400 font-bold">Overall CGPA</div>
             </div>
           </div>
 
@@ -162,17 +193,20 @@ export default function TwinPage() {
           <div className="mt-3 pt-3 border-t border-slate-200 dark:border-gray-800">
             <div className="flex items-center gap-1.5 text-[10px] font-bold text-slate-500 dark:text-gray-400 mb-1.5">
               <Activity className="w-3 h-3 text-[#68c2e3]" />
-              Your SGPA Fingerprint:
+              Your Semester SGPA Fingerprint:
             </div>
             <div className="flex items-end gap-1.5 h-9">
               {myStudent.semesters.map((sem) => {
                 const ht = Math.min(100, (sem.sgpa / 10.0) * 100);
+                const isLatest = sem.sem === getLatestSemester(myStudent).sem;
                 return (
                   <div key={sem.sem} className="flex-1 flex flex-col items-center gap-0.5">
                     <div className="w-full bg-slate-200 dark:bg-gray-800 rounded-t" style={{ height: '30px', display: 'flex', alignItems: 'flex-end' }}>
-                      <div className="w-full rounded-t bg-gradient-to-t from-[#68c2e3] to-sky-400" style={{ height: `${ht}%` }} />
+                      <div className={`w-full rounded-t ${isLatest ? 'bg-gradient-to-t from-emerald-400 to-teal-400' : 'bg-gradient-to-t from-[#68c2e3] to-sky-400'}`} style={{ height: `${ht}%` }} />
                     </div>
-                    <span className="text-[8px] font-bold text-slate-500 dark:text-gray-400">S{sem.sem}</span>
+                    <span className={`text-[8px] font-bold ${isLatest ? 'text-emerald-400' : 'text-slate-500 dark:text-gray-400'}`}>
+                      S{sem.sem}{isLatest ? '*' : ''}
+                    </span>
                   </div>
                 );
               })}
@@ -188,7 +222,7 @@ export default function TwinPage() {
             <div className="font-extrabold text-slate-900 dark:text-white flex items-center gap-1.5">
               <Users className="w-3.5 h-3.5 text-[#68c2e3]" />
               {twins.length > 0
-                ? `${twins.length} Academic Twins Found — All Branches`
+                ? `${twins.length} Academic Twins Found — Matched on Latest Result & SGPA`
                 : 'Koi twin nahi mila'
               }
             </div>
@@ -209,7 +243,7 @@ export default function TwinPage() {
           )}
 
           {twins.map((twin, idx) => {
-            const { label, color } = getTwinLabel(twin.twinScore, twin.sameBranch);
+            const { label, color } = getTwinLabel(twin.twinScore, twin.sameBranch, twin.latestSgpaDiff);
             const scoreBarClass = getScoreBar(twin.twinScore);
             const twinInitials = twin.name.split(' ').map(n => n[0]).join('').slice(0, 2);
 
@@ -245,10 +279,19 @@ export default function TwinPage() {
                       </span>
                       <ExternalLink className="w-3 h-3 text-[#68c2e3] opacity-0 group-hover:opacity-100 shrink-0 transition-opacity" />
                     </Link>
-                    <div className="flex items-center gap-2 text-[10px] font-mono text-slate-500 dark:text-gray-400">
+                    
+                    {/* Latest Result Comparison */}
+                    <div className="flex flex-wrap items-center gap-x-2 gap-y-0.5 text-[10px] font-mono text-slate-500 dark:text-gray-400">
                       <span>{twin.rollNo}</span>
-                      <span>CGPA: <strong className="text-slate-700 dark:text-gray-200">{twin.cgpa}</strong></span>
-                      <span className={parseFloat(twin.cgpaDiff) < 0.3 ? 'text-emerald-500 font-bold' : 'text-amber-500 font-bold'}>±{twin.cgpaDiff}</span>
+                      <span>•</span>
+                      <span className="text-slate-700 dark:text-gray-300 font-bold">
+                        Latest Sem {twin.twinLatest.sem}: <strong className="text-emerald-500">{twin.twinLatest.sgpa} SGPA</strong>
+                      </span>
+                      <span className={parseFloat(twin.latestSgpaDiff) <= 0.2 ? 'text-emerald-500 font-black' : 'text-amber-500 font-bold'}>
+                        (±{twin.latestSgpaDiff} Diff)
+                      </span>
+                      <span>•</span>
+                      <span>CGPA: <strong>{twin.cgpa}</strong></span>
                     </div>
                   </div>
 
@@ -256,7 +299,7 @@ export default function TwinPage() {
                   <div className="flex flex-col items-end gap-1.5 shrink-0 min-w-[90px]">
                     <div className="text-right">
                       <div className="text-lg font-black text-[#68c2e3] leading-none">{twin.twinScore.toFixed(0)}</div>
-                      <div className="text-[9px] text-slate-500 dark:text-gray-400 font-bold">/ 100</div>
+                      <div className="text-[9px] text-slate-500 dark:text-gray-400 font-bold">/ 100 Match</div>
                     </div>
                     <div className="w-full bg-slate-200 dark:bg-gray-800 h-1.5 rounded-full overflow-hidden">
                       <div className={`h-full rounded-full ${scoreBarClass}`} style={{ width: `${Math.min(100, twin.twinScore)}%` }} />
@@ -272,7 +315,7 @@ export default function TwinPage() {
                   <div className="mt-2.5 pt-2.5 border-t border-slate-200 dark:border-gray-800/60">
                     <div className="text-[10px] font-bold text-slate-500 dark:text-gray-400 mb-1.5 flex items-center gap-1">
                       <Activity className="w-3 h-3 text-[#68c2e3]" />
-                      SGPA: You <span className="text-[#68c2e3]">■</span> vs {twin.name.split(' ')[0]} <span className="text-emerald-400">■</span>
+                      Latest SGPA Trend: You <span className="text-[#68c2e3]">■</span> vs {twin.name.split(' ')[0]} <span className="text-emerald-400">■</span>
                     </div>
                     <div className="flex items-end gap-1 h-10">
                       {myStudent.semesters.map((mySem, si) => {
@@ -282,10 +325,10 @@ export default function TwinPage() {
                         return (
                           <div key={si} className="flex-1 flex items-end gap-0.5 h-full">
                             <div className="flex-1 bg-slate-200 dark:bg-gray-800 rounded-t" style={{ height: '36px', display: 'flex', alignItems: 'flex-end' }}>
-                              <div className="w-full rounded-t bg-[#68c2e3]" style={{ height: `${myHt}%`, opacity: 0.85 }} title={`You: ${mySem.sgpa}`} />
+                              <div className="w-full rounded-t bg-[#68c2e3]" style={{ height: `${myHt}%`, opacity: 0.85 }} title={`You Sem ${mySem.sem}: ${mySem.sgpa}`} />
                             </div>
                             <div className="flex-1 bg-slate-200 dark:bg-gray-800 rounded-t" style={{ height: '36px', display: 'flex', alignItems: 'flex-end' }}>
-                              <div className="w-full rounded-t bg-emerald-400" style={{ height: `${twinHt}%`, opacity: 0.85 }} title={`${twin.name.split(' ')[0]}: ${twinSem?.sgpa}`} />
+                              <div className="w-full rounded-t bg-emerald-400" style={{ height: `${twinHt}%`, opacity: 0.85 }} title={`${twin.name.split(' ')[0]} Sem ${twinSem?.sem}: ${twinSem?.sgpa}`} />
                             </div>
                           </div>
                         );
@@ -303,9 +346,9 @@ export default function TwinPage() {
       {!searched && (
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 max-w-2xl mx-auto text-center">
           {[
-            { icon: Activity, color: 'text-[#68c2e3] bg-[#68c2e3]/10 border-[#68c2e3]/30', title: 'SGPA Pattern', desc: 'Semester-by-semester SGPA trend similarity match karta hai.' },
-            { icon: Users, color: 'text-emerald-500 bg-emerald-500/10 border-emerald-500/30', title: 'CGPA Proximity', desc: 'Closest cumulative CGPA wale students dhundhta hai.' },
-            { icon: Sparkles, color: 'text-amber-500 bg-amber-500/10 border-amber-500/30', title: 'All Branches', desc: 'EIE, BME aur ME — teeno department mein search hota hai.' },
+            { icon: Activity, color: 'text-[#68c2e3] bg-[#68c2e3]/10 border-[#68c2e3]/30', title: 'Latest Result Priority', desc: 'Latest semester (Sem VI / V / IV) ke SGPA aur marks ke hisab se closest matching students rank hote hain.' },
+            { icon: Users, color: 'text-emerald-500 bg-emerald-500/10 border-emerald-500/30', title: 'CGPA & Trend Match', desc: 'Cumulative score aur semester progression trajectory ka exact comparison.' },
+            { icon: Sparkles, color: 'text-amber-500 bg-amber-500/10 border-amber-500/30', title: 'All Branches (CSE, EIE, BME, ME)', desc: 'Cross-branch analytical matching pure IET department mein se.' },
           ].map(({ icon: Icon, color, title, desc }) => (
             <div key={title} className="glass-card p-4 space-y-2 border-slate-200 dark:border-gray-800">
               <div className={`w-8 h-8 rounded-lg border flex items-center justify-center mx-auto ${color}`}>
