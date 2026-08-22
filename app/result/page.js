@@ -361,7 +361,15 @@ export default function ResultsPage() {
                 </div>
                 <div className="p-3.5 rounded-xl bg-slate-100 dark:bg-gray-900 border border-slate-200 dark:border-gray-800">
                   <div className="text-slate-500 dark:text-gray-400 font-medium">Academic Status</div>
-                  <div className="text-lg font-black text-emerald-500 mt-0.5">PASSED (FIRST DIV)</div>
+                  {displayedSubjects.some(s => s.grade === 'F') ? (
+                    <div className="text-lg font-black text-rose-500 mt-0.5">
+                      BACK ({displayedSubjects.filter(s => s.grade === 'F').length} PAPER)
+                    </div>
+                  ) : (
+                    <div className={`text-lg font-black mt-0.5 ${parseFloat(calculatedAvgCgpa) >= 6.5 ? 'text-emerald-500' : 'text-amber-500'}`}>
+                      {parseFloat(calculatedAvgCgpa) >= 6.5 ? 'PASSED (FIRST DIV)' : 'PASSED (SECOND DIV)'}
+                    </div>
+                  )}
                 </div>
               </div>
 
