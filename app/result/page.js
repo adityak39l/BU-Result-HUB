@@ -28,23 +28,34 @@ export default function ResultsPage() {
     { id: '2026', label: 'Batch 2026-27' },
   ];
 
-  // Toggle Branch selection
+  // Toggle Branch selection with auto-sync active student
   const toggleBranch = (branchId) => {
+    let updated;
     if (branchId === 'ALL') {
-      setSelectedBranches(['ALL']);
-      return;
-    }
-
-    let updated = selectedBranches.includes('ALL') ? [] : [...selectedBranches];
-
-    if (updated.includes(branchId)) {
-      updated = updated.filter(b => b !== branchId);
-      if (updated.length === 0) updated = ['ALL'];
+      updated = ['ALL'];
     } else {
-      updated.push(branchId);
+      updated = selectedBranches.includes('ALL') ? [] : [...selectedBranches];
+      if (updated.includes(branchId)) {
+        updated = updated.filter(b => b !== branchId);
+        if (updated.length === 0) updated = ['ALL'];
+      } else {
+        updated.push(branchId);
+      }
     }
-
     setSelectedBranches(updated);
+    const matches = searchStudents(query, updated, selectedYear);
+    if (matches.length > 0) {
+      setActiveStudentRoll(matches[0].rollNo);
+    }
+  };
+
+  // Change Year Filter with auto-sync active student
+  const handleYearChange = (yrId) => {
+    setSelectedYear(yrId);
+    const matches = searchStudents(query, selectedBranches, yrId);
+    if (matches.length > 0) {
+      setActiveStudentRoll(matches[0].rollNo);
+    }
   };
 
   const filteredStudents = searchStudents(query, selectedBranches, selectedYear);
@@ -201,7 +212,7 @@ export default function ResultsPage() {
             {YEARS.map((yr) => (
               <button
                 key={yr.id}
-                onClick={() => setSelectedYear(yr.id)}
+                onClick={() => handleYearChange(yr.id)}
                 className={`px-3.5 py-1.5 rounded-lg text-xs font-extrabold whitespace-nowrap transition-all ${
                   selectedYear === yr.id
                     ? 'bg-gradient-to-r from-[#68c2e3] to-sky-600 text-slate-950 shadow-md scale-105'
