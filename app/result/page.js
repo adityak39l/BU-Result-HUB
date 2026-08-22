@@ -485,14 +485,13 @@ export default function ResultsPage() {
                           <button
                             key={sNum}
                             onClick={() => setActiveSem(sNum)}
-                            className={`px-3 py-1 rounded-lg text-xs font-black transition-all border ${
+                            className={`px-3.5 py-1.5 rounded-lg text-xs font-black transition-all border ${
                               currentActiveSem === sNum
                                 ? 'bg-gradient-to-r from-[#68c2e3] to-sky-600 text-slate-950 border-[#68c2e3] shadow-md scale-105'
                                 : 'bg-slate-100 dark:bg-gray-900 text-slate-600 dark:text-gray-400 border-slate-200 dark:border-gray-800 hover:text-white'
                             }`}
                           >
-                            Sem {sNum} {is2024 ? '(Batch 2024-25)' : '(Batch 2025-26)'}
-                            {semObj ? ` • ${semObj.sgpa} SGPA` : ''}
+                            Semester {sNum}{semObj ? ` • ${semObj.sgpa} SGPA` : ''}
                           </button>
                         );
                       })}
