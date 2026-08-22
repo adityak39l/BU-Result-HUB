@@ -16,16 +16,17 @@ export default function ResultsPage() {
   const [selectedYear, setSelectedYear] = useState('ALL');
   const [activeSem, setActiveSem] = useState(null);
   
-  // Default active student on load
-  const [activeStudentRoll, setActiveStudentRoll] = useState(STUDENTS[0]?.rollNo || '231371028003');
+  // Default active student on load (default to top CSE student from Batch 2024-25)
+  const defaultCse = STUDENTS.find(s => s.branch === 'CSE') || STUDENTS[0];
+  const [activeStudentRoll, setActiveStudentRoll] = useState(defaultCse?.rollNo || '231381030050');
 
   // Batch Year Options
   const YEARS = [
-    { id: 'ALL', label: '📅 All Years' },
-    { id: '2023', label: 'Batch 2023-24' },
-    { id: '2024', label: 'Batch 2024-25' },
-    { id: '2025', label: 'Batch 2025-26' },
-    { id: '2026', label: 'Batch 2026-27' },
+    { id: 'ALL', label: '📅 All Batches' },
+    { id: '2024-25', label: 'Batch 2024-25' },
+    { id: '2025-26', label: 'Batch 2025-26' },
+    { id: '2023-24', label: 'Batch 2023-24' },
+    { id: '2026-27', label: 'Batch 2026-27' },
   ];
 
   // Toggle Branch selection with auto-sync active student
