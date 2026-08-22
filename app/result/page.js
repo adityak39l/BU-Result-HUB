@@ -130,7 +130,7 @@ export default function ResultsPage() {
 
   const currentActiveSem = activeSem && availableSems.includes(activeSem)
     ? activeSem
-    : (selectedYear === '2024' && availableSems.includes(3) ? 3 : (selectedYear === '2024' && availableSems.includes(4) ? 4 : availableSems[availableSems.length - 1]));
+    : availableSems[availableSems.length - 1];
 
   const displayedSubjects = (currentStudent?.semesterSubjects && currentStudent.semesterSubjects[currentActiveSem])
     || currentStudent?.currentSemSubjects 
@@ -287,7 +287,10 @@ export default function ResultsPage() {
               filteredStudents.map((s) => (
                 <button
                   key={s.rollNo}
-                  onClick={() => setActiveStudentRoll(s.rollNo)}
+                  onClick={() => {
+                    setActiveStudentRoll(s.rollNo);
+                    setActiveSem(null);
+                  }}
                   className={`w-full p-3 rounded-xl text-left transition-all flex items-center justify-between gap-2 border ${
                     currentStudent?.rollNo === s.rollNo
                       ? 'bg-[#68c2e3]/15 border-[#68c2e3]/50 text-slate-900 dark:text-white shadow-md'
