@@ -69,14 +69,25 @@ export default function StudentDashboardPage() {
   const totalStudentsCount = STUDENTS.length || 41;
   const percentile = (((totalStudentsCount - student.rank + 1) / totalStudentsCount) * 100).toFixed(1);
 
-  // Grade summary counts
+  // Grade summary counts across all available semesters
   const gradeCounts = { 'O': 0, 'A+': 0, 'A': 0, 'B+': 0, 'B': 0, 'C': 0, 'F': 0 };
-  student?.currentSemSubjects?.forEach(sub => {
-    const g = sub.grade?.trim();
-    if (gradeCounts[g] !== undefined) {
-      gradeCounts[g] += 1;
-    }
-  });
+  if (student?.semesterSubjects) {
+    Object.values(student.semesterSubjects).forEach(subs => {
+      subs.forEach(sub => {
+        const g = sub.grade?.trim();
+        if (gradeCounts[g] !== undefined) {
+          gradeCounts[g] += 1;
+        }
+      });
+    });
+  } else if (student?.currentSemSubjects) {
+    student.currentSemSubjects.forEach(sub => {
+      const g = sub.grade?.trim();
+      if (gradeCounts[g] !== undefined) {
+        gradeCounts[g] += 1;
+      }
+    });
+  }
 
   // Average CGPA & Lowest Subject Drop Calculation
   const semCount = student?.semesters?.length || 1;
@@ -84,13 +95,26 @@ export default function StudentDashboardPage() {
   const semSum = semSgpas.reduce((acc, curr) => acc + curr, 0);
   const calculatedAvgCgpa = semCount > 0 ? (semSum / semCount).toFixed(2) : student?.cgpa;
 
+  // Available semesters for student
+  const availableSems = student?.semesterSubjects 
+    ? Object.keys(student.semesterSubjects).map(Number).sort((a,b)=>a-b)
+    : (student?.semesters?.map(s => s.sem) || [5]);
+
+  const currentActiveSem = activeSemFilter && availableSems.includes(activeSemFilter)
+    ? activeSemFilter
+    : availableSems[availableSems.length - 1];
+
+  const displayedSubjects = (student?.semesterSubjects && student.semesterSubjects[currentActiveSem])
+    || student?.currentSemSubjects 
+    || [];
+
   // Calculate lowest subject drop impact (NSUT Style: "AFTER DROP ↓")
   let lowestSubCode = 'COURSE';
   let lowestSubMarksRatio = 1.0;
   let totalMarksObtained = 0;
   let totalMarksMax = 0;
 
-  student?.currentSemSubjects?.forEach((sub) => {
+  displayedSubjects.forEach((sub) => {
     let obtNum = 0;
     let maxNum = 150;
     if (sub.totalStr && sub.totalStr.includes('/')) {
@@ -109,7 +133,7 @@ export default function StudentDashboardPage() {
 
   // Calculate AFTER DROP CGPA excluding the lowest scoring paper
   let afterDropCgpa = (parseFloat(calculatedAvgCgpa) * 1.05).toFixed(2);
-  const lowestSub = student?.currentSemSubjects?.find(s => s.code === lowestSubCode);
+  const lowestSub = displayedSubjects.find(s => s.code === lowestSubCode);
 
   if (lowestSub && totalMarksMax > 150) {
     let obtNum = 0;
@@ -133,18 +157,6 @@ export default function StudentDashboardPage() {
 
   if (parseFloat(afterDropCgpa) > 10.0) afterDropCgpa = '9.90';
 
-  // Available semesters for student
-  const availableSems = student?.semesterSubjects 
-    ? Object.keys(student.semesterSubjects).map(Number).sort((a,b)=>a-b)
-    : (student?.semesters?.map(s => s.sem) || [5]);
-
-  const currentActiveSem = activeSemFilter && availableSems.includes(activeSemFilter)
-    ? activeSemFilter
-    : availableSems[availableSems.length - 1];
-
-  const displayedSubjects = (student?.semesterSubjects && student.semesterSubjects[currentActiveSem])
-    || student?.currentSemSubjects 
-    || [];
 
   // Total credits & subjects count for displayed semester
   const totalCredits = displayedSubjects.reduce((acc, curr) => acc + (curr.credit || 3), 0) || 24;
