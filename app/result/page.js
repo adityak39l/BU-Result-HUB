@@ -449,32 +449,70 @@ export default function ResultsPage() {
                     )}
 
                     {linePoints.map((pt, i) => (
-                      <g key={i} className="group cursor-pointer">
-                        <circle cx={pt.x} cy={pt.y} r="7" fill="#68c2e3" fillOpacity="0.25" />
-                        <circle cx={pt.x} cy={pt.y} r="4" fill="#090d16" stroke="#68c2e3" strokeWidth="2.5" className="group-hover:scale-125 transition-transform" />
+                      <g key={i} className="group cursor-pointer" onClick={() => setActiveSem(pt.sem)}>
+                        <circle cx={pt.x} cy={pt.y} r="7" fill="#68c2e3" fillOpacity={currentActiveSem === pt.sem ? "0.6" : "0.25"} />
+                        <circle cx={pt.x} cy={pt.y} r="4" fill="#090d16" stroke="#68c2e3" strokeWidth={currentActiveSem === pt.sem ? "3.5" : "2.5"} className="group-hover:scale-125 transition-transform" />
                         
                         <g transform={`translate(${pt.x}, ${pt.y - 14})`}>
-                          <rect x="-20" y="-12" width="40" height="18" rx="5" fill="#68c2e3" />
+                          <rect x="-20" y="-12" width="40" height="18" rx="5" fill={currentActiveSem === pt.sem ? "#38bdf8" : "#68c2e3"} />
                           <text x="0" y="0" textAnchor="middle" fill="#090d16" fontSize="10" fontWeight="900" fontFamily="sans-serif">
                             {pt.sgpa}
                           </text>
                         </g>
 
-                        <text x={pt.x} y={svgHeight + 2} textAnchor="middle" fill="currentColor" opacity="0.7" fontSize="10" fontWeight="800">
+                        <text x={pt.x} y={svgHeight + 2} textAnchor="middle" fill={currentActiveSem === pt.sem ? "#68c2e3" : "currentColor"} opacity={currentActiveSem === pt.sem ? "1" : "0.7"} fontSize="10" fontWeight="800">
                           Sem {pt.sem}
                         </text>
                       </g>
                     ))}
                   </svg>
                 </div>
+
+                {/* 🏆 Prominent 4-Semester SGPA Overview Grid */}
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 pt-1">
+                  {availableSems.map((sNum) => {
+                    const semObj = currentStudent?.semesters?.find(s => s.sem === sNum);
+                    const isCurrent = currentActiveSem === sNum;
+                    const subsCount = currentStudent?.semesterSubjects?.[sNum]?.length || 0;
+                    return (
+                      <button
+                        key={sNum}
+                        onClick={() => setActiveSem(sNum)}
+                        className={`p-3 rounded-xl border text-left transition-all relative overflow-hidden ${
+                          isCurrent
+                            ? 'bg-gradient-to-br from-[#68c2e3]/20 to-sky-600/20 border-[#68c2e3] shadow-lg shadow-[#68c2e3]/10 scale-[1.02]'
+                            : 'bg-slate-100/80 dark:bg-gray-900/80 border-slate-200 dark:border-gray-800 hover:border-slate-300 dark:hover:border-gray-700'
+                        }`}
+                      >
+                        <div className="flex items-center justify-between">
+                          <span className={`text-[10px] font-black uppercase tracking-wider ${isCurrent ? 'text-[#68c2e3]' : 'text-slate-500 dark:text-gray-400'}`}>
+                            Semester {sNum}
+                          </span>
+                          {isCurrent && <span className="w-2 h-2 rounded-full bg-[#68c2e3] animate-pulse" />}
+                        </div>
+                        <div className="text-xl font-black text-slate-900 dark:text-white mt-1">
+                          {semObj ? semObj.sgpa.toFixed(2) : '-'} <span className="text-xs font-bold opacity-60">SGPA</span>
+                        </div>
+                        <div className="text-[10px] text-slate-500 dark:text-gray-400 mt-0.5">
+                          {subsCount} Papers Registered
+                        </div>
+                      </button>
+                    );
+                  })}
+                </div>
               </div>
 
               {/* Subject Marksheet Table with Visual Progress Bars & Semester Switcher */}
               <div className="space-y-4">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-200 dark:border-gray-800 pb-3">
-                  <h3 className="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-gray-400">
-                    Official BU Jhansi Subject Breakdown & Marks
-                  </h3>
+                  <div>
+                    <h3 className="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-gray-400">
+                      Official BU Jhansi Subject Breakdown & Marks — Semester {currentActiveSem}
+                    </h3>
+                    <div className="text-[11px] text-[#68c2e3] font-bold mt-0.5">
+                      Showing {displayedSubjects.length} subjects • Semester {currentActiveSem} SGPA: {currentStudent?.semesters?.find(s => s.sem === currentActiveSem)?.sgpa || calculatedAvgCgpa}
+                    </div>
+                  </div>
 
                   {/* Semester Switcher Tabs */}
                   {availableSems.length > 1 && (
@@ -484,7 +522,6 @@ export default function ResultsPage() {
                       </span>
                       {availableSems.map((sNum) => {
                         const semObj = currentStudent?.semesters?.find(s => s.sem === sNum);
-                        const is2024 = sNum === 3 || sNum === 4;
                         return (
                           <button
                             key={sNum}

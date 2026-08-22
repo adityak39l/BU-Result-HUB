@@ -388,23 +388,61 @@ export default function StudentDashboardPage() {
                 </g>
 
                 {/* Bottom X-Axis Label */}
-                <text x={pt.x} y={svgHeight + 2} textAnchor="middle" fill="currentColor" opacity="0.7" fontSize="10" fontWeight="800">
+                <text x={pt.x} y={svgHeight + 2} textAnchor="middle" fill={currentActiveSem === pt.sem ? "#68c2e3" : "currentColor"} opacity={currentActiveSem === pt.sem ? "1" : "0.7"} fontSize="10" fontWeight="800">
                   Sem {pt.sem}
                 </text>
               </g>
             ))}
           </svg>
         </div>
+
+        {/* 🏆 Prominent 4-Semester SGPA Overview Grid */}
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 pt-1">
+          {availableSems.map((sNum) => {
+            const semObj = student?.semesters?.find(s => s.sem === sNum);
+            const isCurrent = currentActiveSem === sNum;
+            const subsCount = student?.semesterSubjects?.[sNum]?.length || 0;
+            return (
+              <button
+                key={sNum}
+                onClick={() => setActiveSemFilter(sNum)}
+                className={`p-3 rounded-xl border text-left transition-all relative overflow-hidden ${
+                  isCurrent
+                    ? 'bg-gradient-to-br from-[#68c2e3]/20 to-sky-600/20 border-[#68c2e3] shadow-lg shadow-[#68c2e3]/10 scale-[1.02]'
+                    : 'bg-slate-100/80 dark:bg-gray-900/80 border-slate-200 dark:border-gray-800 hover:border-slate-300 dark:hover:border-gray-700'
+                }`}
+              >
+                <div className="flex items-center justify-between">
+                  <span className={`text-[10px] font-black uppercase tracking-wider ${isCurrent ? 'text-[#68c2e3]' : 'text-slate-500 dark:text-gray-400'}`}>
+                    Semester {sNum}
+                  </span>
+                  {isCurrent && <span className="w-2 h-2 rounded-full bg-[#68c2e3] animate-pulse" />}
+                </div>
+                <div className="text-xl font-black text-slate-900 dark:text-white mt-1">
+                  {semObj ? semObj.sgpa.toFixed(2) : '-'} <span className="text-xs font-bold opacity-60">SGPA</span>
+                </div>
+                <div className="text-[10px] text-slate-500 dark:text-gray-400 mt-0.5">
+                  {subsCount} Papers Registered
+                </div>
+              </button>
+            );
+          })}
+        </div>
       </div>
 
       {/* Detailed Subject Marksheet Table with Visual Progress Bars */}
       <div className="glass-card p-5 space-y-4 border-slate-200 dark:border-gray-800 shadow-xl">
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
-          <div className="flex items-center gap-2">
-            <BookOpen className="w-4 h-4 text-[#68c2e3]" />
-            <h3 className="text-xs font-extrabold uppercase tracking-wider text-slate-900 dark:text-white">
-              Official Subject-Wise Marks & Grade Breakdown
-            </h3>
+          <div>
+            <div className="flex items-center gap-2">
+              <BookOpen className="w-4 h-4 text-[#68c2e3]" />
+              <h3 className="text-xs font-extrabold uppercase tracking-wider text-slate-900 dark:text-white">
+                Official Subject-Wise Marks & Grade Breakdown — Semester {currentActiveSem}
+              </h3>
+            </div>
+            <div className="text-[11px] text-[#68c2e3] font-bold mt-0.5 ml-6">
+              Showing {displayedSubjects.length} subjects • Semester {currentActiveSem} SGPA: {student?.semesters?.find(s => s.sem === currentActiveSem)?.sgpa || calculatedAvgCgpa}
+            </div>
           </div>
 
           {/* Semester Filter Pills */}
@@ -415,7 +453,6 @@ export default function StudentDashboardPage() {
               </span>
               {availableSems.map((sNum) => {
                 const semObj = student?.semesters?.find(s => s.sem === sNum);
-                const is2024 = sNum === 3 || sNum === 4;
                 return (
                   <button
                     key={sNum}
