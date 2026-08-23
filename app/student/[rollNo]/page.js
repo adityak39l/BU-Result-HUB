@@ -385,15 +385,15 @@ export default function StudentDashboardPage() {
 
             {/* Data Point Circles + Tooltip Callouts */}
             {linePoints.map((pt, i) => (
-              <g key={i} className="group cursor-pointer">
+              <g key={i} className="group cursor-pointer" onClick={() => setActiveSemFilter(pt.sem)}>
                 {/* Point Pulse Ring */}
-                <circle cx={pt.x} cy={pt.y} r="7" fill="#68c2e3" fillOpacity="0.25" />
+                <circle cx={pt.x} cy={pt.y} r="7" fill="#68c2e3" fillOpacity={currentActiveSem === pt.sem ? "0.6" : "0.25"} />
                 {/* Main Point Circle */}
-                <circle cx={pt.x} cy={pt.y} r="4" fill="#090d16" stroke="#68c2e3" strokeWidth="2.5" className="group-hover:scale-125 transition-transform" />
+                <circle cx={pt.x} cy={pt.y} r="4" fill="#090d16" stroke="#68c2e3" strokeWidth={currentActiveSem === pt.sem ? "3.5" : "2.5"} className="group-hover:scale-125 transition-transform" />
                 
                 {/* Top Floating Tooltip Badge for SGPA */}
                 <g transform={`translate(${pt.x}, ${pt.y - 14})`}>
-                  <rect x="-20" y="-12" width="40" height="18" rx="5" fill="#68c2e3" />
+                  <rect x="-20" y="-12" width="40" height="18" rx="5" fill={currentActiveSem === pt.sem ? "#38bdf8" : "#68c2e3"} />
                   <text x="0" y="0" textAnchor="middle" fill="#090d16" fontSize="10" fontWeight="900" fontFamily="sans-serif">
                     {pt.sgpa}
                   </text>
