@@ -8,7 +8,14 @@ import { Award, Trophy, Medal, Crown, ArrowUpRight, Search, Sparkles, ExternalLi
 
 export default function LeaderboardPage() {
   const [selectedBranch, setSelectedBranch] = useState('ALL');
-  const leaderboard = getLeaderboard(selectedBranch);
+  const [selectedYear, setSelectedYear] = useState('ALL');
+  const leaderboard = getLeaderboard(selectedBranch, selectedYear);
+
+  const YEARS = [
+    { id: 'ALL', label: '📅 All Batches' },
+    { id: '2025-26', label: '🎓 Batch 2025-26 (Sem V & VI)' },
+    { id: '2024-25', label: '📘 Batch 2024-25 (Sem III & IV)' },
+  ];
 
   const top3 = leaderboard.slice(0, 3);
 
@@ -66,6 +73,24 @@ export default function LeaderboardPage() {
         })}
       </div>
 
+      {/* Batch Year Filter Pills */}
+      <div className="flex items-center justify-center gap-1.5 overflow-x-auto pb-1 flex-wrap">
+        <span className="text-xs font-bold text-slate-500 dark:text-gray-400 mr-1">Session:</span>
+        {YEARS.map((yr) => (
+          <button
+            key={yr.id}
+            onClick={() => setSelectedYear(yr.id)}
+            className={`px-4 py-2 rounded-xl text-xs font-bold transition-all whitespace-nowrap border ${
+              selectedYear === yr.id
+                ? 'bg-gradient-to-r from-[#68c2e3] to-sky-600 text-slate-950 shadow-md scale-105'
+                : 'bg-slate-100 dark:bg-gray-900 text-slate-600 dark:text-gray-400 hover:text-slate-900 dark:hover:text-white border-slate-200 dark:border-gray-800'
+            }`}
+          >
+            {yr.label}
+          </button>
+        ))}
+      </div>
+
       {/* Podium (Gold, Silver, Bronze) */}
       {top3.length > 0 && (
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-4xl mx-auto">
@@ -90,7 +115,7 @@ export default function LeaderboardPage() {
                   {top3[1].branch} Department
                 </span>
               </div>
-              <div className="mt-4 text-2xl font-black text-slate-700 dark:text-slate-200">{top3[1].cgpa} <span className="text-xs font-normal text-slate-500 dark:text-gray-400">CGPA</span></div>
+              <div className="mt-4 text-2xl font-black text-slate-700 dark:text-slate-200">{(top3[1].effectiveCgpa ?? top3[1].cgpa).toFixed(2)} <span className="text-xs font-normal text-slate-500 dark:text-gray-400">CGPA</span></div>
             </Link>
           )}
 
@@ -115,7 +140,7 @@ export default function LeaderboardPage() {
                   {top3[0].branch} Department
                 </span>
               </div>
-              <div className="mt-4 text-3xl font-black text-amber-500">{top3[0].cgpa} <span className="text-xs font-normal text-slate-500 dark:text-gray-400">CGPA</span></div>
+              <div className="mt-4 text-3xl font-black text-amber-500">{(top3[0].effectiveCgpa ?? top3[0].cgpa).toFixed(2)} <span className="text-xs font-normal text-slate-500 dark:text-gray-400">CGPA</span></div>
             </Link>
           )}
 
@@ -140,7 +165,7 @@ export default function LeaderboardPage() {
                   {top3[2].branch} Department
                 </span>
               </div>
-              <div className="mt-4 text-2xl font-black text-orange-600 dark:text-orange-400">{top3[2].cgpa} <span className="text-xs font-normal text-slate-500 dark:text-gray-400">CGPA</span></div>
+              <div className="mt-4 text-2xl font-black text-orange-600 dark:text-orange-400">{(top3[2].effectiveCgpa ?? top3[2].cgpa).toFixed(2)} <span className="text-xs font-normal text-slate-500 dark:text-gray-400">CGPA</span></div>
             </Link>
           )}
         </div>
@@ -161,7 +186,7 @@ export default function LeaderboardPage() {
                 <th className="p-3.5">Student Name</th>
                 <th className="p-3.5">Roll Number</th>
                 <th className="p-3.5 text-center">Branch</th>
-                <th className="p-3.5 text-center">Cumulative CGPA</th>
+                <th className="p-3.5 text-center">{selectedYear === 'ALL' ? 'Cumulative CGPA' : `${selectedYear} SGPA Avg`}</th>
                 <th className="p-3.5 text-center">Latest SGPA</th>
                 <th className="p-3.5 text-right">Action</th>
               </tr>
@@ -191,7 +216,7 @@ export default function LeaderboardPage() {
                       {student.branch}
                     </span>
                   </td>
-                  <td className="p-3.5 text-center font-black text-[#68c2e3] text-sm">{student.cgpa}</td>
+                  <td className="p-3.5 text-center font-black text-[#68c2e3] text-sm">{(student.effectiveCgpa ?? student.cgpa).toFixed(2)}</td>
                   <td className="p-3.5 text-center font-bold text-slate-900 dark:text-white">
                     {student.semesters[student.semesters.length - 1]?.sgpa || 'N/A'}
                   </td>

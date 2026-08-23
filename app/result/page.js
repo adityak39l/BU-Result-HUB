@@ -23,10 +23,9 @@ export default function ResultsPage() {
   // Batch Year Options
   const YEARS = [
     { id: 'ALL', label: '📅 All Batches' },
-    { id: '2024-25', label: 'Batch 2024-25' },
-    { id: '2025-26', label: 'Batch 2025-26' },
+    { id: '2024-25', label: 'Batch 2024-25 (Sem III & IV)' },
+    { id: '2025-26', label: 'Batch 2025-26 (Sem V & VI)' },
     { id: '2023-24', label: 'Batch 2023-24' },
-    { id: '2026-27', label: 'Batch 2026-27' },
   ];
 
   // Toggle Branch selection with auto-sync active student
@@ -50,12 +49,20 @@ export default function ResultsPage() {
     }
   };
 
-  // Change Year Filter with auto-sync active student
+  // Change Year Filter with auto-sync active student and auto-select latest semester
   const handleYearChange = (yrId) => {
     setSelectedYear(yrId);
     const matches = searchStudents(query, selectedBranches, yrId);
     if (matches.length > 0) {
       setActiveStudentRoll(matches[0].rollNo);
+    }
+    // Auto-switch to the latest relevant semester for this batch
+    if (yrId === '2025-26') {
+      setActiveSem(6); // Show Sem VI by default for batch 2025-26
+    } else if (yrId === '2024-25') {
+      setActiveSem(4); // Show Sem IV by default for batch 2024-25
+    } else {
+      setActiveSem(null); // Reset to latest available
     }
   };
 
