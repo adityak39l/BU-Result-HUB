@@ -8,13 +8,13 @@ import { Award, Trophy, Medal, Crown, ArrowUpRight, Search, Sparkles, ExternalLi
 
 export default function LeaderboardPage() {
   const [selectedBranch, setSelectedBranch] = useState('ALL');
-  const [selectedYear, setSelectedYear] = useState('ALL');
+  const [selectedYear, setSelectedYear] = useState('2025-26');
   const leaderboard = getLeaderboard(selectedBranch, selectedYear);
 
   const YEARS = [
-    { id: 'ALL', label: '📅 All Batches' },
-    { id: '2025-26', label: '🎓 Batch 2025-26 (Sem V & VI)' },
-    { id: '2024-25', label: '📘 Batch 2024-25 (Sem III & IV)' },
+    { id: '2025-26', label: '🎓 Batch 2025-26 (Sem V & VI Combined)' },
+    { id: '2024-25', label: '📘 Batch 2024-25 (Sem III & IV Combined)' },
+    { id: 'ALL', label: '📅 All Semesters' },
   ];
 
   const top3 = leaderboard.slice(0, 3);
@@ -31,13 +31,13 @@ export default function LeaderboardPage() {
       <div className="text-center space-y-2">
         <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500/10 text-amber-500 border border-amber-500/20 text-xs font-bold mb-1">
           <Trophy className="w-4 h-4 text-amber-500" />
-          Official Academic Honor Roll
+          Official Academic Honor Roll • Sem V & VI Combined Rankings
         </div>
         <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white">
           BU Jhansi B.Tech <span className="gradient-text-sky">Leaderboards</span>
         </h1>
         <p className="text-xs sm:text-sm text-slate-500 dark:text-gray-400 max-w-lg mx-auto">
-          Branch-wise & overall student rankings sorted by Cumulative CGPA
+          Branch-wise & overall student rankings calculated from Semester V & Semester VI Combined SGPA Average
         </p>
       </div>
 
