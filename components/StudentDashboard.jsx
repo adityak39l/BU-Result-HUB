@@ -52,20 +52,45 @@ export default function StudentDashboard({ rollNo }) {
     }
   };
 
-  // Branch average CGPA benchmark
+  // 1. Latest Session CGPA (Sem 5 & 6 Combined Average for Batch 2025-26, or latest available sems)
+  const latestSems = student?.semesters?.filter(s => s.sem === 5 || s.sem === 6) || [];
+  const latestAvgCgpa = latestSems.length > 0
+    ? (latestSems.reduce((acc, curr) => acc + curr.sgpa, 0) / latestSems.length).toFixed(2)
+    : (student?.semesters?.length > 0
+        ? (student.semesters.reduce((acc, curr) => acc + curr.sgpa, 0) / student.semesters.length).toFixed(2)
+        : (student?.cgpa?.toFixed(2) || '0.00'));
+
+  // 2. Cumulative All-Semesters CGPA
+  const allSems = student?.semesters || [];
+  const cumulativeCgpa = allSems.length > 0
+    ? (allSems.reduce((acc, curr) => acc + curr.sgpa, 0) / allSems.length).toFixed(2)
+    : (student?.cgpa?.toFixed(2) || '0.00');
+
+  // Branch average benchmark calculated using latest session CGPA across branch
   const branchStudents = STUDENTS.filter(s => s.branch === student?.branch);
   const branchAvgCgpa = branchStudents.length > 0
-    ? (branchStudents.reduce((acc, curr) => acc + curr.cgpa, 0) / branchStudents.length).toFixed(2)
+    ? (branchStudents.reduce((acc, curr) => {
+        const sL = curr?.semesters?.filter(s => s.sem === 5 || s.sem === 6) || [];
+        const score = sL.length > 0 
+          ? (sL.reduce((a, b) => a + b.sgpa, 0) / sL.length) 
+          : curr.cgpa;
+        return acc + score;
+      }, 0) / branchStudents.length).toFixed(2)
     : '8.00';
 
-  const diffVsBranchAvg = (student?.cgpa - parseFloat(branchAvgCgpa)).toFixed(2);
-  const isAboveBranchAvg = diffVsBranchAvg >= 0;
+  const diffVsBranchAvg = (parseFloat(latestAvgCgpa) - parseFloat(branchAvgCgpa)).toFixed(2);
+  const isAboveBranchAvg = parseFloat(diffVsBranchAvg) >= 0;
 
   // Grade summary counts across all available semesters
   const gradeCounts = { 'O': 0, 'A+': 0, 'A': 0, 'B+': 0, 'B': 0, 'C': 0, 'F': 0 };
+  let totalAllSubs = 0;
+  let totalAllCredits = 0;
+
   if (student?.semesterSubjects) {
     Object.values(student.semesterSubjects).forEach(subs => {
+      totalAllSubs += subs.length;
       subs.forEach(sub => {
+        totalAllCredits += (sub.credit || 3);
         const g = sub.grade?.trim();
         if (gradeCounts[g] !== undefined) {
           gradeCounts[g] += 1;
@@ -73,19 +98,15 @@ export default function StudentDashboard({ rollNo }) {
       });
     });
   } else if (student?.currentSemSubjects) {
+    totalAllSubs = student.currentSemSubjects.length;
     student.currentSemSubjects.forEach(sub => {
+      totalAllCredits += (sub.credit || 3);
       const g = sub.grade?.trim();
       if (gradeCounts[g] !== undefined) {
         gradeCounts[g] += 1;
       }
     });
   }
-
-  // Average CGPA & Lowest Subject Drop Calculation
-  const semCount = student?.semesters?.length || 1;
-  const semSgpas = student?.semesters?.map(s => s.sgpa) || [];
-  const semSum = semSgpas.reduce((acc, curr) => acc + curr, 0);
-  const calculatedAvgCgpa = semCount > 0 ? (semSum / semCount).toFixed(2) : student?.cgpa;
 
   // Available semesters for student
   const availableSems = student?.semesterSubjects 
@@ -96,58 +117,12 @@ export default function StudentDashboard({ rollNo }) {
     ? activeSemFilter
     : availableSems[availableSems.length - 1];
 
+  const activeSemObj = student?.semesters?.find(s => s.sem === currentActiveSem);
+  const activeSemSgpa = activeSemObj ? activeSemObj.sgpa.toFixed(2) : '-';
+
   const displayedSubjects = (student?.semesterSubjects && student.semesterSubjects[currentActiveSem])
     || student?.currentSemSubjects 
     || [];
-
-  // Calculate lowest subject drop impact (NSUT Style: "AFTER DROP ↓")
-  let lowestSubCode = 'COURSE';
-  let lowestSubMarksRatio = 1.0;
-  let totalMarksObtained = 0;
-  let totalMarksMax = 0;
-
-  displayedSubjects.forEach((sub) => {
-    let obtNum = 0;
-    let maxNum = 150;
-    if (sub.totalStr && sub.totalStr.includes('/')) {
-      const parts = sub.totalStr.replace('Tot:', '').split('/');
-      obtNum = parseFloat(parts[0]) || 0;
-      maxNum = parseFloat(parts[1]) || 150;
-    }
-    const ratio = maxNum > 0 ? (obtNum / maxNum) : 1.0;
-    if (ratio < lowestSubMarksRatio) {
-      lowestSubMarksRatio = ratio;
-      lowestSubCode = sub.code;
-    }
-    totalMarksObtained += obtNum;
-    totalMarksMax += maxNum;
-  });
-
-  // Calculate AFTER DROP CGPA excluding the lowest scoring paper
-  let afterDropCgpa = (parseFloat(calculatedAvgCgpa) * 1.05).toFixed(2);
-  const lowestSub = displayedSubjects.find(s => s.code === lowestSubCode);
-
-  if (lowestSub && totalMarksMax > 150) {
-    let obtNum = 0;
-    let maxNum = 150;
-    if (lowestSub.totalStr && lowestSub.totalStr.includes('/')) {
-      const parts = lowestSub.totalStr.replace('Tot:', '').split('/');
-      obtNum = parseFloat(parts[0]) || 0;
-      maxNum = parseFloat(parts[1]) || 150;
-    }
-    const remObt = totalMarksObtained - obtNum;
-    const remMax = totalMarksMax - maxNum;
-    if (remMax > 0) {
-      const calculatedDrop = ((remObt / remMax) * 10.0).toFixed(2);
-      if (parseFloat(calculatedDrop) > parseFloat(calculatedAvgCgpa)) {
-        afterDropCgpa = calculatedDrop;
-      } else {
-        afterDropCgpa = (parseFloat(calculatedAvgCgpa) * 1.05).toFixed(2);
-      }
-    }
-  }
-
-  if (parseFloat(afterDropCgpa) > 10.0) afterDropCgpa = '9.90';
 
   // Total credits & subjects count for displayed semester
   const totalCredits = displayedSubjects.reduce((acc, curr) => acc + (curr.credit || 3), 0) || 24;
@@ -240,57 +215,58 @@ export default function StudentDashboard({ rollNo }) {
             </div>
           </div>
 
-          {/* Cumulative CGPA Card */}
-          <div className="bg-gradient-to-br from-[#68c2e3] to-sky-600 text-slate-950 p-4 rounded-2xl text-center shadow-lg shadow-[#68c2e3]/20 border border-white/30 shrink-0 self-stretch md:self-auto flex flex-col justify-center min-w-[130px]">
-            <div className="text-3xl font-black tracking-tight">{calculatedAvgCgpa}</div>
-            <div className="text-[10px] uppercase font-black tracking-wider opacity-90 mt-0.5">Cumulative CGPA</div>
+          {/* Latest Session CGPA Hero Badge */}
+          <div className="bg-gradient-to-br from-[#68c2e3] to-sky-600 text-slate-950 p-4 rounded-2xl text-center shadow-lg shadow-[#68c2e3]/20 border border-white/30 shrink-0 self-stretch md:self-auto flex flex-col justify-center min-w-[140px]">
+            <div className="text-3xl font-black tracking-tight">{latestAvgCgpa}</div>
+            <div className="text-[10px] uppercase font-black tracking-wider opacity-90 mt-0.5">
+              {latestSems.length > 0 ? 'Sem V & VI Combined CGPA' : 'Average CGPA'}
+            </div>
           </div>
         </div>
 
         {/* 🏆 6 NSUT ResultHub Performance Metric Cards Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 pt-2 border-t border-slate-200 dark:border-gray-800">
           
-          {/* 1. CGPA Card */}
+          {/* 1. Latest Session CGPA Card */}
           <div className="p-3.5 rounded-xl bg-[#68c2e3]/10 border border-[#68c2e3]/30 text-center">
-            <div className="text-[10px] text-[#68c2e3] font-black uppercase tracking-wider">CGPA</div>
-            <div className="text-2xl font-black text-slate-900 dark:text-white mt-0.5">{calculatedAvgCgpa}</div>
+            <div className="text-[10px] text-[#68c2e3] font-black uppercase tracking-wider">LATEST CGPA</div>
+            <div className="text-2xl font-black text-slate-900 dark:text-white mt-0.5">{latestAvgCgpa}</div>
+            <div className="text-[9px] text-[#68c2e3] font-bold">Sem 5 & 6 Avg</div>
           </div>
 
-          {/* 2. AFTER DROP ↓ Card */}
+          {/* 2. Cumulative 4-Sem CGPA Card */}
+          <div className="p-3.5 rounded-xl bg-sky-500/10 border border-sky-500/30 text-center">
+            <div className="text-[10px] text-sky-600 dark:text-sky-400 font-black uppercase tracking-wider">OVERALL CGPA</div>
+            <div className="text-2xl font-black text-sky-500 mt-0.5">{cumulativeCgpa}</div>
+            <div className="text-[9px] text-slate-500 dark:text-gray-400 font-bold">{allSems.length} Semesters</div>
+          </div>
+
+          {/* 3. Selected Semester SGPA Card */}
           <div className="p-3.5 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-center">
-            <div className="text-[10px] text-emerald-600 dark:text-emerald-400 font-black uppercase tracking-wider">AFTER DROP ↓</div>
-            <div className="text-2xl font-black text-emerald-500 mt-0.5">{afterDropCgpa}</div>
-            <div className="text-[9px] font-mono text-emerald-600/80 dark:text-emerald-400/80 font-bold truncate">
-              drop {lowestSubCode}
-            </div>
+            <div className="text-[10px] text-emerald-600 dark:text-emerald-400 font-black uppercase tracking-wider">SEM {currentActiveSem} SGPA</div>
+            <div className="text-2xl font-black text-emerald-500 mt-0.5">{activeSemSgpa}</div>
+            <div className="text-[9px] text-emerald-600/80 dark:text-emerald-400/80 font-bold">Active Tab</div>
           </div>
 
-          {/* 3. RANK Card */}
+          {/* 4. Overall Rank Card */}
           <div className="p-3.5 rounded-xl bg-amber-500/10 border border-amber-500/30 text-center">
-            <div className="text-[10px] text-amber-600 dark:text-amber-400 font-black uppercase tracking-wider">RANK</div>
+            <div className="text-[10px] text-amber-600 dark:text-amber-400 font-black uppercase tracking-wider">OVERALL RANK</div>
             <div className="text-2xl font-black text-amber-500 mt-0.5">#{student.rank}</div>
-            <div className="text-[9px] text-slate-500 dark:text-gray-400 font-bold">of all students</div>
+            <div className="text-[9px] text-slate-500 dark:text-gray-400 font-bold">of 106 students</div>
           </div>
 
-          {/* 4. BRANCH RANK Card */}
+          {/* 5. Branch Rank Card */}
           <div className="p-3.5 rounded-xl bg-blue-500/10 border border-blue-500/30 text-center">
             <div className="text-[10px] text-blue-600 dark:text-blue-400 font-black uppercase tracking-wider">BRANCH RANK</div>
             <div className="text-2xl font-black text-blue-500 mt-0.5">#{student.branchRank}</div>
             <div className="text-[9px] text-slate-500 dark:text-gray-400 font-bold">in {student.branch}</div>
           </div>
 
-          {/* 5. CREDITS Card */}
-          <div className="p-3.5 rounded-xl bg-indigo-500/10 border border-indigo-500/30 text-center">
-            <div className="text-[10px] text-indigo-600 dark:text-indigo-400 font-black uppercase tracking-wider">CREDITS</div>
-            <div className="text-2xl font-black text-indigo-500 mt-0.5">{totalCredits}</div>
-            <div className="text-[9px] text-slate-500 dark:text-gray-400 font-bold">completed</div>
-          </div>
-
-          {/* 6. SUBJECTS Card */}
+          {/* 6. Total Registered Papers Card */}
           <div className="p-3.5 rounded-xl bg-purple-500/10 border border-purple-500/30 text-center">
-            <div className="text-[10px] text-purple-600 dark:text-purple-400 font-black uppercase tracking-wider">SUBJECTS</div>
-            <div className="text-2xl font-black text-purple-500 mt-0.5">{totalSubjectsCount}</div>
-            <div className="text-[9px] text-slate-500 dark:text-gray-400 font-bold">registered</div>
+            <div className="text-[10px] text-purple-600 dark:text-purple-400 font-black uppercase tracking-wider">TOTAL PAPERS</div>
+            <div className="text-2xl font-black text-purple-500 mt-0.5">{totalAllSubs || totalSubjectsCount}</div>
+            <div className="text-[9px] text-emerald-500 font-bold">0 Back Papers</div>
           </div>
         </div>
 
