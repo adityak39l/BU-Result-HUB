@@ -1,11 +1,15 @@
 'use client';
 import Link from 'next/link';
 import { ArrowLeft, Code2, Database, Cpu, BarChart3, Users, Zap, AlertTriangle, GraduationCap, Globe } from 'lucide-react';
+import { STUDENTS, BRANCHES } from '@/lib/data';
 
 export default function AboutPage() {
+  const totalStudents = STUDENTS?.length || 167;
+  const totalBranches = BRANCHES?.length || 5;
+
   const features = [
     { icon: BarChart3, label: 'Result & SGPA Viewer', desc: 'Semester-wise performance dekho ek jagah' },
-    { icon: Users, label: 'Branch Leaderboard', desc: 'EIE, BME, ME — sabka rank ek saath' },
+    { icon: Users, label: 'Branch Leaderboard', desc: 'CSE, ECE, EIE, BME, ME — sabhi branches ki ranking ek saath' },
     { icon: Zap, label: 'Academic Twin Finder', desc: 'Apna academic doppelganger dhundo' },
     { icon: Code2, label: 'CGPA Calculator', desc: 'Drop simulation ke saath future planning' },
     { icon: Cpu, label: 'Student Dashboard', desc: 'Personal profile with SGPA trend graph' },
@@ -50,6 +54,20 @@ export default function AboutPage() {
         </p>
       </div>
 
+      {/* Stats */}
+      <div className="grid grid-cols-3 gap-3 text-center">
+        {[
+          { val: `${totalStudents}`, label: 'Total Students' },
+          { val: `${totalBranches}`, label: 'B.Tech Branches' },
+          { val: '100%', label: 'Free & Open' },
+        ].map(({ val, label }) => (
+          <div key={label} className="glass-card p-4 border-slate-200 dark:border-gray-800">
+            <div className="text-2xl font-black text-[#68c2e3]">{val}</div>
+            <div className="text-xs text-slate-400 font-bold mt-1">{label}</div>
+          </div>
+        ))}
+      </div>
+
       {/* Why we built this */}
       <div className="glass-card p-6 sm:p-8 space-y-4">
         <h2 className="font-black text-xl text-white">Why we built this</h2>
@@ -63,7 +81,7 @@ export default function AboutPage() {
             <strong className="text-white">BU Jhansi Result Hub</strong> turns raw marksheet data
             into something genuinely useful. View your detailed result, track your semester-wise
             SGPA graph, see your branch rank, find your academic twin, and compare yourself with
-            any student across EIE, BME, or Mechanical Engineering.
+            any student across CSE, ECE, EIE, BME, or Mechanical Engineering.
           </p>
           <p>
             This platform was built by a BU Jhansi IET student, for BU Jhansi students — completely
@@ -76,25 +94,7 @@ export default function AboutPage() {
         </div>
       </div>
 
-      {/* Features */}
-      <div>
-        <h2 className="font-black text-xl text-white mb-4">What you can do</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-          {features.map(({ icon: Icon, label, desc }) => (
-            <div key={label} className="glass-card p-4 flex items-start gap-3 border-slate-200 dark:border-gray-800">
-              <div className="w-8 h-8 rounded-lg bg-[#68c2e3]/10 border border-[#68c2e3]/30 flex items-center justify-center shrink-0 mt-0.5">
-                <Icon className="w-4 h-4 text-[#68c2e3]" />
-              </div>
-              <div>
-                <div className="text-sm font-black text-white">{label}</div>
-                <div className="text-xs text-slate-400 mt-0.5">{desc}</div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* The Maker — anonymous */}
+      {/* The Maker — moved ABOVE 'What you can do' container */}
       <div>
         <h2 className="font-black text-xl text-white mb-4">The maker</h2>
         <div className="glass-card p-6 flex flex-col gap-5">
@@ -127,6 +127,24 @@ export default function AboutPage() {
         </div>
       </div>
 
+      {/* Features — What you can do */}
+      <div>
+        <h2 className="font-black text-xl text-white mb-4">What you can do</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          {features.map(({ icon: Icon, label, desc }) => (
+            <div key={label} className="glass-card p-4 flex items-start gap-3 border-slate-200 dark:border-gray-800">
+              <div className="w-8 h-8 rounded-lg bg-[#68c2e3]/10 border border-[#68c2e3]/30 flex items-center justify-center shrink-0 mt-0.5">
+                <Icon className="w-4 h-4 text-[#68c2e3]" />
+              </div>
+              <div>
+                <div className="text-sm font-black text-white">{label}</div>
+                <div className="text-xs text-slate-400 mt-0.5">{desc}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
       {/* Tech Stack */}
       <div>
         <h2 className="font-black text-xl text-white mb-4">Built with</h2>
@@ -137,20 +155,6 @@ export default function AboutPage() {
             </span>
           ))}
         </div>
-      </div>
-
-      {/* Stats */}
-      <div className="grid grid-cols-3 gap-3 text-center">
-        {[
-          { val: '42', label: 'Students' },
-          { val: '3', label: 'Branches' },
-          { val: '100%', label: 'Free' },
-        ].map(({ val, label }) => (
-          <div key={label} className="glass-card p-4 border-slate-200 dark:border-gray-800">
-            <div className="text-2xl font-black text-[#68c2e3]">{val}</div>
-            <div className="text-xs text-slate-400 font-bold mt-1">{label}</div>
-          </div>
-        ))}
       </div>
 
       {/* Disclaimer */}
