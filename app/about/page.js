@@ -74,21 +74,21 @@ export default function AboutPage() {
         ))}
       </div>
 
-      {/* The Maker Section — NSUT ResultHub Style */}
-      <section className="space-y-4">
+      {/* The Maker Section — Ultra-Compact & Sleek */}
+      <section className="space-y-2.5">
         <div className="flex items-center gap-2">
-          <span className="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-[#68c2e3]/10 text-[#68c2e3] border border-[#68c2e3]/20 flex items-center gap-1.5">
-            <Sparkles className="w-3.5 h-3.5" />
+          <span className="text-[11px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-[#68c2e3]/10 text-[#68c2e3] border border-[#68c2e3]/20 flex items-center gap-1.5">
+            <Sparkles className="w-3 h-3" />
             The Maker
           </span>
         </div>
 
-        <div className="glass-card p-5 sm:p-6 rounded-2xl border border-slate-200 dark:border-gray-800 bg-slate-900/60 backdrop-blur-xl space-y-4">
+        <div className="glass-card p-4 sm:p-5 rounded-xl border border-slate-200 dark:border-gray-800 bg-slate-900/60 backdrop-blur-xl space-y-3.5">
           {/* Maker Header: Photo + Identity */}
-          <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 text-center sm:text-left">
+          <div className="flex flex-col sm:flex-row items-center sm:items-start gap-3.5 text-center sm:text-left">
             {/* Profile Avatar / Photo */}
             <div className="relative group shrink-0">
-              <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl overflow-hidden ring-4 ring-[#68c2e3]/30 shadow-xl shadow-[#68c2e3]/10 bg-slate-950 flex items-center justify-center">
+              <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-xl overflow-hidden ring-2 ring-[#68c2e3]/40 shadow-lg shadow-[#68c2e3]/10 bg-slate-950 flex items-center justify-center">
                 <img
                   src={makerImg}
                   alt="Aditya Kumar Verma"
@@ -101,63 +101,63 @@ export default function AboutPage() {
             </div>
 
             {/* Name & Details */}
-            <div className="space-y-1.5 flex-1">
+            <div className="space-y-1 flex-1 min-w-0">
               <div className="flex flex-wrap items-center justify-center sm:justify-start gap-1.5">
-                <h2 className="text-xl sm:text-2xl font-black text-white">Aditya Kumar Verma</h2>
-                <span className="text-[10px] px-2 py-0.5 rounded-full font-bold bg-amber-500/15 text-amber-300 border border-amber-500/30">
+                <h2 className="text-lg sm:text-xl font-black text-white">Aditya Kumar Verma</h2>
+                <span className="text-[9px] px-2 py-0.5 rounded font-bold bg-amber-500/15 text-amber-300 border border-amber-500/30">
                   EIE Branch
                 </span>
-                <span className="text-[10px] px-2 py-0.5 rounded-full font-bold bg-sky-500/15 text-[#68c2e3] border border-sky-500/30">
+                <span className="text-[9px] px-2 py-0.5 rounded font-bold bg-sky-500/15 text-[#68c2e3] border border-sky-500/30">
                   Full-Stack Dev
                 </span>
-                <span className="text-[10px] px-2 py-0.5 rounded-full font-bold bg-violet-500/15 text-violet-300 border border-violet-500/30">
+                <span className="text-[9px] px-2 py-0.5 rounded font-bold bg-violet-500/15 text-violet-300 border border-violet-500/30">
                   Data Engineer
                 </span>
               </div>
 
-              <p className="text-xs sm:text-sm font-semibold text-slate-300 flex items-center justify-center sm:justify-start gap-1.5">
-                <GraduationCap className="w-3.5 h-3.5 text-[#68c2e3]" />
+              <p className="text-xs font-semibold text-slate-300 flex items-center justify-center sm:justify-start gap-1.5">
+                <GraduationCap className="w-3.5 h-3.5 text-[#68c2e3] shrink-0" />
                 IET Bundelkhand University, Jhansi · B.Tech (EIE)
               </p>
 
-              <p className="text-xs text-slate-400 leading-relaxed max-w-xl">
-                Created BU IET ResultHub from scratch to give students access to fast, insightful, and beautifully organized academic analytics and semester leaderboards.
+              <p className="text-[11px] text-slate-400 leading-relaxed max-w-xl">
+                Created BU IET ResultHub to give BU Jhansi students fast, insightful, and beautifully organized academic analytics and semester leaderboards.
               </p>
             </div>
           </div>
 
           {/* Key Contributions */}
-          <div className="pt-2 border-t border-slate-800/80 space-y-2.5">
-            <div className="text-[11px] font-bold uppercase tracking-wider text-slate-400 flex items-center justify-center sm:justify-start gap-1.5">
-              <Award className="w-3.5 h-3.5 text-[#68c2e3]" />
-              Key Engineering & Contributions
+          <div className="pt-2 border-t border-slate-800/70 space-y-2">
+            <div className="text-[10px] font-bold uppercase tracking-wider text-slate-400 flex items-center justify-center sm:justify-start gap-1.5">
+              <Award className="w-3 h-3 text-[#68c2e3]" />
+              Key Contributions & Engineering
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-300">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5 text-slate-300">
               {makerContributions.map((item, i) => (
-                <div key={i} className="flex items-start gap-2 p-2 rounded-lg bg-slate-950/40 border border-slate-800/60">
+                <div key={i} className="flex items-start gap-1.5 p-1.5 px-2.5 rounded-lg bg-slate-950/30 border border-slate-800/50">
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" />
-                  <span className="leading-snug text-[11px] sm:text-xs">{item}</span>
+                  <span className="leading-tight text-[11px]">{item}</span>
                 </div>
               ))}
             </div>
           </div>
 
           {/* Connect Badges */}
-          <div className="pt-2 border-t border-slate-800/80 space-y-2.5">
-            <div className="text-[11px] font-bold uppercase tracking-wider text-slate-400 text-center sm:text-left">
+          <div className="pt-2 border-t border-slate-800/70 space-y-2">
+            <div className="text-[10px] font-bold uppercase tracking-wider text-slate-400 text-center sm:text-left">
               Connect
             </div>
-            <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2.5">
+            <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2">
               {/* YouTube Button */}
               <a
                 href="https://youtube.com/@adityakverma-039?si=ynAmFVEJL8eBxs3e"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-bold bg-red-500/10 hover:bg-red-500/20 text-red-400 border border-red-500/30 hover:border-red-500/50 transition-all shadow-sm hover:scale-[1.02]"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-red-500/10 hover:bg-red-500/20 text-red-400 border border-red-500/30 hover:border-red-500/50 transition-all shadow-sm hover:scale-[1.02]"
               >
                 <Youtube className="w-3.5 h-3.5 text-red-400" />
-                <span>YouTube Channel</span>
-                <ExternalLink className="w-3 h-3 opacity-60 ml-0.5" />
+                <span>YouTube</span>
+                <ExternalLink className="w-3 h-3 opacity-60" />
               </a>
 
               {/* GitHub Button */}
@@ -165,11 +165,11 @@ export default function AboutPage() {
                 href="https://github.com/adityak39l"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-bold bg-slate-800/90 hover:bg-slate-700 text-slate-200 border border-slate-700 hover:border-slate-600 transition-all shadow-sm hover:scale-[1.02]"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-800/90 hover:bg-slate-700 text-slate-200 border border-slate-700 hover:border-slate-600 transition-all shadow-sm hover:scale-[1.02]"
               >
                 <Github className="w-3.5 h-3.5 text-slate-300" />
-                <span>GitHub (@adityak39l)</span>
-                <ExternalLink className="w-3 h-3 opacity-60 ml-0.5" />
+                <span>GitHub</span>
+                <ExternalLink className="w-3 h-3 opacity-60" />
               </a>
 
               {/* LinkedIn Button */}
@@ -177,11 +177,11 @@ export default function AboutPage() {
                 href="https://www.linkedin.com/in/aditya-verma-0309l/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-bold bg-sky-500/10 hover:bg-sky-500/20 text-sky-400 border border-sky-500/30 hover:border-sky-500/50 transition-all shadow-sm hover:scale-[1.02]"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-sky-500/10 hover:bg-sky-500/20 text-sky-400 border border-sky-500/30 hover:border-sky-500/50 transition-all shadow-sm hover:scale-[1.02]"
               >
                 <Linkedin className="w-3.5 h-3.5 text-sky-400" />
                 <span>LinkedIn</span>
-                <ExternalLink className="w-3 h-3 opacity-60 ml-0.5" />
+                <ExternalLink className="w-3 h-3 opacity-60" />
               </a>
             </div>
           </div>
