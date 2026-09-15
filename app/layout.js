@@ -1,6 +1,7 @@
 import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import FeedbackModal from '@/components/FeedbackModal';
 
 export const metadata = {
   metadataBase: new URL('https://bu-btech-resulthub.vercel.app'),
@@ -81,6 +82,7 @@ export default function RootLayout({ children }) {
           {children}
         </main>
         <Footer />
+        <FeedbackModal />
       </body>
     </html>
   );
