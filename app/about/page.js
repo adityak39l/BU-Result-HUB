@@ -306,7 +306,7 @@ export default function AboutPage() {
                   onError={() => {
                     if (ashzadImg !== '/maker.svg') setAshzadImg('/maker.svg');
                   }}
-                  className="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-105"
+                  className="w-full h-full object-cover object-[50%_18%] transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
             </div>
