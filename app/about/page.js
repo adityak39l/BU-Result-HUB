@@ -174,7 +174,7 @@ export default function AboutPage() {
 
               {/* LinkedIn Button */}
               <a
-                href="https://www.linkedin.com/in/adityakverma"
+                href="https://www.linkedin.com/in/aditya-verma-0309l/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-bold bg-sky-500/10 hover:bg-sky-500/20 text-sky-400 border border-sky-500/30 hover:border-sky-500/50 transition-all shadow-sm hover:scale-[1.02]"
