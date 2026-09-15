@@ -41,12 +41,11 @@ export default function Home() {
         </div>
 
         <h1 className="text-4xl sm:text-6xl md:text-7xl font-black tracking-tight leading-none text-slate-900 dark:text-white">
-          Bundelkhand University <br />
-          <span className="gradient-text-sky">B.Tech Result Hub</span>
+          BU IET <span className="gradient-text-sky">ResultHub</span>
         </h1>
 
-        <p className="text-sm sm:text-base text-slate-600 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed">
-          Fast, accurate, and student-focused result portal for IET Bundelkhand University Jhansi. Inspect semester marksheets, track SGPA journey, and explore leaderboards.
+        <p className="text-sm sm:text-base text-slate-600 dark:text-gray-400 max-w-2xl mx-auto leading-relaxed font-medium">
+          Official student-focused B.Tech result & SGPA leaderboard portal for IET Bundelkhand University Jhansi. Inspect semester marksheets, track SGPA journey, and explore leaderboards.
         </p>
 
         {/* Action Buttons */}
