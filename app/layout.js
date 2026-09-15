@@ -4,6 +4,9 @@ import Footer from '@/components/Footer';
 
 export const metadata = {
   metadataBase: new URL('https://bu-btech-resulthub.vercel.app'),
+  verification: {
+    google: 'xOvL0zuKVs2CKyI036FIp9hvugGAJkmfH6RUp-ygI1U',
+  },
   title: {
     default: 'BU IET ResultHub — Bundelkhand University B.Tech Results & Leaderboard',
     template: '%s | BU IET ResultHub'
@@ -66,6 +69,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="dark">
       <head>
+        <meta name="google-site-verification" content="xOvL0zuKVs2CKyI036FIp9hvugGAJkmfH6RUp-ygI1U" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
