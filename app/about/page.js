@@ -128,11 +128,11 @@ export default function AboutPage() {
               </div>
 
               <div className="flex flex-wrap items-center justify-center sm:justify-start gap-1.5">
-                <span className="text-[10px] px-2 py-0.5 rounded-md font-bold bg-amber-500/15 text-amber-300 border border-amber-500/30 shadow-xs">
-                  Lead Creator
-                </span>
                 <span className="text-[10px] px-2 py-0.5 rounded-md font-bold bg-sky-500/15 text-[#68c2e3] border border-sky-500/30 shadow-xs">
                   Full-Stack Dev
+                </span>
+                <span className="text-[10px] px-2 py-0.5 rounded-md font-bold bg-amber-500/15 text-amber-300 border border-amber-500/30 shadow-xs">
+                  Python & Automation
                 </span>
                 <span className="text-[10px] px-2 py-0.5 rounded-md font-bold bg-violet-500/15 text-violet-300 border border-violet-500/30 shadow-xs">
                   Data Engineer
