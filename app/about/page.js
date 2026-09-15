@@ -107,6 +107,9 @@ export default function AboutPage() {
             <div className="space-y-2 flex-1">
               <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2">
                 <h2 className="text-2xl font-black text-white">Aditya Verma</h2>
+                <span className="text-[11px] px-2.5 py-0.5 rounded-full font-bold bg-amber-500/15 text-amber-300 border border-amber-500/30">
+                  EIE Branch
+                </span>
                 <span className="text-[11px] px-2.5 py-0.5 rounded-full font-bold bg-sky-500/15 text-[#68c2e3] border border-sky-500/30">
                   Full-Stack Developer
                 </span>
@@ -117,7 +120,7 @@ export default function AboutPage() {
 
               <p className="text-sm font-semibold text-slate-300 flex items-center justify-center sm:justify-start gap-1.5">
                 <GraduationCap className="w-4 h-4 text-[#68c2e3]" />
-                IET Bundelkhand University, Jhansi · B.Tech
+                IET Bundelkhand University, Jhansi · B.Tech (EIE)
               </p>
 
               <p className="text-xs text-slate-400 leading-relaxed max-w-xl">
@@ -145,7 +148,7 @@ export default function AboutPage() {
           {/* Connect Badges */}
           <div className="pt-2 border-t border-slate-800/80 space-y-3">
             <div className="text-xs font-bold uppercase tracking-wider text-slate-400 text-center sm:text-left">
-              Connect with the Maker
+              Connect
             </div>
             <div className="flex flex-wrap items-center justify-center sm:justify-start gap-3">
               {/* YouTube Button */}
