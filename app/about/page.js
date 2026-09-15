@@ -113,7 +113,7 @@ export default function AboutPage() {
                   onError={() => {
                     if (makerImg !== '/maker.svg') setMakerImg('/maker.svg');
                   }}
-                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="w-full h-full object-cover object-[50%_15%] transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
             </div>
