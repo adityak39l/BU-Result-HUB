@@ -4,12 +4,14 @@ import Link from 'next/link';
 import { 
   ArrowLeft, Code2, Database, Cpu, BarChart3, Users, Zap, 
   AlertTriangle, GraduationCap, Globe, Youtube, Github, 
-  Linkedin, ExternalLink, Sparkles, CheckCircle2, Award, Heart 
+  Linkedin, Instagram, ExternalLink, Sparkles, CheckCircle2, Award, Heart 
 } from 'lucide-react';
 import { STUDENTS, BRANCHES } from '@/lib/data';
 
 export default function AboutPage() {
   const [makerImg, setMakerImg] = useState('/maker.jpg');
+  const [kapilImg, setKapilImg] = useState('/kapil.jpg');
+  const [ashzadImg, setAshzadImg] = useState('/ashzad.jpg');
   const totalStudents = STUDENTS?.length || 167;
   const totalBranches = BRANCHES?.length || 5;
 
@@ -38,6 +40,20 @@ export default function AboutPage() {
     'Integrated comprehensive result dataset across CSE, ECE, ME, EIE, & BME branches',
     'Created interactive student dashboard with semester-wise performance visualizer',
     'Configured automated cloud deployment on Vercel with SEO sitemap indexing',
+  ];
+
+  const kapilContributions = [
+    'Assisted in BME & engineering result dataset verification and accuracy validation',
+    'Provided UI feedback, layout testing, and feature optimizations across mobile devices',
+    'Supported student marksheet auditing and academic twin feature testing',
+    'Helped with student community outreach and platform feedback collection',
+  ];
+
+  const ashzadContributions = [
+    'Conducted comprehensive quality assurance and cross-branch data validation',
+    'Audited SGPA ranking algorithms and leaderboard sorting precision',
+    'Tested result search workflows and contributed to user experience enhancements',
+    'Assisted in platform distribution and student feedback gathering',
   ];
 
   return (
@@ -74,19 +90,19 @@ export default function AboutPage() {
         ))}
       </div>
 
-      {/* The Maker Section — Ultra-Compact & Sleek */}
-      <section className="space-y-2.5">
+      {/* The Makers Section */}
+      <section className="space-y-4">
         <div className="flex items-center gap-2">
           <span className="text-[11px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-[#68c2e3]/10 text-[#68c2e3] border border-[#68c2e3]/20 flex items-center gap-1.5">
             <Sparkles className="w-3 h-3" />
-            The Maker
+            The Makers
           </span>
         </div>
 
+        {/* 1. Aditya Kumar Verma Container */}
         <div className="glass-card p-4 sm:p-5 rounded-xl border border-slate-200 dark:border-gray-800 bg-slate-900/60 backdrop-blur-xl space-y-3.5">
-          {/* Maker Header: Photo + Identity */}
+          {/* Header */}
           <div className="flex flex-col sm:flex-row items-center sm:items-start gap-3.5 text-center sm:text-left">
-            {/* Profile Avatar / Photo */}
             <div className="relative group shrink-0">
               <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-xl overflow-hidden ring-2 ring-[#68c2e3]/40 shadow-lg shadow-[#68c2e3]/10 bg-slate-950 flex items-center justify-center">
                 <img
@@ -100,17 +116,14 @@ export default function AboutPage() {
               </div>
             </div>
 
-            {/* Name & Details */}
-            <div className="space-y-1.5 flex-1 min-w-0">
-              {/* Line 1: Name + EIE Branch badge */}
-              <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2">
+            <div className="space-y-1 flex-1 min-w-0">
+              <div className="flex flex-wrap items-center justify-center sm:justify-start gap-1.5">
                 <h2 className="text-lg sm:text-xl font-black text-white">Aditya Kumar Verma</h2>
-                <span className="text-[10px] px-2.5 py-0.5 rounded-full font-bold bg-emerald-500/15 text-emerald-300 border border-emerald-500/40 shadow-sm">
+                <span className="text-[9px] px-2 py-0.5 rounded font-bold bg-emerald-500/15 text-emerald-300 border border-emerald-500/40 shadow-sm">
                   EIE Branch
                 </span>
               </div>
 
-              {/* Line 2: Role badges */}
               <div className="flex flex-wrap items-center justify-center sm:justify-start gap-1.5">
                 <span className="text-[9px] px-2 py-0.5 rounded font-bold bg-sky-500/15 text-[#68c2e3] border border-sky-500/30">
                   Full-Stack Dev
@@ -131,7 +144,7 @@ export default function AboutPage() {
             </div>
           </div>
 
-          {/* Key Contributions */}
+          {/* Contributions */}
           <div className="pt-2 border-t border-slate-800/70 space-y-2">
             <div className="text-[10px] font-bold uppercase tracking-wider text-slate-400 flex items-center justify-center sm:justify-start gap-1.5">
               <Award className="w-3 h-3 text-[#68c2e3]" />
@@ -147,13 +160,12 @@ export default function AboutPage() {
             </div>
           </div>
 
-          {/* Connect Badges */}
+          {/* Connect */}
           <div className="pt-2 border-t border-slate-800/70 space-y-2">
             <div className="text-[10px] font-bold uppercase tracking-wider text-slate-400 text-center sm:text-left">
               Connect
             </div>
             <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2">
-              {/* YouTube Button */}
               <a
                 href="https://youtube.com/@adityakverma-039?si=ynAmFVEJL8eBxs3e"
                 target="_blank"
@@ -165,7 +177,6 @@ export default function AboutPage() {
                 <ExternalLink className="w-3 h-3 opacity-60" />
               </a>
 
-              {/* GitHub Button */}
               <a
                 href="https://github.com/adityak39l"
                 target="_blank"
@@ -177,7 +188,6 @@ export default function AboutPage() {
                 <ExternalLink className="w-3 h-3 opacity-60" />
               </a>
 
-              {/* LinkedIn Button */}
               <a
                 href="https://www.linkedin.com/in/aditya-verma-0309l/"
                 target="_blank"
@@ -186,6 +196,190 @@ export default function AboutPage() {
               >
                 <Linkedin className="w-3.5 h-3.5 text-sky-400" />
                 <span>LinkedIn</span>
+                <ExternalLink className="w-3 h-3 opacity-60" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* 2. Kapil Ahirwar Container */}
+        <div className="glass-card p-4 sm:p-5 rounded-xl border border-slate-200 dark:border-gray-800 bg-slate-900/60 backdrop-blur-xl space-y-3.5">
+          {/* Header */}
+          <div className="flex flex-col sm:flex-row items-center sm:items-start gap-3.5 text-center sm:text-left">
+            <div className="relative group shrink-0">
+              <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-xl overflow-hidden ring-2 ring-cyan-500/40 shadow-lg shadow-cyan-500/10 bg-slate-950 flex items-center justify-center">
+                <img
+                  src={kapilImg}
+                  alt="Kapil Ahirwar"
+                  onError={() => {
+                    if (kapilImg !== '/maker.svg') setKapilImg('/maker.svg');
+                  }}
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
+            </div>
+
+            <div className="space-y-1 flex-1 min-w-0">
+              <div className="flex flex-wrap items-center justify-center sm:justify-start gap-1.5">
+                <h2 className="text-lg sm:text-xl font-black text-white">Kapil Ahirwar</h2>
+                <span className="text-[9px] px-2 py-0.5 rounded font-bold bg-cyan-500/15 text-cyan-300 border border-cyan-500/40 shadow-sm">
+                  BME Branch
+                </span>
+              </div>
+
+              <div className="flex flex-wrap items-center justify-center sm:justify-start gap-1.5">
+                <span className="text-[9px] px-2 py-0.5 rounded font-bold bg-blue-500/15 text-blue-300 border border-blue-500/30">
+                  Core Contributor
+                </span>
+                <span className="text-[9px] px-2 py-0.5 rounded font-bold bg-teal-500/15 text-teal-300 border border-teal-500/30">
+                  Data & Research
+                </span>
+              </div>
+
+              <p className="text-xs font-semibold text-slate-300 flex items-center justify-center sm:justify-start gap-1.5">
+                <GraduationCap className="w-3.5 h-3.5 text-cyan-400 shrink-0" />
+                IET Bundelkhand University, Jhansi · B.Tech (BME)
+              </p>
+
+              <p className="text-[11px] text-slate-400 leading-relaxed max-w-xl">
+                Contributed to BU IET ResultHub development, engineering result verification, and student experience optimization.
+              </p>
+            </div>
+          </div>
+
+          {/* Contributions */}
+          <div className="pt-2 border-t border-slate-800/70 space-y-2">
+            <div className="text-[10px] font-bold uppercase tracking-wider text-slate-400 flex items-center justify-center sm:justify-start gap-1.5">
+              <Award className="w-3 h-3 text-cyan-400" />
+              Key Contributions
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5 text-slate-300">
+              {kapilContributions.map((item, i) => (
+                <div key={i} className="flex items-start gap-1.5 p-1.5 px-2.5 rounded-lg bg-slate-950/30 border border-slate-800/50">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" />
+                  <span className="leading-tight text-[11px]">{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Connect */}
+          <div className="pt-2 border-t border-slate-800/70 space-y-2">
+            <div className="text-[10px] font-bold uppercase tracking-wider text-slate-400 text-center sm:text-left">
+              Connect
+            </div>
+            <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2">
+              <a
+                href="https://www.linkedin.com/in/kapil-gautam-2767202ba?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-sky-500/10 hover:bg-sky-500/20 text-sky-400 border border-sky-500/30 hover:border-sky-500/50 transition-all shadow-sm hover:scale-[1.02]"
+              >
+                <Linkedin className="w-3.5 h-3.5 text-sky-400" />
+                <span>LinkedIn</span>
+                <ExternalLink className="w-3 h-3 opacity-60" />
+              </a>
+
+              <a
+                href="https://www.instagram.com/kapilgautamm/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-pink-500/10 hover:bg-pink-500/20 text-pink-400 border border-pink-500/30 hover:border-pink-500/50 transition-all shadow-sm hover:scale-[1.02]"
+              >
+                <Instagram className="w-3.5 h-3.5 text-pink-400" />
+                <span>Instagram</span>
+                <ExternalLink className="w-3 h-3 opacity-60" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* 3. Mohd Ashzad Container */}
+        <div className="glass-card p-4 sm:p-5 rounded-xl border border-slate-200 dark:border-gray-800 bg-slate-900/60 backdrop-blur-xl space-y-3.5">
+          {/* Header */}
+          <div className="flex flex-col sm:flex-row items-center sm:items-start gap-3.5 text-center sm:text-left">
+            <div className="relative group shrink-0">
+              <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-xl overflow-hidden ring-2 ring-indigo-500/40 shadow-lg shadow-indigo-500/10 bg-slate-950 flex items-center justify-center">
+                <img
+                  src={ashzadImg}
+                  alt="Mohd Ashzad"
+                  onError={() => {
+                    if (ashzadImg !== '/maker.svg') setAshzadImg('/maker.svg');
+                  }}
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
+            </div>
+
+            <div className="space-y-1 flex-1 min-w-0">
+              <div className="flex flex-wrap items-center justify-center sm:justify-start gap-1.5">
+                <h2 className="text-lg sm:text-xl font-black text-white">Mohd Ashzad</h2>
+                <span className="text-[9px] px-2 py-0.5 rounded font-bold bg-cyan-500/15 text-cyan-300 border border-cyan-500/40 shadow-sm">
+                  BME Branch
+                </span>
+              </div>
+
+              <div className="flex flex-wrap items-center justify-center sm:justify-start gap-1.5">
+                <span className="text-[9px] px-2 py-0.5 rounded font-bold bg-purple-500/15 text-purple-300 border border-purple-500/30">
+                  Core Contributor
+                </span>
+                <span className="text-[9px] px-2 py-0.5 rounded font-bold bg-indigo-500/15 text-indigo-300 border border-indigo-500/30">
+                  Quality & Analytics
+                </span>
+              </div>
+
+              <p className="text-xs font-semibold text-slate-300 flex items-center justify-center sm:justify-start gap-1.5">
+                <GraduationCap className="w-3.5 h-3.5 text-indigo-400 shrink-0" />
+                IET Bundelkhand University, Jhansi · B.Tech (BME)
+              </p>
+
+              <p className="text-[11px] text-slate-400 leading-relaxed max-w-xl">
+                Contributed to platform testing, student marksheet data auditing, and user experience enhancements for BU IET ResultHub.
+              </p>
+            </div>
+          </div>
+
+          {/* Contributions */}
+          <div className="pt-2 border-t border-slate-800/70 space-y-2">
+            <div className="text-[10px] font-bold uppercase tracking-wider text-slate-400 flex items-center justify-center sm:justify-start gap-1.5">
+              <Award className="w-3 h-3 text-indigo-400" />
+              Key Contributions
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5 text-slate-300">
+              {ashzadContributions.map((item, i) => (
+                <div key={i} className="flex items-start gap-1.5 p-1.5 px-2.5 rounded-lg bg-slate-950/30 border border-slate-800/50">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" />
+                  <span className="leading-tight text-[11px]">{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Connect */}
+          <div className="pt-2 border-t border-slate-800/70 space-y-2">
+            <div className="text-[10px] font-bold uppercase tracking-wider text-slate-400 text-center sm:text-left">
+              Connect
+            </div>
+            <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2">
+              <a
+                href="https://www.linkedin.com/in/ashjad-khan-75b8a137b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-sky-500/10 hover:bg-sky-500/20 text-sky-400 border border-sky-500/30 hover:border-sky-500/50 transition-all shadow-sm hover:scale-[1.02]"
+              >
+                <Linkedin className="w-3.5 h-3.5 text-sky-400" />
+                <span>LinkedIn</span>
+                <ExternalLink className="w-3 h-3 opacity-60" />
+              </a>
+
+              <a
+                href="https://www.instagram.com/ashjadhere?stkn=Z2tqczNnZ2xpZTBi"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-pink-500/10 hover:bg-pink-500/20 text-pink-400 border border-pink-500/30 hover:border-pink-500/50 transition-all shadow-sm hover:scale-[1.02]"
+              >
+                <Instagram className="w-3.5 h-3.5 text-pink-400" />
+                <span>Instagram</span>
                 <ExternalLink className="w-3 h-3 opacity-60" />
               </a>
             </div>
