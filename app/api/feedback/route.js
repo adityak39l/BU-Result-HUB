@@ -42,24 +42,24 @@ export async function POST(req) {
       console.warn('Web3Forms dispatch warning:', mailErr);
     }
 
-    // 2. If Google Apps Script Webhook URL is provided, also forward directly to Google Sheet
-    if (process.env.GOOGLE_SHEET_WEBHOOK_URL) {
-      try {
-        await fetch(process.env.GOOGLE_SHEET_WEBHOOK_URL, {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            timestamp,
-            name,
-            branch: branch || 'N/A',
-            year: year || 'N/A',
-            rating: Number(rating),
-            feedback,
-          }),
-        });
-      } catch (sheetErr) {
-        console.warn('Google Sheet webhook warning:', sheetErr);
-      }
+    // 2. Forward directly to Aditya's Google Sheet Webhook
+    const sheetWebhookUrl = process.env.GOOGLE_SHEET_WEBHOOK_URL || 'https://script.google.com/macros/s/AKfycbw9KENycxQszxLc9khFAU2AmMuDm0CB33hJhdodrlzJhALy60KG_qSYzsivD5p1qBhR/exec';
+    
+    try {
+      await fetch(sheetWebhookUrl, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          timestamp,
+          name,
+          branch: branch || 'N/A',
+          year: year || 'N/A',
+          rating: Number(rating),
+          feedback,
+        }),
+      });
+    } catch (sheetErr) {
+      console.warn('Google Sheet webhook warning:', sheetErr);
     }
 
     return NextResponse.json({
