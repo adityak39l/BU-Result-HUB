@@ -50,6 +50,8 @@ export default function AboutPage() {
   ];
 
   const ashzadContributions = [
+    'Crafted UI/UX design concepts, responsive layout aesthetics, and visual themes',
+    'Designed intuitive user flows for marksheet lookup and leaderboard browsing',
     'Conducted comprehensive quality assurance and cross-branch data validation',
     'Audited SGPA ranking algorithms and leaderboard sorting precision',
     'Tested result search workflows and contributed to user experience enhancements',
@@ -320,6 +322,9 @@ export default function AboutPage() {
               </div>
 
               <div className="flex flex-wrap items-center justify-center sm:justify-start gap-1.5">
+                <span className="text-[9px] px-2 py-0.5 rounded font-bold bg-pink-500/15 text-pink-300 border border-pink-500/30">
+                  UI/UX Designer
+                </span>
                 <span className="text-[9px] px-2 py-0.5 rounded font-bold bg-purple-500/15 text-purple-300 border border-purple-500/30">
                   Core Contributor
                 </span>
@@ -334,7 +339,7 @@ export default function AboutPage() {
               </p>
 
               <p className="text-[11px] text-slate-400 leading-relaxed max-w-xl">
-                Contributed to platform testing, student marksheet data auditing, and user experience enhancements for BU IET ResultHub.
+                Contributed to UI/UX design aesthetics, platform testing, student marksheet data auditing, and user experience enhancements for BU IET ResultHub.
               </p>
             </div>
           </div>
