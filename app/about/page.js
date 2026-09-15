@@ -88,18 +88,15 @@ export default function AboutPage() {
           <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 text-center sm:text-left">
             {/* Profile Avatar / Photo */}
             <div className="relative group shrink-0">
-              <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl overflow-hidden ring-4 ring-[#68c2e3]/30 shadow-xl shadow-[#68c2e3]/10 bg-slate-950 flex items-center justify-center relative">
+              <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl overflow-hidden ring-4 ring-[#68c2e3]/30 shadow-xl shadow-[#68c2e3]/10 bg-slate-950 flex items-center justify-center">
                 <img
                   src={makerImg}
-                  alt="Aditya Kumar Verma - Creator"
+                  alt="Aditya Kumar Verma"
                   onError={() => {
                     if (makerImg !== '/maker.svg') setMakerImg('/maker.svg');
                   }}
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
-              </div>
-              <div className="absolute -bottom-1.5 -right-1 px-1.5 py-0.5 rounded-md bg-[#68c2e3] text-slate-950 text-[9px] font-black uppercase tracking-wider shadow-md">
-                Creator
               </div>
             </div>
 
