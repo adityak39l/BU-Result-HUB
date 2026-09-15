@@ -50,29 +50,57 @@ export default function FeedbackModal() {
     }
 
     setLoading(true);
+    const timestamp = new Date().toLocaleString('en-IN', {
+      timeZone: 'Asia/Kolkata',
+      dateStyle: 'medium',
+      timeStyle: 'short',
+    });
+
+    const payload = {
+      timestamp,
+      name: name.trim(),
+      branch,
+      year,
+      rating,
+      feedback: feedback.trim(),
+    };
+
+    const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbw9KENycxQszxLc9khFAU2AmMuDm0CB33hJhdodrlzJhALy60KG_qSYzsivD5p1qBhR/exec';
+
     try {
-      const res = await fetch('/api/feedback', {
+      // 1. Send directly to Google Sheet Webhook (Runs in real-time from browser)
+      await fetch(GOOGLE_SCRIPT_URL, {
         method: 'POST',
+        mode: 'no-cors',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          name: name.trim(),
-          branch,
-          year,
-          rating,
-          feedback: feedback.trim(),
-        }),
+        body: JSON.stringify(payload),
       });
 
-      const data = await res.json();
-      if (res.ok && data.success) {
-        setSubmitted(true);
-      } else {
-        // Fallback gracefully as success
-        setSubmitted(true);
+      // 2. Send email notification directly via Web3Forms
+      try {
+        await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          body: JSON.stringify({
+            access_key: 'a888c3a9-e2b2-4d56-82b4-367f082e0e5a',
+            subject: `⭐ New Student Review (${rating}/5 Stars) - ${name.trim()} (${branch}, ${year})`,
+            from_name: 'BU IET ResultHub Feedback',
+            to_email: 'adityakverma945085@gmail.com',
+            'Student Name': name.trim(),
+            'Branch': branch,
+            'Academic Year': year,
+            'Star Rating': `${rating} / 5 Stars ${'⭐'.repeat(Number(rating) || 5)}`,
+            'Feedback / Suggestion': feedback.trim(),
+            'Submitted At (IST)': timestamp,
+          }),
+        });
+      } catch (e) {
+        console.warn('Email dispatch notice:', e);
       }
+
+      setSubmitted(true);
     } catch (err) {
       console.error('Submission error:', err);
-      // Even if network glitches, display success UX
       setSubmitted(true);
     } finally {
       setLoading(false);
