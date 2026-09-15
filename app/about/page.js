@@ -83,43 +83,43 @@ export default function AboutPage() {
           </span>
         </div>
 
-        <div className="glass-card p-6 sm:p-8 rounded-2xl border border-slate-200 dark:border-gray-800 bg-slate-900/60 backdrop-blur-xl space-y-6">
+        <div className="glass-card p-5 sm:p-6 rounded-2xl border border-slate-200 dark:border-gray-800 bg-slate-900/60 backdrop-blur-xl space-y-4">
           {/* Maker Header: Photo + Identity */}
-          <div className="flex flex-col sm:flex-row items-center sm:items-start gap-5 text-center sm:text-left">
+          <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 text-center sm:text-left">
             {/* Profile Avatar / Photo */}
             <div className="relative group shrink-0">
-              <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl overflow-hidden ring-4 ring-[#68c2e3]/30 shadow-xl shadow-[#68c2e3]/10 bg-slate-950 flex items-center justify-center relative">
+              <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl overflow-hidden ring-4 ring-[#68c2e3]/30 shadow-xl shadow-[#68c2e3]/10 bg-slate-950 flex items-center justify-center relative">
                 <img
                   src={makerImg}
-                  alt="Aditya Verma - Creator"
+                  alt="Aditya Kumar Verma - Creator"
                   onError={() => {
                     if (makerImg !== '/maker.svg') setMakerImg('/maker.svg');
                   }}
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
-              <div className="absolute -bottom-2 -right-1 px-2 py-0.5 rounded-md bg-[#68c2e3] text-slate-950 text-[10px] font-black uppercase tracking-wider shadow-md">
+              <div className="absolute -bottom-1.5 -right-1 px-1.5 py-0.5 rounded-md bg-[#68c2e3] text-slate-950 text-[9px] font-black uppercase tracking-wider shadow-md">
                 Creator
               </div>
             </div>
 
             {/* Name & Details */}
-            <div className="space-y-2 flex-1">
-              <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2">
-                <h2 className="text-2xl font-black text-white">Aditya Verma</h2>
-                <span className="text-[11px] px-2.5 py-0.5 rounded-full font-bold bg-amber-500/15 text-amber-300 border border-amber-500/30">
+            <div className="space-y-1.5 flex-1">
+              <div className="flex flex-wrap items-center justify-center sm:justify-start gap-1.5">
+                <h2 className="text-xl sm:text-2xl font-black text-white">Aditya Kumar Verma</h2>
+                <span className="text-[10px] px-2 py-0.5 rounded-full font-bold bg-amber-500/15 text-amber-300 border border-amber-500/30">
                   EIE Branch
                 </span>
-                <span className="text-[11px] px-2.5 py-0.5 rounded-full font-bold bg-sky-500/15 text-[#68c2e3] border border-sky-500/30">
-                  Full-Stack Developer
+                <span className="text-[10px] px-2 py-0.5 rounded-full font-bold bg-sky-500/15 text-[#68c2e3] border border-sky-500/30">
+                  Full-Stack Dev
                 </span>
-                <span className="text-[11px] px-2.5 py-0.5 rounded-full font-bold bg-violet-500/15 text-violet-300 border border-violet-500/30">
+                <span className="text-[10px] px-2 py-0.5 rounded-full font-bold bg-violet-500/15 text-violet-300 border border-violet-500/30">
                   Data Engineer
                 </span>
               </div>
 
-              <p className="text-sm font-semibold text-slate-300 flex items-center justify-center sm:justify-start gap-1.5">
-                <GraduationCap className="w-4 h-4 text-[#68c2e3]" />
+              <p className="text-xs sm:text-sm font-semibold text-slate-300 flex items-center justify-center sm:justify-start gap-1.5">
+                <GraduationCap className="w-3.5 h-3.5 text-[#68c2e3]" />
                 IET Bundelkhand University, Jhansi · B.Tech (EIE)
               </p>
 
@@ -130,35 +130,35 @@ export default function AboutPage() {
           </div>
 
           {/* Key Contributions */}
-          <div className="pt-2 border-t border-slate-800/80 space-y-3">
-            <div className="text-xs font-bold uppercase tracking-wider text-slate-400 flex items-center justify-center sm:justify-start gap-1.5">
+          <div className="pt-2 border-t border-slate-800/80 space-y-2.5">
+            <div className="text-[11px] font-bold uppercase tracking-wider text-slate-400 flex items-center justify-center sm:justify-start gap-1.5">
               <Award className="w-3.5 h-3.5 text-[#68c2e3]" />
               Key Engineering & Contributions
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs text-slate-300">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-300">
               {makerContributions.map((item, i) => (
-                <div key={i} className="flex items-start gap-2 p-2.5 rounded-lg bg-slate-950/40 border border-slate-800/60">
-                  <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
-                  <span className="leading-snug">{item}</span>
+                <div key={i} className="flex items-start gap-2 p-2 rounded-lg bg-slate-950/40 border border-slate-800/60">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" />
+                  <span className="leading-snug text-[11px] sm:text-xs">{item}</span>
                 </div>
               ))}
             </div>
           </div>
 
           {/* Connect Badges */}
-          <div className="pt-2 border-t border-slate-800/80 space-y-3">
-            <div className="text-xs font-bold uppercase tracking-wider text-slate-400 text-center sm:text-left">
+          <div className="pt-2 border-t border-slate-800/80 space-y-2.5">
+            <div className="text-[11px] font-bold uppercase tracking-wider text-slate-400 text-center sm:text-left">
               Connect
             </div>
-            <div className="flex flex-wrap items-center justify-center sm:justify-start gap-3">
+            <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2.5">
               {/* YouTube Button */}
               <a
                 href="https://youtube.com/@adityakverma-039?si=ynAmFVEJL8eBxs3e"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-bold bg-red-500/10 hover:bg-red-500/20 text-red-400 border border-red-500/30 hover:border-red-500/50 transition-all shadow-sm hover:scale-[1.02]"
+                className="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-bold bg-red-500/10 hover:bg-red-500/20 text-red-400 border border-red-500/30 hover:border-red-500/50 transition-all shadow-sm hover:scale-[1.02]"
               >
-                <Youtube className="w-4 h-4 text-red-400" />
+                <Youtube className="w-3.5 h-3.5 text-red-400" />
                 <span>YouTube Channel</span>
                 <ExternalLink className="w-3 h-3 opacity-60 ml-0.5" />
               </a>
@@ -168,9 +168,9 @@ export default function AboutPage() {
                 href="https://github.com/adityak39l"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-bold bg-slate-800/90 hover:bg-slate-700 text-slate-200 border border-slate-700 hover:border-slate-600 transition-all shadow-sm hover:scale-[1.02]"
+                className="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-bold bg-slate-800/90 hover:bg-slate-700 text-slate-200 border border-slate-700 hover:border-slate-600 transition-all shadow-sm hover:scale-[1.02]"
               >
-                <Github className="w-4 h-4 text-slate-300" />
+                <Github className="w-3.5 h-3.5 text-slate-300" />
                 <span>GitHub (@adityak39l)</span>
                 <ExternalLink className="w-3 h-3 opacity-60 ml-0.5" />
               </a>
@@ -180,9 +180,9 @@ export default function AboutPage() {
                 href="https://www.linkedin.com/in/adityakverma"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-bold bg-sky-500/10 hover:bg-sky-500/20 text-sky-400 border border-sky-500/30 hover:border-sky-500/50 transition-all shadow-sm hover:scale-[1.02]"
+                className="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl text-xs font-bold bg-sky-500/10 hover:bg-sky-500/20 text-sky-400 border border-sky-500/30 hover:border-sky-500/50 transition-all shadow-sm hover:scale-[1.02]"
               >
-                <Linkedin className="w-4 h-4 text-sky-400" />
+                <Linkedin className="w-3.5 h-3.5 text-sky-400" />
                 <span>LinkedIn</span>
                 <ExternalLink className="w-3 h-3 opacity-60 ml-0.5" />
               </a>
