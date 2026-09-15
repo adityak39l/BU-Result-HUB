@@ -118,19 +118,23 @@ export default function AboutPage() {
               </div>
             </div>
 
-            <div className="space-y-1 flex-1 min-w-0">
-              <div className="flex flex-wrap items-center justify-center sm:justify-start gap-1.5">
-                <h2 className="text-lg sm:text-xl font-black text-white">Aditya Kumar Verma</h2>
-                <span className="text-[9px] px-2 py-0.5 rounded font-bold bg-emerald-500/15 text-emerald-300 border border-emerald-500/40 shadow-sm">
+            <div className="space-y-1.5 flex-1 min-w-0">
+              <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2">
+                <h2 className="text-lg sm:text-xl font-black text-white tracking-tight">Aditya Kumar Verma</h2>
+                <span className="inline-flex items-center gap-1 text-[10px] font-extrabold px-2.5 py-0.5 rounded-full bg-gradient-to-r from-emerald-600 via-emerald-500 to-teal-500 text-white shadow-md shadow-emerald-950/60 border border-emerald-300/40 tracking-wide uppercase">
+                  <GraduationCap className="w-3 h-3 text-emerald-100 shrink-0" />
                   EIE Branch
                 </span>
               </div>
 
               <div className="flex flex-wrap items-center justify-center sm:justify-start gap-1.5">
-                <span className="text-[9px] px-2 py-0.5 rounded font-bold bg-sky-500/15 text-[#68c2e3] border border-sky-500/30">
+                <span className="text-[10px] px-2 py-0.5 rounded-md font-bold bg-amber-500/15 text-amber-300 border border-amber-500/30 shadow-xs">
+                  Lead Creator
+                </span>
+                <span className="text-[10px] px-2 py-0.5 rounded-md font-bold bg-sky-500/15 text-[#68c2e3] border border-sky-500/30 shadow-xs">
                   Full-Stack Dev
                 </span>
-                <span className="text-[9px] px-2 py-0.5 rounded font-bold bg-violet-500/15 text-violet-300 border border-violet-500/30">
+                <span className="text-[10px] px-2 py-0.5 rounded-md font-bold bg-violet-500/15 text-violet-300 border border-violet-500/30 shadow-xs">
                   Data Engineer
                 </span>
               </div>
@@ -221,19 +225,20 @@ export default function AboutPage() {
               </div>
             </div>
 
-            <div className="space-y-1 flex-1 min-w-0">
-              <div className="flex flex-wrap items-center justify-center sm:justify-start gap-1.5">
-                <h2 className="text-lg sm:text-xl font-black text-white">Kapil Ahirwar</h2>
-                <span className="text-[9px] px-2 py-0.5 rounded font-bold bg-cyan-500/15 text-cyan-300 border border-cyan-500/40 shadow-sm">
+            <div className="space-y-1.5 flex-1 min-w-0">
+              <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2">
+                <h2 className="text-lg sm:text-xl font-black text-white tracking-tight">Kapil Ahirwar</h2>
+                <span className="inline-flex items-center gap-1 text-[10px] font-extrabold px-2.5 py-0.5 rounded-full bg-gradient-to-r from-cyan-600 via-sky-500 to-blue-600 text-white shadow-md shadow-cyan-950/60 border border-cyan-300/40 tracking-wide uppercase">
+                  <GraduationCap className="w-3 h-3 text-cyan-100 shrink-0" />
                   BME Branch
                 </span>
               </div>
 
               <div className="flex flex-wrap items-center justify-center sm:justify-start gap-1.5">
-                <span className="text-[9px] px-2 py-0.5 rounded font-bold bg-blue-500/15 text-blue-300 border border-blue-500/30">
+                <span className="text-[10px] px-2 py-0.5 rounded-md font-bold bg-blue-500/15 text-blue-300 border border-blue-500/30 shadow-xs">
                   Core Contributor
                 </span>
-                <span className="text-[9px] px-2 py-0.5 rounded font-bold bg-teal-500/15 text-teal-300 border border-teal-500/30">
+                <span className="text-[10px] px-2 py-0.5 rounded-md font-bold bg-teal-500/15 text-teal-300 border border-teal-500/30 shadow-xs">
                   Data & Research
                 </span>
               </div>
@@ -313,22 +318,23 @@ export default function AboutPage() {
               </div>
             </div>
 
-            <div className="space-y-1 flex-1 min-w-0">
-              <div className="flex flex-wrap items-center justify-center sm:justify-start gap-1.5">
-                <h2 className="text-lg sm:text-xl font-black text-white">Mohd Ashzad</h2>
-                <span className="text-[9px] px-2 py-0.5 rounded font-bold bg-cyan-500/15 text-cyan-300 border border-cyan-500/40 shadow-sm">
+            <div className="space-y-1.5 flex-1 min-w-0">
+              <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2">
+                <h2 className="text-lg sm:text-xl font-black text-white tracking-tight">Mohd Ashzad</h2>
+                <span className="inline-flex items-center gap-1 text-[10px] font-extrabold px-2.5 py-0.5 rounded-full bg-gradient-to-r from-cyan-600 via-sky-500 to-blue-600 text-white shadow-md shadow-cyan-950/60 border border-cyan-300/40 tracking-wide uppercase">
+                  <GraduationCap className="w-3 h-3 text-cyan-100 shrink-0" />
                   BME Branch
                 </span>
               </div>
 
               <div className="flex flex-wrap items-center justify-center sm:justify-start gap-1.5">
-                <span className="text-[9px] px-2 py-0.5 rounded font-bold bg-pink-500/15 text-pink-300 border border-pink-500/30">
+                <span className="text-[10px] px-2 py-0.5 rounded-md font-bold bg-pink-500/15 text-pink-300 border border-pink-500/30 shadow-xs">
                   UI/UX Designer
                 </span>
-                <span className="text-[9px] px-2 py-0.5 rounded font-bold bg-purple-500/15 text-purple-300 border border-purple-500/30">
+                <span className="text-[10px] px-2 py-0.5 rounded-md font-bold bg-purple-500/15 text-purple-300 border border-purple-500/30 shadow-xs">
                   Core Contributor
                 </span>
-                <span className="text-[9px] px-2 py-0.5 rounded font-bold bg-indigo-500/15 text-indigo-300 border border-indigo-500/30">
+                <span className="text-[10px] px-2 py-0.5 rounded-md font-bold bg-indigo-500/15 text-indigo-300 border border-indigo-500/30 shadow-xs">
                   Quality & Analytics
                 </span>
               </div>
