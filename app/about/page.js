@@ -101,12 +101,17 @@ export default function AboutPage() {
             </div>
 
             {/* Name & Details */}
-            <div className="space-y-1 flex-1 min-w-0">
-              <div className="flex flex-wrap items-center justify-center sm:justify-start gap-1.5">
+            <div className="space-y-1.5 flex-1 min-w-0">
+              {/* Line 1: Name + EIE Branch badge */}
+              <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2">
                 <h2 className="text-lg sm:text-xl font-black text-white">Aditya Kumar Verma</h2>
-                <span className="text-[9px] px-2 py-0.5 rounded font-bold bg-amber-500/15 text-amber-300 border border-amber-500/30">
+                <span className="text-[10px] px-2.5 py-0.5 rounded-full font-bold bg-emerald-500/15 text-emerald-300 border border-emerald-500/40 shadow-sm">
                   EIE Branch
                 </span>
+              </div>
+
+              {/* Line 2: Role badges */}
+              <div className="flex flex-wrap items-center justify-center sm:justify-start gap-1.5">
                 <span className="text-[9px] px-2 py-0.5 rounded font-bold bg-sky-500/15 text-[#68c2e3] border border-sky-500/30">
                   Full-Stack Dev
                 </span>
