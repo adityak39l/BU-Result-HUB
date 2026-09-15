@@ -1,9 +1,15 @@
 'use client';
+import { useState } from 'react';
 import Link from 'next/link';
-import { ArrowLeft, Code2, Database, Cpu, BarChart3, Users, Zap, AlertTriangle, GraduationCap, Globe } from 'lucide-react';
+import { 
+  ArrowLeft, Code2, Database, Cpu, BarChart3, Users, Zap, 
+  AlertTriangle, GraduationCap, Globe, Youtube, Github, 
+  Linkedin, ExternalLink, Sparkles, CheckCircle2, Award, Heart 
+} from 'lucide-react';
 import { STUDENTS, BRANCHES } from '@/lib/data';
 
 export default function AboutPage() {
+  const [makerImg, setMakerImg] = useState('/maker.jpg');
   const totalStudents = STUDENTS?.length || 167;
   const totalBranches = BRANCHES?.length || 5;
 
@@ -21,17 +27,17 @@ export default function AboutPage() {
     { name: 'Tailwind CSS', color: 'text-cyan-300 bg-cyan-900/30 border-cyan-700/50' },
     { name: 'Python Scraper', color: 'text-yellow-300 bg-yellow-900/30 border-yellow-700/50' },
     { name: 'BeautifulSoup', color: 'text-emerald-300 bg-emerald-900/30 border-emerald-700/50' },
-    { name: 'Vercel', color: 'text-violet-300 bg-violet-900/30 border-violet-700/50' },
+    { name: 'Vercel Cloud', color: 'text-violet-300 bg-violet-900/30 border-violet-700/50' },
     { name: 'Lucide Icons', color: 'text-rose-300 bg-rose-900/30 border-rose-700/50' },
   ];
 
   const makerContributions = [
-    'Designed and built the complete frontend UI system',
-    'Implemented real-time result scraping pipeline from BU Jhansi server',
-    'Built data parsing engine using Python & BeautifulSoup',
-    'Developed SGPA analytics, leaderboard & student dashboard',
-    'Created Academic Twin algorithm with cross-branch matching',
-    'Deployed on Vercel with full SEO & sitemap configuration',
+    'Designed & engineered full-stack responsive web UI in Next.js & Tailwind CSS',
+    'Automated BU Jhansi marksheet web-scraping pipeline using Python & BeautifulSoup',
+    'Built live SGPA leaderboard ranking and academic twin algorithms',
+    'Integrated comprehensive result dataset across CSE, ECE, ME, EIE, & BME branches',
+    'Created interactive student dashboard with semester-wise performance visualizer',
+    'Configured automated cloud deployment on Vercel with SEO sitemap indexing',
   ];
 
   return (
@@ -50,7 +56,7 @@ export default function AboutPage() {
           <span className="text-[#68c2e3]"> RESULT HUB</span>
         </h1>
         <p className="text-slate-400 text-sm font-medium">
-          IET — Institute of Engineering & Technology
+          IET — Institute of Engineering & Technology · Bundelkhand University
         </p>
       </div>
 
@@ -67,6 +73,120 @@ export default function AboutPage() {
           </div>
         ))}
       </div>
+
+      {/* The Maker Section — NSUT ResultHub Style */}
+      <section className="space-y-4">
+        <div className="flex items-center gap-2">
+          <span className="text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-[#68c2e3]/10 text-[#68c2e3] border border-[#68c2e3]/20 flex items-center gap-1.5">
+            <Sparkles className="w-3.5 h-3.5" />
+            The Maker
+          </span>
+        </div>
+
+        <div className="glass-card p-6 sm:p-8 rounded-2xl border border-slate-200 dark:border-gray-800 bg-slate-900/60 backdrop-blur-xl space-y-6">
+          {/* Maker Header: Photo + Identity */}
+          <div className="flex flex-col sm:flex-row items-center sm:items-start gap-5 text-center sm:text-left">
+            {/* Profile Avatar / Photo */}
+            <div className="relative group shrink-0">
+              <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl overflow-hidden ring-4 ring-[#68c2e3]/30 shadow-xl shadow-[#68c2e3]/10 bg-slate-950 flex items-center justify-center relative">
+                <img
+                  src={makerImg}
+                  alt="Aditya Verma - Creator"
+                  onError={() => {
+                    if (makerImg !== '/maker.svg') setMakerImg('/maker.svg');
+                  }}
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
+              <div className="absolute -bottom-2 -right-1 px-2 py-0.5 rounded-md bg-[#68c2e3] text-slate-950 text-[10px] font-black uppercase tracking-wider shadow-md">
+                Creator
+              </div>
+            </div>
+
+            {/* Name & Details */}
+            <div className="space-y-2 flex-1">
+              <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2">
+                <h2 className="text-2xl font-black text-white">Aditya Verma</h2>
+                <span className="text-[11px] px-2.5 py-0.5 rounded-full font-bold bg-sky-500/15 text-[#68c2e3] border border-sky-500/30">
+                  Full-Stack Developer
+                </span>
+                <span className="text-[11px] px-2.5 py-0.5 rounded-full font-bold bg-violet-500/15 text-violet-300 border border-violet-500/30">
+                  Data Engineer
+                </span>
+              </div>
+
+              <p className="text-sm font-semibold text-slate-300 flex items-center justify-center sm:justify-start gap-1.5">
+                <GraduationCap className="w-4 h-4 text-[#68c2e3]" />
+                IET Bundelkhand University, Jhansi · B.Tech
+              </p>
+
+              <p className="text-xs text-slate-400 leading-relaxed max-w-xl">
+                Created BU IET ResultHub from scratch to give students access to fast, insightful, and beautifully organized academic analytics and semester leaderboards.
+              </p>
+            </div>
+          </div>
+
+          {/* Key Contributions */}
+          <div className="pt-2 border-t border-slate-800/80 space-y-3">
+            <div className="text-xs font-bold uppercase tracking-wider text-slate-400 flex items-center justify-center sm:justify-start gap-1.5">
+              <Award className="w-3.5 h-3.5 text-[#68c2e3]" />
+              Key Engineering & Contributions
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 text-xs text-slate-300">
+              {makerContributions.map((item, i) => (
+                <div key={i} className="flex items-start gap-2 p-2.5 rounded-lg bg-slate-950/40 border border-slate-800/60">
+                  <CheckCircle2 className="w-4 h-4 text-emerald-400 shrink-0 mt-0.5" />
+                  <span className="leading-snug">{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Connect Badges */}
+          <div className="pt-2 border-t border-slate-800/80 space-y-3">
+            <div className="text-xs font-bold uppercase tracking-wider text-slate-400 text-center sm:text-left">
+              Connect with the Maker
+            </div>
+            <div className="flex flex-wrap items-center justify-center sm:justify-start gap-3">
+              {/* YouTube Button */}
+              <a
+                href="https://youtube.com/@adityakverma-039?si=ynAmFVEJL8eBxs3e"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-bold bg-red-500/10 hover:bg-red-500/20 text-red-400 border border-red-500/30 hover:border-red-500/50 transition-all shadow-sm hover:scale-[1.02]"
+              >
+                <Youtube className="w-4 h-4 text-red-400" />
+                <span>YouTube Channel</span>
+                <ExternalLink className="w-3 h-3 opacity-60 ml-0.5" />
+              </a>
+
+              {/* GitHub Button */}
+              <a
+                href="https://github.com/adityak39l"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-bold bg-slate-800/90 hover:bg-slate-700 text-slate-200 border border-slate-700 hover:border-slate-600 transition-all shadow-sm hover:scale-[1.02]"
+              >
+                <Github className="w-4 h-4 text-slate-300" />
+                <span>GitHub (@adityak39l)</span>
+                <ExternalLink className="w-3 h-3 opacity-60 ml-0.5" />
+              </a>
+
+              {/* LinkedIn Button */}
+              <a
+                href="https://www.linkedin.com/in/adityakverma"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl text-xs font-bold bg-sky-500/10 hover:bg-sky-500/20 text-sky-400 border border-sky-500/30 hover:border-sky-500/50 transition-all shadow-sm hover:scale-[1.02]"
+              >
+                <Linkedin className="w-4 h-4 text-sky-400" />
+                <span>LinkedIn</span>
+                <ExternalLink className="w-3 h-3 opacity-60 ml-0.5" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Why we built this */}
       <div className="glass-card p-6 sm:p-8 space-y-4">
@@ -89,41 +209,8 @@ export default function AboutPage() {
           </p>
           <p>
             We're continuously improving the platform and adding new features. If you have
-            suggestions or find any data issues, feel free to reach out via GitHub.
+            suggestions or find any data issues, feel free to reach out via GitHub or YouTube.
           </p>
-        </div>
-      </div>
-
-      {/* The Maker — moved ABOVE 'What you can do' container */}
-      <div>
-        <h2 className="font-black text-xl text-white mb-4">The maker</h2>
-        <div className="glass-card p-6 flex flex-col gap-5">
-          {/* Avatar placeholder */}
-          <div className="flex flex-col items-center gap-3 text-center">
-            <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#68c2e3] to-sky-700 flex items-center justify-center ring-2 ring-[#68c2e3] ring-offset-2 ring-offset-slate-950">
-              <GraduationCap className="w-9 h-9 text-slate-950" />
-            </div>
-            <div>
-              <h3 className="font-black text-lg text-white leading-tight">BU Jhansi IET Student</h3>
-              <p className="text-sm text-slate-400 mt-0.5">Full-Stack Developer & Data Engineer</p>
-              <div className="flex items-center justify-center gap-1.5 mt-2">
-                <span className="text-[10px] px-2 py-0.5 rounded-full font-bold bg-violet-500/10 text-violet-400 border border-violet-500/30">2024 Batch</span>
-              </div>
-            </div>
-          </div>
-
-          {/* Contributions */}
-          <div>
-            <p className="font-bold text-sm text-white mb-2">Key Contributions:</p>
-            <ul className="space-y-1.5">
-              {makerContributions.map((item, i) => (
-                <li key={i} className="flex items-start gap-2 text-sm text-slate-300">
-                  <span className="mt-0.5 shrink-0 text-emerald-400 font-bold">✓</span>
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
         </div>
       </div>
 
@@ -178,3 +265,4 @@ export default function AboutPage() {
     </div>
   );
 }
+
