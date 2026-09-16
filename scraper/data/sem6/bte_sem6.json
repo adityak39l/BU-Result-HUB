@@ -1,0 +1,762 @@
+[
+  {
+    "rollNo": "231411029001",
+    "enrollNo": "BU0230596635",
+    "name": "AAYUSHI SRIVASTAVA",
+    "fatherName": "SANJAY KUMAR SRIVASTAVA",
+    "motherName": "RADHIKA SRIVASTAVA",
+    "examCategory": "REGULAR",
+    "courseName": "B.TECH (BIOTECHNOLOGY ENGG) VI SEMESTER",
+    "sem": 6,
+    "sgpa": 7.62,
+    "resultStatus": "PASSED",
+    "subjects": [
+      {
+        "code": "BIOINFORMATI",
+        "name": "BIOINFORMATICS",
+        "internalStr": "Int: 33 / 50",
+        "externalStr": "Ext: 44 / 100",
+        "totalStr": "Tot: 77 / 150",
+        "grade": "B",
+        "credit": 3
+      },
+      {
+        "code": "PLANT-BIOTEC",
+        "name": "PLANT BIOTECHNOLOGY",
+        "internalStr": "Int: 35 / 50",
+        "externalStr": "Ext: 60 / 100",
+        "totalStr": "Tot: 95 / 150",
+        "grade": "B+",
+        "credit": 3
+      },
+      {
+        "code": "FERMENTATION",
+        "name": "FERMENTATION BIOTECHNOLOGY",
+        "internalStr": "Int: 36 / 50",
+        "externalStr": "Ext: 66 / 100",
+        "totalStr": "Tot: 102 / 150",
+        "grade": "B+",
+        "credit": 3
+      },
+      {
+        "code": "GENETIC-ENGI",
+        "name": "GENETIC ENGINEERING",
+        "internalStr": "Int: 29 / 50",
+        "externalStr": "Ext: 50 / 100",
+        "totalStr": "Tot: 79 / 150",
+        "grade": "B",
+        "credit": 3
+      },
+      {
+        "code": "BIOPROCESS-E",
+        "name": "BIOPROCESS ENGINEERING - II",
+        "internalStr": "Int: 48 / 50",
+        "externalStr": "Ext: 95 / 100",
+        "totalStr": "Tot: 143 / 150",
+        "grade": "O",
+        "credit": 3
+      },
+      {
+        "code": "BIOINFORMATI",
+        "name": "BIOINFORMATICS LAB.",
+        "internalStr": "Int: 31 / 50",
+        "externalStr": "Ext: 45 / 100",
+        "totalStr": "Tot: 76 / 100",
+        "grade": "A",
+        "credit": 2
+      },
+      {
+        "code": "FERMENTATION",
+        "name": "FERMENTATION BIOTECHNOLOGY LAB.",
+        "internalStr": "Int: 38 / 50",
+        "externalStr": "Ext: 50 / 100",
+        "totalStr": "Tot: 88 / 100",
+        "grade": "A+",
+        "credit": 2
+      },
+      {
+        "code": "GENETIC-ENGI",
+        "name": "GENETIC ENGINEERING LAB.",
+        "internalStr": "Int: 15 / 50",
+        "externalStr": "Ext: 25 / 100",
+        "totalStr": "Tot: 40 / 100",
+        "grade": "A+",
+        "credit": 2
+      },
+      {
+        "code": "GENERAL-PROF",
+        "name": "GENERAL PROFECIENCY",
+        "internalStr": "Int: --",
+        "externalStr": "Ext: 41 / 100",
+        "totalStr": "Tot: 41 / 150",
+        "grade": "A",
+        "credit": 3
+      }
+    ]
+  },
+  {
+    "rollNo": "231411029002",
+    "enrollNo": "BU0230651968",
+    "name": "ABHYA SINGH",
+    "fatherName": "ABHAY NARAIN SINGH",
+    "motherName": "POONAM SINGH",
+    "examCategory": "REGULAR",
+    "courseName": "B.TECH (BIOTECHNOLOGY ENGG) VI SEMESTER",
+    "sem": 6,
+    "sgpa": 7.38,
+    "resultStatus": "PASSED",
+    "subjects": [
+      {
+        "code": "BIOINFORMATI",
+        "name": "BIOINFORMATICS",
+        "internalStr": "Int: 33 / 50",
+        "externalStr": "Ext: 50 / 100",
+        "totalStr": "Tot: 83 / 150",
+        "grade": "B",
+        "credit": 3
+      },
+      {
+        "code": "PLANT-BIOTEC",
+        "name": "PLANT BIOTECHNOLOGY",
+        "internalStr": "Int: 33 / 50",
+        "externalStr": "Ext: 56 / 100",
+        "totalStr": "Tot: 89 / 150",
+        "grade": "B",
+        "credit": 3
+      },
+      {
+        "code": "FERMENTATION",
+        "name": "FERMENTATION BIOTECHNOLOGY",
+        "internalStr": "Int: 37 / 50",
+        "externalStr": "Ext: 62 / 100",
+        "totalStr": "Tot: 99 / 150",
+        "grade": "B+",
+        "credit": 3
+      },
+      {
+        "code": "GENETIC-ENGI",
+        "name": "GENETIC ENGINEERING",
+        "internalStr": "Int: 27 / 50",
+        "externalStr": "Ext: 48 / 100",
+        "totalStr": "Tot: 75 / 150",
+        "grade": "B",
+        "credit": 3
+      },
+      {
+        "code": "BIOPROCESS-E",
+        "name": "BIOPROCESS ENGINEERING - II",
+        "internalStr": "Int: 40 / 50",
+        "externalStr": "Ext: 95 / 100",
+        "totalStr": "Tot: 135 / 150",
+        "grade": "O",
+        "credit": 3
+      },
+      {
+        "code": "BIOINFORMATI",
+        "name": "BIOINFORMATICS LAB.",
+        "internalStr": "Int: 32 / 50",
+        "externalStr": "Ext: 45 / 100",
+        "totalStr": "Tot: 77 / 100",
+        "grade": "A",
+        "credit": 2
+      },
+      {
+        "code": "FERMENTATION",
+        "name": "FERMENTATION BIOTECHNOLOGY LAB.",
+        "internalStr": "Int: 32 / 50",
+        "externalStr": "Ext: 51 / 100",
+        "totalStr": "Tot: 83 / 100",
+        "grade": "A+",
+        "credit": 2
+      },
+      {
+        "code": "GENETIC-ENGI",
+        "name": "GENETIC ENGINEERING LAB.",
+        "internalStr": "Int: 14 / 50",
+        "externalStr": "Ext: 21 / 100",
+        "totalStr": "Tot: 35 / 100",
+        "grade": "A",
+        "credit": 2
+      },
+      {
+        "code": "GENERAL-PROF",
+        "name": "GENERAL PROFECIENCY",
+        "internalStr": "Int: --",
+        "externalStr": "Ext: 38 / 100",
+        "totalStr": "Tot: 38 / 150",
+        "grade": "A",
+        "credit": 3
+      }
+    ]
+  },
+  {
+    "rollNo": "231411029003",
+    "enrollNo": "BU0230596186",
+    "name": "ADITYA KUSHWAHA",
+    "fatherName": "JAI CHAND KUSHWAHA",
+    "motherName": "SUNITA KUSHWAHA",
+    "examCategory": "REGULAR",
+    "courseName": "B.TECH (BIOTECHNOLOGY ENGG) VI SEMESTER",
+    "sem": 6,
+    "sgpa": 6.86,
+    "resultStatus": "PASSED",
+    "subjects": [
+      {
+        "code": "BIOINFORMATI",
+        "name": "BIOINFORMATICS",
+        "internalStr": "Int: 30 / 50",
+        "externalStr": "Ext: 52 / 100",
+        "totalStr": "Tot: 82 / 150",
+        "grade": "B",
+        "credit": 3
+      },
+      {
+        "code": "PLANT-BIOTEC",
+        "name": "PLANT BIOTECHNOLOGY",
+        "internalStr": "Int: 35 / 50",
+        "externalStr": "Ext: 54 / 100",
+        "totalStr": "Tot: 89 / 150",
+        "grade": "B",
+        "credit": 3
+      },
+      {
+        "code": "FERMENTATION",
+        "name": "FERMENTATION BIOTECHNOLOGY",
+        "internalStr": "Int: 33 / 50",
+        "externalStr": "Ext: 70 / 100",
+        "totalStr": "Tot: 103 / 150",
+        "grade": "B+",
+        "credit": 3
+      },
+      {
+        "code": "GENETIC-ENGI",
+        "name": "GENETIC ENGINEERING",
+        "internalStr": "Int: 29 / 50",
+        "externalStr": "Ext: 49 / 100",
+        "totalStr": "Tot: 78 / 150",
+        "grade": "B",
+        "credit": 3
+      },
+      {
+        "code": "BIOPROCESS-E",
+        "name": "BIOPROCESS ENGINEERING - II",
+        "internalStr": "Int: 40 / 50",
+        "externalStr": "Ext: 94 / 100",
+        "totalStr": "Tot: 134 / 150",
+        "grade": "A+",
+        "credit": 3
+      },
+      {
+        "code": "BIOINFORMATI",
+        "name": "BIOINFORMATICS LAB.",
+        "internalStr": "Int: 26 / 50",
+        "externalStr": "Ext: 43 / 100",
+        "totalStr": "Tot: 69 / 100",
+        "grade": "B+",
+        "credit": 2
+      },
+      {
+        "code": "FERMENTATION",
+        "name": "FERMENTATION BIOTECHNOLOGY LAB.",
+        "internalStr": "Int: 32 / 50",
+        "externalStr": "Ext: 46 / 100",
+        "totalStr": "Tot: 78 / 100",
+        "grade": "A",
+        "credit": 2
+      },
+      {
+        "code": "GENETIC-ENGI",
+        "name": "GENETIC ENGINEERING LAB.",
+        "internalStr": "Int: 14 / 50",
+        "externalStr": "Ext: 15 / 100",
+        "totalStr": "Tot: 29 / 100",
+        "grade": "B",
+        "credit": 2
+      },
+      {
+        "code": "GENERAL-PROF",
+        "name": "GENERAL PROFECIENCY",
+        "internalStr": "Int: --",
+        "externalStr": "Ext: 35 / 100",
+        "totalStr": "Tot: 35 / 150",
+        "grade": "A",
+        "credit": 3
+      }
+    ]
+  },
+  {
+    "rollNo": "231411029004",
+    "enrollNo": "BU0230596707",
+    "name": "AMAN KUMAR SINGH",
+    "fatherName": "ADITYA PRAKASH SINGH",
+    "motherName": "RANJU SINGH",
+    "examCategory": "REGULAR",
+    "courseName": "B.TECH (BIOTECHNOLOGY ENGG) VI SEMESTER",
+    "sem": 6,
+    "sgpa": 7.67,
+    "resultStatus": "PASSED",
+    "subjects": [
+      {
+        "code": "BIOINFORMATI",
+        "name": "BIOINFORMATICS",
+        "internalStr": "Int: 31 / 50",
+        "externalStr": "Ext: 56 / 100",
+        "totalStr": "Tot: 87 / 150",
+        "grade": "B",
+        "credit": 3
+      },
+      {
+        "code": "PLANT-BIOTEC",
+        "name": "PLANT BIOTECHNOLOGY",
+        "internalStr": "Int: 32 / 50",
+        "externalStr": "Ext: 60 / 100",
+        "totalStr": "Tot: 92 / 150",
+        "grade": "B+",
+        "credit": 3
+      },
+      {
+        "code": "FERMENTATION",
+        "name": "FERMENTATION BIOTECHNOLOGY",
+        "internalStr": "Int: 32 / 50",
+        "externalStr": "Ext: 81 / 100",
+        "totalStr": "Tot: 113 / 150",
+        "grade": "A",
+        "credit": 3
+      },
+      {
+        "code": "GENETIC-ENGI",
+        "name": "GENETIC ENGINEERING",
+        "internalStr": "Int: 28 / 50",
+        "externalStr": "Ext: 59 / 100",
+        "totalStr": "Tot: 87 / 150",
+        "grade": "B",
+        "credit": 3
+      },
+      {
+        "code": "BIOPROCESS-E",
+        "name": "BIOPROCESS ENGINEERING - II",
+        "internalStr": "Int: 45 / 50",
+        "externalStr": "Ext: 96 / 100",
+        "totalStr": "Tot: 141 / 150",
+        "grade": "O",
+        "credit": 3
+      },
+      {
+        "code": "BIOINFORMATI",
+        "name": "BIOINFORMATICS LAB.",
+        "internalStr": "Int: 27 / 50",
+        "externalStr": "Ext: 44 / 100",
+        "totalStr": "Tot: 71 / 100",
+        "grade": "A",
+        "credit": 2
+      },
+      {
+        "code": "FERMENTATION",
+        "name": "FERMENTATION BIOTECHNOLOGY LAB.",
+        "internalStr": "Int: 36 / 50",
+        "externalStr": "Ext: 47 / 100",
+        "totalStr": "Tot: 83 / 100",
+        "grade": "A+",
+        "credit": 2
+      },
+      {
+        "code": "GENETIC-ENGI",
+        "name": "GENETIC ENGINEERING LAB.",
+        "internalStr": "Int: 14 / 50",
+        "externalStr": "Ext: 22 / 100",
+        "totalStr": "Tot: 36 / 100",
+        "grade": "A",
+        "credit": 2
+      },
+      {
+        "code": "GENERAL-PROF",
+        "name": "GENERAL PROFECIENCY",
+        "internalStr": "Int: --",
+        "externalStr": "Ext: 37 / 100",
+        "totalStr": "Tot: 37 / 150",
+        "grade": "A",
+        "credit": 3
+      }
+    ]
+  },
+  {
+    "rollNo": "231411029005",
+    "enrollNo": "BU0230651690",
+    "name": "ASHUTOSH SAINI",
+    "fatherName": "RAVINDRA KUMAR SAINI",
+    "motherName": "VANDANA PUSHKER",
+    "examCategory": "REGULAR",
+    "courseName": "B.TECH (BIOTECHNOLOGY ENGG) VI SEMESTER",
+    "sem": 6,
+    "sgpa": 7.29,
+    "resultStatus": "PASSED",
+    "subjects": [
+      {
+        "code": "BIOINFORMATI",
+        "name": "BIOINFORMATICS",
+        "internalStr": "Int: 25 / 50",
+        "externalStr": "Ext: 56 / 100",
+        "totalStr": "Tot: 81 / 150",
+        "grade": "B",
+        "credit": 3
+      },
+      {
+        "code": "PLANT-BIOTEC",
+        "name": "PLANT BIOTECHNOLOGY",
+        "internalStr": "Int: 33 / 50",
+        "externalStr": "Ext: 57 / 100",
+        "totalStr": "Tot: 90 / 150",
+        "grade": "B+",
+        "credit": 3
+      },
+      {
+        "code": "FERMENTATION",
+        "name": "FERMENTATION BIOTECHNOLOGY",
+        "internalStr": "Int: 33 / 50",
+        "externalStr": "Ext: 69 / 100",
+        "totalStr": "Tot: 102 / 150",
+        "grade": "B+",
+        "credit": 3
+      },
+      {
+        "code": "GENETIC-ENGI",
+        "name": "GENETIC ENGINEERING",
+        "internalStr": "Int: 27 / 50",
+        "externalStr": "Ext: 60 / 100",
+        "totalStr": "Tot: 87 / 150",
+        "grade": "B",
+        "credit": 3
+      },
+      {
+        "code": "BIOPROCESS-E",
+        "name": "BIOPROCESS ENGINEERING - II",
+        "internalStr": "Int: 40 / 50",
+        "externalStr": "Ext: 92 / 100",
+        "totalStr": "Tot: 132 / 150",
+        "grade": "A+",
+        "credit": 3
+      },
+      {
+        "code": "BIOINFORMATI",
+        "name": "BIOINFORMATICS LAB.",
+        "internalStr": "Int: 27 / 50",
+        "externalStr": "Ext: 43 / 100",
+        "totalStr": "Tot: 70 / 100",
+        "grade": "A",
+        "credit": 2
+      },
+      {
+        "code": "FERMENTATION",
+        "name": "FERMENTATION BIOTECHNOLOGY LAB.",
+        "internalStr": "Int: 31 / 50",
+        "externalStr": "Ext: 46 / 100",
+        "totalStr": "Tot: 77 / 100",
+        "grade": "A",
+        "credit": 2
+      },
+      {
+        "code": "GENETIC-ENGI",
+        "name": "GENETIC ENGINEERING LAB.",
+        "internalStr": "Int: 14 / 50",
+        "externalStr": "Ext: 21 / 100",
+        "totalStr": "Tot: 35 / 100",
+        "grade": "A",
+        "credit": 2
+      },
+      {
+        "code": "GENERAL-PROF",
+        "name": "GENERAL PROFECIENCY",
+        "internalStr": "Int: --",
+        "externalStr": "Ext: 36 / 100",
+        "totalStr": "Tot: 36 / 150",
+        "grade": "A",
+        "credit": 3
+      }
+    ]
+  },
+  {
+    "rollNo": "231411029007",
+    "enrollNo": "BU0230596641",
+    "name": "PRIYAVADA YADAV",
+    "fatherName": "MADAN YADAV",
+    "motherName": "SUBHAWATI DEVI",
+    "examCategory": "REGULAR",
+    "courseName": "B.TECH (BIOTECHNOLOGY ENGG) VI SEMESTER",
+    "sem": 6,
+    "sgpa": 8.48,
+    "resultStatus": "PASSED",
+    "subjects": [
+      {
+        "code": "BIOINFORMATI",
+        "name": "BIOINFORMATICS",
+        "internalStr": "Int: 40 / 50",
+        "externalStr": "Ext: 50 / 100",
+        "totalStr": "Tot: 90 / 150",
+        "grade": "B+",
+        "credit": 3
+      },
+      {
+        "code": "PLANT-BIOTEC",
+        "name": "PLANT BIOTECHNOLOGY",
+        "internalStr": "Int: 42 / 50",
+        "externalStr": "Ext: 62 / 100",
+        "totalStr": "Tot: 104 / 150",
+        "grade": "B+",
+        "credit": 3
+      },
+      {
+        "code": "FERMENTATION",
+        "name": "FERMENTATION BIOTECHNOLOGY",
+        "internalStr": "Int: 40 / 50",
+        "externalStr": "Ext: 74 / 100",
+        "totalStr": "Tot: 114 / 150",
+        "grade": "A",
+        "credit": 3
+      },
+      {
+        "code": "GENETIC-ENGI",
+        "name": "GENETIC ENGINEERING",
+        "internalStr": "Int: 38 / 50",
+        "externalStr": "Ext: 69 / 100",
+        "totalStr": "Tot: 107 / 150",
+        "grade": "A",
+        "credit": 3
+      },
+      {
+        "code": "BIOPROCESS-E",
+        "name": "BIOPROCESS ENGINEERING - II",
+        "internalStr": "Int: 49 / 50",
+        "externalStr": "Ext: 97 / 100",
+        "totalStr": "Tot: 146 / 150",
+        "grade": "O",
+        "credit": 3
+      },
+      {
+        "code": "BIOINFORMATI",
+        "name": "BIOINFORMATICS LAB.",
+        "internalStr": "Int: 35 / 50",
+        "externalStr": "Ext: 48 / 100",
+        "totalStr": "Tot: 83 / 100",
+        "grade": "A+",
+        "credit": 2
+      },
+      {
+        "code": "FERMENTATION",
+        "name": "FERMENTATION BIOTECHNOLOGY LAB.",
+        "internalStr": "Int: 38 / 50",
+        "externalStr": "Ext: 55 / 100",
+        "totalStr": "Tot: 93 / 100",
+        "grade": "O",
+        "credit": 2
+      },
+      {
+        "code": "GENETIC-ENGI",
+        "name": "GENETIC ENGINEERING LAB.",
+        "internalStr": "Int: 17 / 50",
+        "externalStr": "Ext: 28 / 100",
+        "totalStr": "Tot: 45 / 100",
+        "grade": "O",
+        "credit": 2
+      },
+      {
+        "code": "GENERAL-PROF",
+        "name": "GENERAL PROFECIENCY",
+        "internalStr": "Int: --",
+        "externalStr": "Ext: 45 / 100",
+        "totalStr": "Tot: 45 / 150",
+        "grade": "A",
+        "credit": 3
+      }
+    ]
+  },
+  {
+    "rollNo": "231411029008",
+    "enrollNo": "BU0230600167",
+    "name": "SAUD AHMAD KHAN",
+    "fatherName": "ZUBER AHMAD",
+    "motherName": "JANNATUN NISHA",
+    "examCategory": "REGULAR",
+    "courseName": "B.TECH (BIOTECHNOLOGY ENGG) VI SEMESTER",
+    "sem": 6,
+    "sgpa": 7.67,
+    "resultStatus": "PASSED",
+    "subjects": [
+      {
+        "code": "BIOINFORMATI",
+        "name": "BIOINFORMATICS",
+        "internalStr": "Int: 36 / 50",
+        "externalStr": "Ext: 51 / 100",
+        "totalStr": "Tot: 87 / 150",
+        "grade": "B",
+        "credit": 3
+      },
+      {
+        "code": "PLANT-BIOTEC",
+        "name": "PLANT BIOTECHNOLOGY",
+        "internalStr": "Int: 36 / 50",
+        "externalStr": "Ext: 60 / 100",
+        "totalStr": "Tot: 96 / 150",
+        "grade": "B+",
+        "credit": 3
+      },
+      {
+        "code": "FERMENTATION",
+        "name": "FERMENTATION BIOTECHNOLOGY",
+        "internalStr": "Int: 37 / 50",
+        "externalStr": "Ext: 74 / 100",
+        "totalStr": "Tot: 111 / 150",
+        "grade": "A",
+        "credit": 3
+      },
+      {
+        "code": "GENETIC-ENGI",
+        "name": "GENETIC ENGINEERING",
+        "internalStr": "Int: 30 / 50",
+        "externalStr": "Ext: 64 / 100",
+        "totalStr": "Tot: 94 / 150",
+        "grade": "B+",
+        "credit": 3
+      },
+      {
+        "code": "BIOPROCESS-E",
+        "name": "BIOPROCESS ENGINEERING - II",
+        "internalStr": "Int: 43 / 50",
+        "externalStr": "Ext: 89 / 100",
+        "totalStr": "Tot: 132 / 150",
+        "grade": "A+",
+        "credit": 3
+      },
+      {
+        "code": "BIOINFORMATI",
+        "name": "BIOINFORMATICS LAB.",
+        "internalStr": "Int: 30 / 50",
+        "externalStr": "Ext: 46 / 100",
+        "totalStr": "Tot: 76 / 100",
+        "grade": "A",
+        "credit": 2
+      },
+      {
+        "code": "FERMENTATION",
+        "name": "FERMENTATION BIOTECHNOLOGY LAB.",
+        "internalStr": "Int: 35 / 50",
+        "externalStr": "Ext: 52 / 100",
+        "totalStr": "Tot: 87 / 100",
+        "grade": "A+",
+        "credit": 2
+      },
+      {
+        "code": "GENETIC-ENGI",
+        "name": "GENETIC ENGINEERING LAB.",
+        "internalStr": "Int: 18 / 50",
+        "externalStr": "Ext: 20 / 100",
+        "totalStr": "Tot: 38 / 100",
+        "grade": "A",
+        "credit": 2
+      },
+      {
+        "code": "GENERAL-PROF",
+        "name": "GENERAL PROFECIENCY",
+        "internalStr": "Int: --",
+        "externalStr": "Ext: 42 / 100",
+        "totalStr": "Tot: 42 / 150",
+        "grade": "A",
+        "credit": 3
+      }
+    ]
+  },
+  {
+    "rollNo": "231411029009",
+    "enrollNo": "BU0230603227",
+    "name": "VIPIN YADAV",
+    "fatherName": "RAKESH YADAV",
+    "motherName": "VIMLESH YADAV",
+    "examCategory": "REGULAR",
+    "courseName": "B.TECH (BIOTECHNOLOGY ENGG) VI SEMESTER",
+    "sem": 6,
+    "sgpa": 7.67,
+    "resultStatus": "PASSED",
+    "subjects": [
+      {
+        "code": "BIOINFORMATI",
+        "name": "BIOINFORMATICS",
+        "internalStr": "Int: 35 / 50",
+        "externalStr": "Ext: 49 / 100",
+        "totalStr": "Tot: 84 / 150",
+        "grade": "B",
+        "credit": 3
+      },
+      {
+        "code": "PLANT-BIOTEC",
+        "name": "PLANT BIOTECHNOLOGY",
+        "internalStr": "Int: 38 / 50",
+        "externalStr": "Ext: 48 / 100",
+        "totalStr": "Tot: 86 / 150",
+        "grade": "B",
+        "credit": 3
+      },
+      {
+        "code": "FERMENTATION",
+        "name": "FERMENTATION BIOTECHNOLOGY",
+        "internalStr": "Int: 38 / 50",
+        "externalStr": "Ext: 74 / 100",
+        "totalStr": "Tot: 112 / 150",
+        "grade": "A",
+        "credit": 3
+      },
+      {
+        "code": "GENETIC-ENGI",
+        "name": "GENETIC ENGINEERING",
+        "internalStr": "Int: 37 / 50",
+        "externalStr": "Ext: 55 / 100",
+        "totalStr": "Tot: 92 / 150",
+        "grade": "B+",
+        "credit": 3
+      },
+      {
+        "code": "BIOPROCESS-E",
+        "name": "BIOPROCESS ENGINEERING - II",
+        "internalStr": "Int: 46 / 50",
+        "externalStr": "Ext: 94 / 100",
+        "totalStr": "Tot: 140 / 150",
+        "grade": "O",
+        "credit": 3
+      },
+      {
+        "code": "BIOINFORMATI",
+        "name": "BIOINFORMATICS LAB.",
+        "internalStr": "Int: 30 / 50",
+        "externalStr": "Ext: 46 / 100",
+        "totalStr": "Tot: 76 / 100",
+        "grade": "A",
+        "credit": 2
+      },
+      {
+        "code": "FERMENTATION",
+        "name": "FERMENTATION BIOTECHNOLOGY LAB.",
+        "internalStr": "Int: 36 / 50",
+        "externalStr": "Ext: 52 / 100",
+        "totalStr": "Tot: 88 / 100",
+        "grade": "A+",
+        "credit": 2
+      },
+      {
+        "code": "GENETIC-ENGI",
+        "name": "GENETIC ENGINEERING LAB.",
+        "internalStr": "Int: 16 / 50",
+        "externalStr": "Ext: 20 / 100",
+        "totalStr": "Tot: 36 / 100",
+        "grade": "A",
+        "credit": 2
+      },
+      {
+        "code": "GENERAL-PROF",
+        "name": "GENERAL PROFECIENCY",
+        "internalStr": "Int: --",
+        "externalStr": "Ext: 43 / 100",
+        "totalStr": "Tot: 43 / 150",
+        "grade": "A",
+        "credit": 3
+      }
+    ]
+  }
+]

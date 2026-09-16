@@ -1,0 +1,1544 @@
+[
+  {
+    "id": "231411029007",
+    "rollNo": "231411029007",
+    "name": "PRIYAVADA YADAV",
+    "branch": "BTE",
+    "cgpa": 8.31,
+    "batch": "2024-25 / 2025-26",
+    "fatherName": "MADAN YADAV",
+    "motherName": "SUBHAWATI DEVI",
+    "enrollNo": "BU0230596641",
+    "semesters": [
+      {
+        "sem": 5,
+        "sgpa": 8.14
+      },
+      {
+        "sem": 6,
+        "sgpa": 8.48
+      }
+    ],
+    "semesterSubjects": {
+      "5": [
+        {
+          "code": "ANALYTICAL-T",
+          "name": "ANALYTICAL TECHNIQUES IN BIOTECHNOLOGY",
+          "internalStr": "Int: 31 / 50",
+          "externalStr": "Ext: 64 / 100",
+          "totalStr": "Tot: 95 / 150",
+          "grade": "B+",
+          "credit": 3
+        },
+        {
+          "code": "BIOPROCESS-E",
+          "name": "BIOPROCESS ENGINEERING - I",
+          "internalStr": "Int: 48 / 50",
+          "externalStr": "Ext: 92 / 100",
+          "totalStr": "Tot: 140 / 150",
+          "grade": "O",
+          "credit": 3
+        },
+        {
+          "code": "INDUSTRIAL-E",
+          "name": "INDUSTRIAL ECONOMICS AND PRINCIPLES OF MANAGEMENT",
+          "internalStr": "Int: 41 / 50",
+          "externalStr": "Ext: 43 / 100",
+          "totalStr": "Tot: 84 / 150",
+          "grade": "B",
+          "credit": 3
+        },
+        {
+          "code": "CHEMICAL-REA",
+          "name": "CHEMICAL REACTION ENGINEERING",
+          "internalStr": "Int: 41 / 50",
+          "externalStr": "Ext: 83 / 100",
+          "totalStr": "Tot: 124 / 150",
+          "grade": "A+",
+          "credit": 3
+        },
+        {
+          "code": "DESIGN-AND-A",
+          "name": "DESIGN AND ANALYSIS OF ALGORITHM",
+          "internalStr": "Int: 42 / 50",
+          "externalStr": "Ext: 55 / 100",
+          "totalStr": "Tot: 97 / 150",
+          "grade": "B+",
+          "credit": 3
+        },
+        {
+          "code": "BIOPROCESS-E",
+          "name": "BIOPROCESS ENGINEERING LAB.",
+          "internalStr": "Int: 47 / 50",
+          "externalStr": "Ext: 73 / 100",
+          "totalStr": "Tot: 120 / 150",
+          "grade": "O",
+          "credit": 3
+        },
+        {
+          "code": "DESIGN-AND-A",
+          "name": "DESIGN AND ANALYSIS OF ALGORTHM LAB.",
+          "internalStr": "Int: 40 / 50",
+          "externalStr": "Ext: 52 / 100",
+          "totalStr": "Tot: 92 / 150",
+          "grade": "A",
+          "credit": 3
+        },
+        {
+          "code": "GENERAL-PROF",
+          "name": "GENERAL PROFECIENCY",
+          "internalStr": "Int: --",
+          "externalStr": "Ext: 46 / 100",
+          "totalStr": "Tot: 46 / 150",
+          "grade": "A",
+          "credit": 3
+        }
+      ],
+      "6": [
+        {
+          "code": "BIOINFORMATI",
+          "name": "BIOINFORMATICS",
+          "internalStr": "Int: 40 / 50",
+          "externalStr": "Ext: 50 / 100",
+          "totalStr": "Tot: 90 / 150",
+          "grade": "B+",
+          "credit": 3
+        },
+        {
+          "code": "PLANT-BIOTEC",
+          "name": "PLANT BIOTECHNOLOGY",
+          "internalStr": "Int: 42 / 50",
+          "externalStr": "Ext: 62 / 100",
+          "totalStr": "Tot: 104 / 150",
+          "grade": "B+",
+          "credit": 3
+        },
+        {
+          "code": "FERMENTATION",
+          "name": "FERMENTATION BIOTECHNOLOGY",
+          "internalStr": "Int: 40 / 50",
+          "externalStr": "Ext: 74 / 100",
+          "totalStr": "Tot: 114 / 150",
+          "grade": "A",
+          "credit": 3
+        },
+        {
+          "code": "GENETIC-ENGI",
+          "name": "GENETIC ENGINEERING",
+          "internalStr": "Int: 38 / 50",
+          "externalStr": "Ext: 69 / 100",
+          "totalStr": "Tot: 107 / 150",
+          "grade": "A",
+          "credit": 3
+        },
+        {
+          "code": "BIOPROCESS-E",
+          "name": "BIOPROCESS ENGINEERING - II",
+          "internalStr": "Int: 49 / 50",
+          "externalStr": "Ext: 97 / 100",
+          "totalStr": "Tot: 146 / 150",
+          "grade": "O",
+          "credit": 3
+        },
+        {
+          "code": "BIOINFORMATI",
+          "name": "BIOINFORMATICS LAB.",
+          "internalStr": "Int: 35 / 50",
+          "externalStr": "Ext: 48 / 100",
+          "totalStr": "Tot: 83 / 100",
+          "grade": "A+",
+          "credit": 2
+        },
+        {
+          "code": "FERMENTATION",
+          "name": "FERMENTATION BIOTECHNOLOGY LAB.",
+          "internalStr": "Int: 38 / 50",
+          "externalStr": "Ext: 55 / 100",
+          "totalStr": "Tot: 93 / 100",
+          "grade": "O",
+          "credit": 2
+        },
+        {
+          "code": "GENETIC-ENGI",
+          "name": "GENETIC ENGINEERING LAB.",
+          "internalStr": "Int: 17 / 50",
+          "externalStr": "Ext: 28 / 100",
+          "totalStr": "Tot: 45 / 100",
+          "grade": "O",
+          "credit": 2
+        },
+        {
+          "code": "GENERAL-PROF",
+          "name": "GENERAL PROFECIENCY",
+          "internalStr": "Int: --",
+          "externalStr": "Ext: 45 / 100",
+          "totalStr": "Tot: 45 / 150",
+          "grade": "A",
+          "credit": 3
+        }
+      ]
+    },
+    "branchRank": 1
+  },
+  {
+    "id": "231411029006",
+    "rollNo": "231411029006",
+    "name": "GAGAN SIKHANAYA",
+    "branch": "BTE",
+    "cgpa": 7.86,
+    "batch": "2024-25 / 2025-26",
+    "fatherName": "RAM LAL SIKHANAYA",
+    "motherName": "PUSHPA SIKHANAYA",
+    "enrollNo": "BU0230596709",
+    "semesters": [
+      {
+        "sem": 5,
+        "sgpa": 7.86
+      }
+    ],
+    "semesterSubjects": {
+      "5": [
+        {
+          "code": "ANALYTICAL-T",
+          "name": "ANALYTICAL TECHNIQUES IN BIOTECHNOLOGY",
+          "internalStr": "Int: 38 / 50",
+          "externalStr": "Ext: 60 / 100",
+          "totalStr": "Tot: 98 / 150",
+          "grade": "B+",
+          "credit": 3
+        },
+        {
+          "code": "BIOPROCESS-E",
+          "name": "BIOPROCESS ENGINEERING - I",
+          "internalStr": "Int: 48 / 50",
+          "externalStr": "Ext: 57 / 100",
+          "totalStr": "Tot: 105 / 150",
+          "grade": "A",
+          "credit": 3
+        },
+        {
+          "code": "INDUSTRIAL-E",
+          "name": "INDUSTRIAL ECONOMICS AND PRINCIPLES OF MANAGEMENT",
+          "internalStr": "Int: 41 / 50",
+          "externalStr": "Ext: 40 / 100",
+          "totalStr": "Tot: 81 / 150",
+          "grade": "B",
+          "credit": 3
+        },
+        {
+          "code": "CHEMICAL-REA",
+          "name": "CHEMICAL REACTION ENGINEERING",
+          "internalStr": "Int: 36 / 50",
+          "externalStr": "Ext: 77 / 100",
+          "totalStr": "Tot: 113 / 150",
+          "grade": "A",
+          "credit": 3
+        },
+        {
+          "code": "DESIGN-AND-A",
+          "name": "DESIGN AND ANALYSIS OF ALGORITHM",
+          "internalStr": "Int: 39 / 50",
+          "externalStr": "Ext: 53 / 100",
+          "totalStr": "Tot: 92 / 150",
+          "grade": "B+",
+          "credit": 3
+        },
+        {
+          "code": "BIOPROCESS-E",
+          "name": "BIOPROCESS ENGINEERING LAB.",
+          "internalStr": "Int: 46 / 50",
+          "externalStr": "Ext: 73 / 100",
+          "totalStr": "Tot: 119 / 150",
+          "grade": "O",
+          "credit": 3
+        },
+        {
+          "code": "DESIGN-AND-A",
+          "name": "DESIGN AND ANALYSIS OF ALGORTHM LAB.",
+          "internalStr": "Int: 40 / 50",
+          "externalStr": "Ext: 60 / 100",
+          "totalStr": "Tot: 100 / 150",
+          "grade": "A+",
+          "credit": 3
+        },
+        {
+          "code": "GENERAL-PROF",
+          "name": "GENERAL PROFECIENCY",
+          "internalStr": "Int: --",
+          "externalStr": "Ext: 45 / 100",
+          "totalStr": "Tot: 45 / 150",
+          "grade": "A",
+          "credit": 3
+        }
+      ]
+    },
+    "branchRank": 2
+  },
+  {
+    "id": "231411029001",
+    "rollNo": "231411029001",
+    "name": "AAYUSHI SRIVASTAVA",
+    "branch": "BTE",
+    "cgpa": 7.6,
+    "batch": "2024-25 / 2025-26",
+    "fatherName": "SANJAY KUMAR SRIVASTAVA",
+    "motherName": "RADHIKA SRIVASTAVA",
+    "enrollNo": "BU0230596635",
+    "semesters": [
+      {
+        "sem": 5,
+        "sgpa": 7.57
+      },
+      {
+        "sem": 6,
+        "sgpa": 7.62
+      }
+    ],
+    "semesterSubjects": {
+      "5": [
+        {
+          "code": "ANALYTICAL-T",
+          "name": "ANALYTICAL TECHNIQUES IN BIOTECHNOLOGY",
+          "internalStr": "Int: 24 / 50",
+          "externalStr": "Ext: 60 / 100",
+          "totalStr": "Tot: 84 / 150",
+          "grade": "B",
+          "credit": 3
+        },
+        {
+          "code": "BIOPROCESS-E",
+          "name": "BIOPROCESS ENGINEERING - I",
+          "internalStr": "Int: 48 / 50",
+          "externalStr": "Ext: 45 / 100",
+          "totalStr": "Tot: 93 / 150",
+          "grade": "B+",
+          "credit": 3
+        },
+        {
+          "code": "INDUSTRIAL-E",
+          "name": "INDUSTRIAL ECONOMICS AND PRINCIPLES OF MANAGEMENT",
+          "internalStr": "Int: 42 / 50",
+          "externalStr": "Ext: 55 / 100",
+          "totalStr": "Tot: 97 / 150",
+          "grade": "B+",
+          "credit": 3
+        },
+        {
+          "code": "CHEMICAL-REA",
+          "name": "CHEMICAL REACTION ENGINEERING",
+          "internalStr": "Int: 38 / 50",
+          "externalStr": "Ext: 76 / 100",
+          "totalStr": "Tot: 114 / 150",
+          "grade": "A",
+          "credit": 3
+        },
+        {
+          "code": "DESIGN-AND-A",
+          "name": "DESIGN AND ANALYSIS OF ALGORITHM",
+          "internalStr": "Int: 40 / 50",
+          "externalStr": "Ext: 55 / 100",
+          "totalStr": "Tot: 95 / 150",
+          "grade": "B+",
+          "credit": 3
+        },
+        {
+          "code": "BIOPROCESS-E",
+          "name": "BIOPROCESS ENGINEERING LAB.",
+          "internalStr": "Int: 47 / 50",
+          "externalStr": "Ext: 73 / 100",
+          "totalStr": "Tot: 120 / 150",
+          "grade": "O",
+          "credit": 3
+        },
+        {
+          "code": "DESIGN-AND-A",
+          "name": "DESIGN AND ANALYSIS OF ALGORTHM LAB.",
+          "internalStr": "Int: 38 / 50",
+          "externalStr": "Ext: 55 / 100",
+          "totalStr": "Tot: 93 / 150",
+          "grade": "A",
+          "credit": 3
+        },
+        {
+          "code": "GENERAL-PROF",
+          "name": "GENERAL PROFECIENCY",
+          "internalStr": "Int: --",
+          "externalStr": "Ext: 45 / 100",
+          "totalStr": "Tot: 45 / 150",
+          "grade": "A",
+          "credit": 3
+        }
+      ],
+      "6": [
+        {
+          "code": "BIOINFORMATI",
+          "name": "BIOINFORMATICS",
+          "internalStr": "Int: 33 / 50",
+          "externalStr": "Ext: 44 / 100",
+          "totalStr": "Tot: 77 / 150",
+          "grade": "B",
+          "credit": 3
+        },
+        {
+          "code": "PLANT-BIOTEC",
+          "name": "PLANT BIOTECHNOLOGY",
+          "internalStr": "Int: 35 / 50",
+          "externalStr": "Ext: 60 / 100",
+          "totalStr": "Tot: 95 / 150",
+          "grade": "B+",
+          "credit": 3
+        },
+        {
+          "code": "FERMENTATION",
+          "name": "FERMENTATION BIOTECHNOLOGY",
+          "internalStr": "Int: 36 / 50",
+          "externalStr": "Ext: 66 / 100",
+          "totalStr": "Tot: 102 / 150",
+          "grade": "B+",
+          "credit": 3
+        },
+        {
+          "code": "GENETIC-ENGI",
+          "name": "GENETIC ENGINEERING",
+          "internalStr": "Int: 29 / 50",
+          "externalStr": "Ext: 50 / 100",
+          "totalStr": "Tot: 79 / 150",
+          "grade": "B",
+          "credit": 3
+        },
+        {
+          "code": "BIOPROCESS-E",
+          "name": "BIOPROCESS ENGINEERING - II",
+          "internalStr": "Int: 48 / 50",
+          "externalStr": "Ext: 95 / 100",
+          "totalStr": "Tot: 143 / 150",
+          "grade": "O",
+          "credit": 3
+        },
+        {
+          "code": "BIOINFORMATI",
+          "name": "BIOINFORMATICS LAB.",
+          "internalStr": "Int: 31 / 50",
+          "externalStr": "Ext: 45 / 100",
+          "totalStr": "Tot: 76 / 100",
+          "grade": "A",
+          "credit": 2
+        },
+        {
+          "code": "FERMENTATION",
+          "name": "FERMENTATION BIOTECHNOLOGY LAB.",
+          "internalStr": "Int: 38 / 50",
+          "externalStr": "Ext: 50 / 100",
+          "totalStr": "Tot: 88 / 100",
+          "grade": "A+",
+          "credit": 2
+        },
+        {
+          "code": "GENETIC-ENGI",
+          "name": "GENETIC ENGINEERING LAB.",
+          "internalStr": "Int: 15 / 50",
+          "externalStr": "Ext: 25 / 100",
+          "totalStr": "Tot: 40 / 100",
+          "grade": "A+",
+          "credit": 2
+        },
+        {
+          "code": "GENERAL-PROF",
+          "name": "GENERAL PROFECIENCY",
+          "internalStr": "Int: --",
+          "externalStr": "Ext: 41 / 100",
+          "totalStr": "Tot: 41 / 150",
+          "grade": "A",
+          "credit": 3
+        }
+      ]
+    },
+    "branchRank": 3
+  },
+  {
+    "id": "231411029008",
+    "rollNo": "231411029008",
+    "name": "SAUD AHMAD KHAN",
+    "branch": "BTE",
+    "cgpa": 7.48,
+    "batch": "2024-25 / 2025-26",
+    "fatherName": "ZUBER AHMAD",
+    "motherName": "JANNATUN NISHA",
+    "enrollNo": "BU0230600167",
+    "semesters": [
+      {
+        "sem": 5,
+        "sgpa": 7.29
+      },
+      {
+        "sem": 6,
+        "sgpa": 7.67
+      }
+    ],
+    "semesterSubjects": {
+      "5": [
+        {
+          "code": "ANALYTICAL-T",
+          "name": "ANALYTICAL TECHNIQUES IN BIOTECHNOLOGY",
+          "internalStr": "Int: 26 / 50",
+          "externalStr": "Ext: 58 / 100",
+          "totalStr": "Tot: 84 / 150",
+          "grade": "B",
+          "credit": 3
+        },
+        {
+          "code": "BIOPROCESS-E",
+          "name": "BIOPROCESS ENGINEERING - I",
+          "internalStr": "Int: 45 / 50",
+          "externalStr": "Ext: 48 / 100",
+          "totalStr": "Tot: 93 / 150",
+          "grade": "B+",
+          "credit": 3
+        },
+        {
+          "code": "INDUSTRIAL-E",
+          "name": "INDUSTRIAL ECONOMICS AND PRINCIPLES OF MANAGEMENT",
+          "internalStr": "Int: 38 / 50",
+          "externalStr": "Ext: 49 / 100",
+          "totalStr": "Tot: 87 / 150",
+          "grade": "B",
+          "credit": 3
+        },
+        {
+          "code": "CHEMICAL-REA",
+          "name": "CHEMICAL REACTION ENGINEERING",
+          "internalStr": "Int: 30 / 50",
+          "externalStr": "Ext: 81 / 100",
+          "totalStr": "Tot: 111 / 150",
+          "grade": "A",
+          "credit": 3
+        },
+        {
+          "code": "DESIGN-AND-A",
+          "name": "DESIGN AND ANALYSIS OF ALGORITHM",
+          "internalStr": "Int: 39 / 50",
+          "externalStr": "Ext: 56 / 100",
+          "totalStr": "Tot: 95 / 150",
+          "grade": "B+",
+          "credit": 3
+        },
+        {
+          "code": "BIOPROCESS-E",
+          "name": "BIOPROCESS ENGINEERING LAB.",
+          "internalStr": "Int: 46 / 50",
+          "externalStr": "Ext: 71 / 100",
+          "totalStr": "Tot: 117 / 150",
+          "grade": "O",
+          "credit": 3
+        },
+        {
+          "code": "DESIGN-AND-A",
+          "name": "DESIGN AND ANALYSIS OF ALGORTHM LAB.",
+          "internalStr": "Int: 37 / 50",
+          "externalStr": "Ext: 48 / 100",
+          "totalStr": "Tot: 85 / 150",
+          "grade": "B+",
+          "credit": 3
+        },
+        {
+          "code": "GENERAL-PROF",
+          "name": "GENERAL PROFECIENCY",
+          "internalStr": "Int: --",
+          "externalStr": "Ext: 43 / 100",
+          "totalStr": "Tot: 43 / 150",
+          "grade": "A",
+          "credit": 3
+        }
+      ],
+      "6": [
+        {
+          "code": "BIOINFORMATI",
+          "name": "BIOINFORMATICS",
+          "internalStr": "Int: 36 / 50",
+          "externalStr": "Ext: 51 / 100",
+          "totalStr": "Tot: 87 / 150",
+          "grade": "B",
+          "credit": 3
+        },
+        {
+          "code": "PLANT-BIOTEC",
+          "name": "PLANT BIOTECHNOLOGY",
+          "internalStr": "Int: 36 / 50",
+          "externalStr": "Ext: 60 / 100",
+          "totalStr": "Tot: 96 / 150",
+          "grade": "B+",
+          "credit": 3
+        },
+        {
+          "code": "FERMENTATION",
+          "name": "FERMENTATION BIOTECHNOLOGY",
+          "internalStr": "Int: 37 / 50",
+          "externalStr": "Ext: 74 / 100",
+          "totalStr": "Tot: 111 / 150",
+          "grade": "A",
+          "credit": 3
+        },
+        {
+          "code": "GENETIC-ENGI",
+          "name": "GENETIC ENGINEERING",
+          "internalStr": "Int: 30 / 50",
+          "externalStr": "Ext: 64 / 100",
+          "totalStr": "Tot: 94 / 150",
+          "grade": "B+",
+          "credit": 3
+        },
+        {
+          "code": "BIOPROCESS-E",
+          "name": "BIOPROCESS ENGINEERING - II",
+          "internalStr": "Int: 43 / 50",
+          "externalStr": "Ext: 89 / 100",
+          "totalStr": "Tot: 132 / 150",
+          "grade": "A+",
+          "credit": 3
+        },
+        {
+          "code": "BIOINFORMATI",
+          "name": "BIOINFORMATICS LAB.",
+          "internalStr": "Int: 30 / 50",
+          "externalStr": "Ext: 46 / 100",
+          "totalStr": "Tot: 76 / 100",
+          "grade": "A",
+          "credit": 2
+        },
+        {
+          "code": "FERMENTATION",
+          "name": "FERMENTATION BIOTECHNOLOGY LAB.",
+          "internalStr": "Int: 35 / 50",
+          "externalStr": "Ext: 52 / 100",
+          "totalStr": "Tot: 87 / 100",
+          "grade": "A+",
+          "credit": 2
+        },
+        {
+          "code": "GENETIC-ENGI",
+          "name": "GENETIC ENGINEERING LAB.",
+          "internalStr": "Int: 18 / 50",
+          "externalStr": "Ext: 20 / 100",
+          "totalStr": "Tot: 38 / 100",
+          "grade": "A",
+          "credit": 2
+        },
+        {
+          "code": "GENERAL-PROF",
+          "name": "GENERAL PROFECIENCY",
+          "internalStr": "Int: --",
+          "externalStr": "Ext: 42 / 100",
+          "totalStr": "Tot: 42 / 150",
+          "grade": "A",
+          "credit": 3
+        }
+      ]
+    },
+    "branchRank": 4
+  },
+  {
+    "id": "231411029009",
+    "rollNo": "231411029009",
+    "name": "VIPIN YADAV",
+    "branch": "BTE",
+    "cgpa": 7.4,
+    "batch": "2024-25 / 2025-26",
+    "fatherName": "RAKESH YADAV",
+    "motherName": "VIMLESH YADAV",
+    "enrollNo": "BU0230603227",
+    "semesters": [
+      {
+        "sem": 5,
+        "sgpa": 7.14
+      },
+      {
+        "sem": 6,
+        "sgpa": 7.67
+      }
+    ],
+    "semesterSubjects": {
+      "5": [
+        {
+          "code": "ANALYTICAL-T",
+          "name": "ANALYTICAL TECHNIQUES IN BIOTECHNOLOGY",
+          "internalStr": "Int: 25 / 50",
+          "externalStr": "Ext: 58 / 100",
+          "totalStr": "Tot: 83 / 150",
+          "grade": "B",
+          "credit": 3
+        },
+        {
+          "code": "BIOPROCESS-E",
+          "name": "BIOPROCESS ENGINEERING - I",
+          "internalStr": "Int: 46 / 50",
+          "externalStr": "Ext: 40 / 100",
+          "totalStr": "Tot: 86 / 150",
+          "grade": "B",
+          "credit": 3
+        },
+        {
+          "code": "INDUSTRIAL-E",
+          "name": "INDUSTRIAL ECONOMICS AND PRINCIPLES OF MANAGEMENT",
+          "internalStr": "Int: 40 / 50",
+          "externalStr": "Ext: 43 / 100",
+          "totalStr": "Tot: 83 / 150",
+          "grade": "B",
+          "credit": 3
+        },
+        {
+          "code": "CHEMICAL-REA",
+          "name": "CHEMICAL REACTION ENGINEERING",
+          "internalStr": "Int: 38 / 50",
+          "externalStr": "Ext: 76 / 100",
+          "totalStr": "Tot: 114 / 150",
+          "grade": "A",
+          "credit": 3
+        },
+        {
+          "code": "DESIGN-AND-A",
+          "name": "DESIGN AND ANALYSIS OF ALGORITHM",
+          "internalStr": "Int: 41 / 50",
+          "externalStr": "Ext: 51 / 100",
+          "totalStr": "Tot: 92 / 150",
+          "grade": "B+",
+          "credit": 3
+        },
+        {
+          "code": "BIOPROCESS-E",
+          "name": "BIOPROCESS ENGINEERING LAB.",
+          "internalStr": "Int: 46 / 50",
+          "externalStr": "Ext: 72 / 100",
+          "totalStr": "Tot: 118 / 150",
+          "grade": "O",
+          "credit": 3
+        },
+        {
+          "code": "DESIGN-AND-A",
+          "name": "DESIGN AND ANALYSIS OF ALGORTHM LAB.",
+          "internalStr": "Int: 39 / 50",
+          "externalStr": "Ext: 47 / 100",
+          "totalStr": "Tot: 86 / 150",
+          "grade": "B+",
+          "credit": 3
+        },
+        {
+          "code": "GENERAL-PROF",
+          "name": "GENERAL PROFECIENCY",
+          "internalStr": "Int: --",
+          "externalStr": "Ext: 44 / 100",
+          "totalStr": "Tot: 44 / 150",
+          "grade": "A",
+          "credit": 3
+        }
+      ],
+      "6": [
+        {
+          "code": "BIOINFORMATI",
+          "name": "BIOINFORMATICS",
+          "internalStr": "Int: 35 / 50",
+          "externalStr": "Ext: 49 / 100",
+          "totalStr": "Tot: 84 / 150",
+          "grade": "B",
+          "credit": 3
+        },
+        {
+          "code": "PLANT-BIOTEC",
+          "name": "PLANT BIOTECHNOLOGY",
+          "internalStr": "Int: 38 / 50",
+          "externalStr": "Ext: 48 / 100",
+          "totalStr": "Tot: 86 / 150",
+          "grade": "B",
+          "credit": 3
+        },
+        {
+          "code": "FERMENTATION",
+          "name": "FERMENTATION BIOTECHNOLOGY",
+          "internalStr": "Int: 38 / 50",
+          "externalStr": "Ext: 74 / 100",
+          "totalStr": "Tot: 112 / 150",
+          "grade": "A",
+          "credit": 3
+        },
+        {
+          "code": "GENETIC-ENGI",
+          "name": "GENETIC ENGINEERING",
+          "internalStr": "Int: 37 / 50",
+          "externalStr": "Ext: 55 / 100",
+          "totalStr": "Tot: 92 / 150",
+          "grade": "B+",
+          "credit": 3
+        },
+        {
+          "code": "BIOPROCESS-E",
+          "name": "BIOPROCESS ENGINEERING - II",
+          "internalStr": "Int: 46 / 50",
+          "externalStr": "Ext: 94 / 100",
+          "totalStr": "Tot: 140 / 150",
+          "grade": "O",
+          "credit": 3
+        },
+        {
+          "code": "BIOINFORMATI",
+          "name": "BIOINFORMATICS LAB.",
+          "internalStr": "Int: 30 / 50",
+          "externalStr": "Ext: 46 / 100",
+          "totalStr": "Tot: 76 / 100",
+          "grade": "A",
+          "credit": 2
+        },
+        {
+          "code": "FERMENTATION",
+          "name": "FERMENTATION BIOTECHNOLOGY LAB.",
+          "internalStr": "Int: 36 / 50",
+          "externalStr": "Ext: 52 / 100",
+          "totalStr": "Tot: 88 / 100",
+          "grade": "A+",
+          "credit": 2
+        },
+        {
+          "code": "GENETIC-ENGI",
+          "name": "GENETIC ENGINEERING LAB.",
+          "internalStr": "Int: 16 / 50",
+          "externalStr": "Ext: 20 / 100",
+          "totalStr": "Tot: 36 / 100",
+          "grade": "A",
+          "credit": 2
+        },
+        {
+          "code": "GENERAL-PROF",
+          "name": "GENERAL PROFECIENCY",
+          "internalStr": "Int: --",
+          "externalStr": "Ext: 43 / 100",
+          "totalStr": "Tot: 43 / 150",
+          "grade": "A",
+          "credit": 3
+        }
+      ]
+    },
+    "branchRank": 5
+  },
+  {
+    "id": "231411029002",
+    "rollNo": "231411029002",
+    "name": "ABHYA SINGH",
+    "branch": "BTE",
+    "cgpa": 7.33,
+    "batch": "2024-25 / 2025-26",
+    "fatherName": "ABHAY NARAIN SINGH",
+    "motherName": "POONAM SINGH",
+    "enrollNo": "BU0230651968",
+    "semesters": [
+      {
+        "sem": 5,
+        "sgpa": 7.29
+      },
+      {
+        "sem": 6,
+        "sgpa": 7.38
+      }
+    ],
+    "semesterSubjects": {
+      "5": [
+        {
+          "code": "ANALYTICAL-T",
+          "name": "ANALYTICAL TECHNIQUES IN BIOTECHNOLOGY",
+          "internalStr": "Int: 27 / 50",
+          "externalStr": "Ext: 54 / 100",
+          "totalStr": "Tot: 81 / 150",
+          "grade": "B",
+          "credit": 3
+        },
+        {
+          "code": "BIOPROCESS-E",
+          "name": "BIOPROCESS ENGINEERING - I",
+          "internalStr": "Int: 45 / 50",
+          "externalStr": "Ext: 57 / 100",
+          "totalStr": "Tot: 102 / 150",
+          "grade": "B+",
+          "credit": 3
+        },
+        {
+          "code": "INDUSTRIAL-E",
+          "name": "INDUSTRIAL ECONOMICS AND PRINCIPLES OF MANAGEMENT",
+          "internalStr": "Int: 39 / 50",
+          "externalStr": "Ext: 49 / 100",
+          "totalStr": "Tot: 88 / 150",
+          "grade": "B",
+          "credit": 3
+        },
+        {
+          "code": "CHEMICAL-REA",
+          "name": "CHEMICAL REACTION ENGINEERING",
+          "internalStr": "Int: 35 / 50",
+          "externalStr": "Ext: 79 / 100",
+          "totalStr": "Tot: 114 / 150",
+          "grade": "A",
+          "credit": 3
+        },
+        {
+          "code": "DESIGN-AND-A",
+          "name": "DESIGN AND ANALYSIS OF ALGORITHM",
+          "internalStr": "Int: 42 / 50",
+          "externalStr": "Ext: 47 / 100",
+          "totalStr": "Tot: 89 / 150",
+          "grade": "B",
+          "credit": 3
+        },
+        {
+          "code": "BIOPROCESS-E",
+          "name": "BIOPROCESS ENGINEERING LAB.",
+          "internalStr": "Int: 46 / 50",
+          "externalStr": "Ext: 72 / 100",
+          "totalStr": "Tot: 118 / 150",
+          "grade": "O",
+          "credit": 3
+        },
+        {
+          "code": "DESIGN-AND-A",
+          "name": "DESIGN AND ANALYSIS OF ALGORTHM LAB.",
+          "internalStr": "Int: 40 / 50",
+          "externalStr": "Ext: 48 / 100",
+          "totalStr": "Tot: 88 / 150",
+          "grade": "A",
+          "credit": 3
+        },
+        {
+          "code": "GENERAL-PROF",
+          "name": "GENERAL PROFECIENCY",
+          "internalStr": "Int: --",
+          "externalStr": "Ext: 43 / 100",
+          "totalStr": "Tot: 43 / 150",
+          "grade": "A",
+          "credit": 3
+        }
+      ],
+      "6": [
+        {
+          "code": "BIOINFORMATI",
+          "name": "BIOINFORMATICS",
+          "internalStr": "Int: 33 / 50",
+          "externalStr": "Ext: 50 / 100",
+          "totalStr": "Tot: 83 / 150",
+          "grade": "B",
+          "credit": 3
+        },
+        {
+          "code": "PLANT-BIOTEC",
+          "name": "PLANT BIOTECHNOLOGY",
+          "internalStr": "Int: 33 / 50",
+          "externalStr": "Ext: 56 / 100",
+          "totalStr": "Tot: 89 / 150",
+          "grade": "B",
+          "credit": 3
+        },
+        {
+          "code": "FERMENTATION",
+          "name": "FERMENTATION BIOTECHNOLOGY",
+          "internalStr": "Int: 37 / 50",
+          "externalStr": "Ext: 62 / 100",
+          "totalStr": "Tot: 99 / 150",
+          "grade": "B+",
+          "credit": 3
+        },
+        {
+          "code": "GENETIC-ENGI",
+          "name": "GENETIC ENGINEERING",
+          "internalStr": "Int: 27 / 50",
+          "externalStr": "Ext: 48 / 100",
+          "totalStr": "Tot: 75 / 150",
+          "grade": "B",
+          "credit": 3
+        },
+        {
+          "code": "BIOPROCESS-E",
+          "name": "BIOPROCESS ENGINEERING - II",
+          "internalStr": "Int: 40 / 50",
+          "externalStr": "Ext: 95 / 100",
+          "totalStr": "Tot: 135 / 150",
+          "grade": "O",
+          "credit": 3
+        },
+        {
+          "code": "BIOINFORMATI",
+          "name": "BIOINFORMATICS LAB.",
+          "internalStr": "Int: 32 / 50",
+          "externalStr": "Ext: 45 / 100",
+          "totalStr": "Tot: 77 / 100",
+          "grade": "A",
+          "credit": 2
+        },
+        {
+          "code": "FERMENTATION",
+          "name": "FERMENTATION BIOTECHNOLOGY LAB.",
+          "internalStr": "Int: 32 / 50",
+          "externalStr": "Ext: 51 / 100",
+          "totalStr": "Tot: 83 / 100",
+          "grade": "A+",
+          "credit": 2
+        },
+        {
+          "code": "GENETIC-ENGI",
+          "name": "GENETIC ENGINEERING LAB.",
+          "internalStr": "Int: 14 / 50",
+          "externalStr": "Ext: 21 / 100",
+          "totalStr": "Tot: 35 / 100",
+          "grade": "A",
+          "credit": 2
+        },
+        {
+          "code": "GENERAL-PROF",
+          "name": "GENERAL PROFECIENCY",
+          "internalStr": "Int: --",
+          "externalStr": "Ext: 38 / 100",
+          "totalStr": "Tot: 38 / 150",
+          "grade": "A",
+          "credit": 3
+        }
+      ]
+    },
+    "branchRank": 6
+  },
+  {
+    "id": "231411029004",
+    "rollNo": "231411029004",
+    "name": "AMAN KUMAR SINGH",
+    "branch": "BTE",
+    "cgpa": 7.33,
+    "batch": "2024-25 / 2025-26",
+    "fatherName": "ADITYA PRAKASH SINGH",
+    "motherName": "RANJU SINGH",
+    "enrollNo": "BU0230596707",
+    "semesters": [
+      {
+        "sem": 5,
+        "sgpa": 7.0
+      },
+      {
+        "sem": 6,
+        "sgpa": 7.67
+      }
+    ],
+    "semesterSubjects": {
+      "5": [
+        {
+          "code": "ANALYTICAL-T",
+          "name": "ANALYTICAL TECHNIQUES IN BIOTECHNOLOGY",
+          "internalStr": "Int: 26 / 50",
+          "externalStr": "Ext: 57 / 100",
+          "totalStr": "Tot: 83 / 150",
+          "grade": "B",
+          "credit": 3
+        },
+        {
+          "code": "BIOPROCESS-E",
+          "name": "BIOPROCESS ENGINEERING - I",
+          "internalStr": "Int: 46 / 50",
+          "externalStr": "Ext: 56 / 100",
+          "totalStr": "Tot: 102 / 150",
+          "grade": "B+",
+          "credit": 3
+        },
+        {
+          "code": "INDUSTRIAL-E",
+          "name": "INDUSTRIAL ECONOMICS AND PRINCIPLES OF MANAGEMENT",
+          "internalStr": "Int: 39 / 50",
+          "externalStr": "Ext: 44 / 100",
+          "totalStr": "Tot: 83 / 150",
+          "grade": "B",
+          "credit": 3
+        },
+        {
+          "code": "CHEMICAL-REA",
+          "name": "CHEMICAL REACTION ENGINEERING",
+          "internalStr": "Int: 29 / 50",
+          "externalStr": "Ext: 73 / 100",
+          "totalStr": "Tot: 102 / 150",
+          "grade": "B+",
+          "credit": 3
+        },
+        {
+          "code": "DESIGN-AND-A",
+          "name": "DESIGN AND ANALYSIS OF ALGORITHM",
+          "internalStr": "Int: 42 / 50",
+          "externalStr": "Ext: 40 / 100",
+          "totalStr": "Tot: 82 / 150",
+          "grade": "B",
+          "credit": 3
+        },
+        {
+          "code": "BIOPROCESS-E",
+          "name": "BIOPROCESS ENGINEERING LAB.",
+          "internalStr": "Int: 45 / 50",
+          "externalStr": "Ext: 71 / 100",
+          "totalStr": "Tot: 116 / 150",
+          "grade": "O",
+          "credit": 3
+        },
+        {
+          "code": "DESIGN-AND-A",
+          "name": "DESIGN AND ANALYSIS OF ALGORTHM LAB.",
+          "internalStr": "Int: 40 / 50",
+          "externalStr": "Ext: 47 / 100",
+          "totalStr": "Tot: 87 / 150",
+          "grade": "B+",
+          "credit": 3
+        },
+        {
+          "code": "GENERAL-PROF",
+          "name": "GENERAL PROFECIENCY",
+          "internalStr": "Int: --",
+          "externalStr": "Ext: 41 / 100",
+          "totalStr": "Tot: 41 / 150",
+          "grade": "A",
+          "credit": 3
+        }
+      ],
+      "6": [
+        {
+          "code": "BIOINFORMATI",
+          "name": "BIOINFORMATICS",
+          "internalStr": "Int: 31 / 50",
+          "externalStr": "Ext: 56 / 100",
+          "totalStr": "Tot: 87 / 150",
+          "grade": "B",
+          "credit": 3
+        },
+        {
+          "code": "PLANT-BIOTEC",
+          "name": "PLANT BIOTECHNOLOGY",
+          "internalStr": "Int: 32 / 50",
+          "externalStr": "Ext: 60 / 100",
+          "totalStr": "Tot: 92 / 150",
+          "grade": "B+",
+          "credit": 3
+        },
+        {
+          "code": "FERMENTATION",
+          "name": "FERMENTATION BIOTECHNOLOGY",
+          "internalStr": "Int: 32 / 50",
+          "externalStr": "Ext: 81 / 100",
+          "totalStr": "Tot: 113 / 150",
+          "grade": "A",
+          "credit": 3
+        },
+        {
+          "code": "GENETIC-ENGI",
+          "name": "GENETIC ENGINEERING",
+          "internalStr": "Int: 28 / 50",
+          "externalStr": "Ext: 59 / 100",
+          "totalStr": "Tot: 87 / 150",
+          "grade": "B",
+          "credit": 3
+        },
+        {
+          "code": "BIOPROCESS-E",
+          "name": "BIOPROCESS ENGINEERING - II",
+          "internalStr": "Int: 45 / 50",
+          "externalStr": "Ext: 96 / 100",
+          "totalStr": "Tot: 141 / 150",
+          "grade": "O",
+          "credit": 3
+        },
+        {
+          "code": "BIOINFORMATI",
+          "name": "BIOINFORMATICS LAB.",
+          "internalStr": "Int: 27 / 50",
+          "externalStr": "Ext: 44 / 100",
+          "totalStr": "Tot: 71 / 100",
+          "grade": "A",
+          "credit": 2
+        },
+        {
+          "code": "FERMENTATION",
+          "name": "FERMENTATION BIOTECHNOLOGY LAB.",
+          "internalStr": "Int: 36 / 50",
+          "externalStr": "Ext: 47 / 100",
+          "totalStr": "Tot: 83 / 100",
+          "grade": "A+",
+          "credit": 2
+        },
+        {
+          "code": "GENETIC-ENGI",
+          "name": "GENETIC ENGINEERING LAB.",
+          "internalStr": "Int: 14 / 50",
+          "externalStr": "Ext: 22 / 100",
+          "totalStr": "Tot: 36 / 100",
+          "grade": "A",
+          "credit": 2
+        },
+        {
+          "code": "GENERAL-PROF",
+          "name": "GENERAL PROFECIENCY",
+          "internalStr": "Int: --",
+          "externalStr": "Ext: 37 / 100",
+          "totalStr": "Tot: 37 / 150",
+          "grade": "A",
+          "credit": 3
+        }
+      ]
+    },
+    "branchRank": 7
+  },
+  {
+    "id": "231411029005",
+    "rollNo": "231411029005",
+    "name": "ASHUTOSH SAINI",
+    "branch": "BTE",
+    "cgpa": 6.5,
+    "batch": "2024-25 / 2025-26",
+    "fatherName": "RAVINDRA KUMAR SAINI",
+    "motherName": "VANDANA PUSHKER",
+    "enrollNo": "BU0230651690",
+    "semesters": [
+      {
+        "sem": 5,
+        "sgpa": 5.71
+      },
+      {
+        "sem": 6,
+        "sgpa": 7.29
+      }
+    ],
+    "semesterSubjects": {
+      "5": [
+        {
+          "code": "ANALYTICAL-T",
+          "name": "ANALYTICAL TECHNIQUES IN BIOTECHNOLOGY",
+          "internalStr": "Int: 26 / 50",
+          "externalStr": "Ext: 40 / 100",
+          "totalStr": "Tot: 66 / 150",
+          "grade": "C",
+          "credit": 3
+        },
+        {
+          "code": "BIOPROCESS-E",
+          "name": "BIOPROCESS ENGINEERING - I",
+          "internalStr": "Int: 40 / 50",
+          "externalStr": "Ext: 40 / 100",
+          "totalStr": "Tot: 80 / 150",
+          "grade": "B",
+          "credit": 3
+        },
+        {
+          "code": "INDUSTRIAL-E",
+          "name": "INDUSTRIAL ECONOMICS AND PRINCIPLES OF MANAGEMENT",
+          "internalStr": "Int: 38 / 50",
+          "externalStr": "Ext: 41 / 100",
+          "totalStr": "Tot: 79 / 150",
+          "grade": "B",
+          "credit": 3
+        },
+        {
+          "code": "CHEMICAL-REA",
+          "name": "CHEMICAL REACTION ENGINEERING",
+          "internalStr": "Int: 26 / 50",
+          "externalStr": "Ext: 78 / 100",
+          "totalStr": "Tot: 104 / 150",
+          "grade": "B+",
+          "credit": 3
+        },
+        {
+          "code": "DESIGN-AND-A",
+          "name": "DESIGN AND ANALYSIS OF ALGORITHM",
+          "internalStr": "Int: 32 / 50",
+          "externalStr": "Ext: 25 / 100",
+          "totalStr": "Tot: 57 / 150",
+          "grade": "F",
+          "credit": 3
+        },
+        {
+          "code": "BIOPROCESS-E",
+          "name": "BIOPROCESS ENGINEERING LAB.",
+          "internalStr": "Int: 40 / 50",
+          "externalStr": "Ext: 66 / 100",
+          "totalStr": "Tot: 106 / 150",
+          "grade": "A+",
+          "credit": 3
+        },
+        {
+          "code": "DESIGN-AND-A",
+          "name": "DESIGN AND ANALYSIS OF ALGORTHM LAB.",
+          "internalStr": "Int: 37 / 50",
+          "externalStr": "Ext: 48 / 100",
+          "totalStr": "Tot: 85 / 150",
+          "grade": "B+",
+          "credit": 3
+        },
+        {
+          "code": "GENERAL-PROF",
+          "name": "GENERAL PROFECIENCY",
+          "internalStr": "Int: --",
+          "externalStr": "Ext: 40 / 100",
+          "totalStr": "Tot: 40 / 150",
+          "grade": "A",
+          "credit": 3
+        }
+      ],
+      "6": [
+        {
+          "code": "BIOINFORMATI",
+          "name": "BIOINFORMATICS",
+          "internalStr": "Int: 25 / 50",
+          "externalStr": "Ext: 56 / 100",
+          "totalStr": "Tot: 81 / 150",
+          "grade": "B",
+          "credit": 3
+        },
+        {
+          "code": "PLANT-BIOTEC",
+          "name": "PLANT BIOTECHNOLOGY",
+          "internalStr": "Int: 33 / 50",
+          "externalStr": "Ext: 57 / 100",
+          "totalStr": "Tot: 90 / 150",
+          "grade": "B+",
+          "credit": 3
+        },
+        {
+          "code": "FERMENTATION",
+          "name": "FERMENTATION BIOTECHNOLOGY",
+          "internalStr": "Int: 33 / 50",
+          "externalStr": "Ext: 69 / 100",
+          "totalStr": "Tot: 102 / 150",
+          "grade": "B+",
+          "credit": 3
+        },
+        {
+          "code": "GENETIC-ENGI",
+          "name": "GENETIC ENGINEERING",
+          "internalStr": "Int: 27 / 50",
+          "externalStr": "Ext: 60 / 100",
+          "totalStr": "Tot: 87 / 150",
+          "grade": "B",
+          "credit": 3
+        },
+        {
+          "code": "BIOPROCESS-E",
+          "name": "BIOPROCESS ENGINEERING - II",
+          "internalStr": "Int: 40 / 50",
+          "externalStr": "Ext: 92 / 100",
+          "totalStr": "Tot: 132 / 150",
+          "grade": "A+",
+          "credit": 3
+        },
+        {
+          "code": "BIOINFORMATI",
+          "name": "BIOINFORMATICS LAB.",
+          "internalStr": "Int: 27 / 50",
+          "externalStr": "Ext: 43 / 100",
+          "totalStr": "Tot: 70 / 100",
+          "grade": "A",
+          "credit": 2
+        },
+        {
+          "code": "FERMENTATION",
+          "name": "FERMENTATION BIOTECHNOLOGY LAB.",
+          "internalStr": "Int: 31 / 50",
+          "externalStr": "Ext: 46 / 100",
+          "totalStr": "Tot: 77 / 100",
+          "grade": "A",
+          "credit": 2
+        },
+        {
+          "code": "GENETIC-ENGI",
+          "name": "GENETIC ENGINEERING LAB.",
+          "internalStr": "Int: 14 / 50",
+          "externalStr": "Ext: 21 / 100",
+          "totalStr": "Tot: 35 / 100",
+          "grade": "A",
+          "credit": 2
+        },
+        {
+          "code": "GENERAL-PROF",
+          "name": "GENERAL PROFECIENCY",
+          "internalStr": "Int: --",
+          "externalStr": "Ext: 36 / 100",
+          "totalStr": "Tot: 36 / 150",
+          "grade": "A",
+          "credit": 3
+        }
+      ]
+    },
+    "branchRank": 8
+  },
+  {
+    "id": "231411029003",
+    "rollNo": "231411029003",
+    "name": "ADITYA KUSHWAHA",
+    "branch": "BTE",
+    "cgpa": 5.86,
+    "batch": "2024-25 / 2025-26",
+    "fatherName": "JAI CHAND KUSHWAHA",
+    "motherName": "SUNITA KUSHWAHA",
+    "enrollNo": "BU0230596186",
+    "semesters": [
+      {
+        "sem": 5,
+        "sgpa": 4.86
+      },
+      {
+        "sem": 6,
+        "sgpa": 6.86
+      }
+    ],
+    "semesterSubjects": {
+      "5": [
+        {
+          "code": "ANALYTICAL-T",
+          "name": "ANALYTICAL TECHNIQUES IN BIOTECHNOLOGY",
+          "internalStr": "Int: 23 / 50",
+          "externalStr": "Ext: 40 / 100",
+          "totalStr": "Tot: 63 / 150",
+          "grade": "C",
+          "credit": 3
+        },
+        {
+          "code": "BIOPROCESS-E",
+          "name": "BIOPROCESS ENGINEERING - I",
+          "internalStr": "Int: 43 / 50",
+          "externalStr": "Ext: 34 / 100",
+          "totalStr": "Tot: 77 / 150",
+          "grade": "F",
+          "credit": 3
+        },
+        {
+          "code": "INDUSTRIAL-E",
+          "name": "INDUSTRIAL ECONOMICS AND PRINCIPLES OF MANAGEMENT",
+          "internalStr": "Int: 40 / 50",
+          "externalStr": "Ext: 40 / 100",
+          "totalStr": "Tot: 80 / 150",
+          "grade": "B",
+          "credit": 3
+        },
+        {
+          "code": "CHEMICAL-REA",
+          "name": "CHEMICAL REACTION ENGINEERING",
+          "internalStr": "Int: 22 / 50",
+          "externalStr": "Ext: 72 / 100",
+          "totalStr": "Tot: 94 / 150",
+          "grade": "B+",
+          "credit": 3
+        },
+        {
+          "code": "DESIGN-AND-A",
+          "name": "DESIGN AND ANALYSIS OF ALGORITHM",
+          "internalStr": "Int: 41 / 50",
+          "externalStr": "Ext: 25 / 100",
+          "totalStr": "Tot: 66 / 150",
+          "grade": "F",
+          "credit": 3
+        },
+        {
+          "code": "BIOPROCESS-E",
+          "name": "BIOPROCESS ENGINEERING LAB.",
+          "internalStr": "Int: 41 / 50",
+          "externalStr": "Ext: 68 / 100",
+          "totalStr": "Tot: 109 / 150",
+          "grade": "A+",
+          "credit": 3
+        },
+        {
+          "code": "DESIGN-AND-A",
+          "name": "DESIGN AND ANALYSIS OF ALGORTHM LAB.",
+          "internalStr": "Int: 39 / 50",
+          "externalStr": "Ext: 47 / 100",
+          "totalStr": "Tot: 86 / 150",
+          "grade": "B+",
+          "credit": 3
+        },
+        {
+          "code": "GENERAL-PROF",
+          "name": "GENERAL PROFECIENCY",
+          "internalStr": "Int: --",
+          "externalStr": "Ext: 40 / 100",
+          "totalStr": "Tot: 40 / 150",
+          "grade": "A",
+          "credit": 3
+        }
+      ],
+      "6": [
+        {
+          "code": "BIOINFORMATI",
+          "name": "BIOINFORMATICS",
+          "internalStr": "Int: 30 / 50",
+          "externalStr": "Ext: 52 / 100",
+          "totalStr": "Tot: 82 / 150",
+          "grade": "B",
+          "credit": 3
+        },
+        {
+          "code": "PLANT-BIOTEC",
+          "name": "PLANT BIOTECHNOLOGY",
+          "internalStr": "Int: 35 / 50",
+          "externalStr": "Ext: 54 / 100",
+          "totalStr": "Tot: 89 / 150",
+          "grade": "B",
+          "credit": 3
+        },
+        {
+          "code": "FERMENTATION",
+          "name": "FERMENTATION BIOTECHNOLOGY",
+          "internalStr": "Int: 33 / 50",
+          "externalStr": "Ext: 70 / 100",
+          "totalStr": "Tot: 103 / 150",
+          "grade": "B+",
+          "credit": 3
+        },
+        {
+          "code": "GENETIC-ENGI",
+          "name": "GENETIC ENGINEERING",
+          "internalStr": "Int: 29 / 50",
+          "externalStr": "Ext: 49 / 100",
+          "totalStr": "Tot: 78 / 150",
+          "grade": "B",
+          "credit": 3
+        },
+        {
+          "code": "BIOPROCESS-E",
+          "name": "BIOPROCESS ENGINEERING - II",
+          "internalStr": "Int: 40 / 50",
+          "externalStr": "Ext: 94 / 100",
+          "totalStr": "Tot: 134 / 150",
+          "grade": "A+",
+          "credit": 3
+        },
+        {
+          "code": "BIOINFORMATI",
+          "name": "BIOINFORMATICS LAB.",
+          "internalStr": "Int: 26 / 50",
+          "externalStr": "Ext: 43 / 100",
+          "totalStr": "Tot: 69 / 100",
+          "grade": "B+",
+          "credit": 2
+        },
+        {
+          "code": "FERMENTATION",
+          "name": "FERMENTATION BIOTECHNOLOGY LAB.",
+          "internalStr": "Int: 32 / 50",
+          "externalStr": "Ext: 46 / 100",
+          "totalStr": "Tot: 78 / 100",
+          "grade": "A",
+          "credit": 2
+        },
+        {
+          "code": "GENETIC-ENGI",
+          "name": "GENETIC ENGINEERING LAB.",
+          "internalStr": "Int: 14 / 50",
+          "externalStr": "Ext: 15 / 100",
+          "totalStr": "Tot: 29 / 100",
+          "grade": "B",
+          "credit": 2
+        },
+        {
+          "code": "GENERAL-PROF",
+          "name": "GENERAL PROFECIENCY",
+          "internalStr": "Int: --",
+          "externalStr": "Ext: 35 / 100",
+          "totalStr": "Tot: 35 / 150",
+          "grade": "A",
+          "credit": 3
+        }
+      ]
+    },
+    "branchRank": 9
+  }
+]
