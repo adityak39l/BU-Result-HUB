@@ -1,0 +1,857 @@
+[
+  {
+    "rollNo": "231411029001",
+    "enrollNo": "BU0230596635",
+    "name": "AAYUSHI SRIVASTAVA",
+    "fatherName": "SANJAY KUMAR SRIVASTAVA",
+    "motherName": "RADHIKA SRIVASTAVA",
+    "examCategory": "REGULAR",
+    "courseName": "B.TECH (BIOTECHNOLOGY ENGG) IV SEMESTER",
+    "sem": 4,
+    "sgpa": 6.14,
+    "resultStatus": "BACK PAPER",
+    "subjects": [
+      {
+        "code": "IMMUNOLOGY",
+        "name": "IMMUNOLOGY",
+        "internalStr": "Int: 32 / 50",
+        "externalStr": "Ext: 51 / 100",
+        "totalStr": "Tot: 83 / 150",
+        "grade": "B",
+        "credit": 3
+      },
+      {
+        "code": "GENETICS-AND",
+        "name": "GENETICS AND MOLECULAR BIOLOGY",
+        "internalStr": "Int: 45 / 50",
+        "externalStr": "Ext: 57 / 100",
+        "totalStr": "Tot: 102 / 150",
+        "grade": "B+",
+        "credit": 3
+      },
+      {
+        "code": "PROTEIN-AND-",
+        "name": "PROTEIN AND ENZYME ENGINEERING",
+        "internalStr": "Int: 29 / 50",
+        "externalStr": "Ext: 51 / 100",
+        "totalStr": "Tot: 80 / 150",
+        "grade": "B",
+        "credit": 3
+      },
+      {
+        "code": "CHEMICAL-ENG",
+        "name": "CHEMICAL ENGINEERING THERMODYNAMICS",
+        "internalStr": "Int: 43 / 50",
+        "externalStr": "Ext: 42 / 100",
+        "totalStr": "Tot: 85 / 150",
+        "grade": "B",
+        "credit": 3
+      },
+      {
+        "code": "HEAT-AND-MAS",
+        "name": "HEAT AND MASS TRANSFER OPERATION",
+        "internalStr": "Int: 38 / 50",
+        "externalStr": "Ext: 34 / 100",
+        "totalStr": "Tot: 72 / 150",
+        "grade": "F",
+        "credit": 3
+      },
+      {
+        "code": "IMMUNOLOGY-L",
+        "name": "IMMUNOLOGY LAB",
+        "internalStr": "Int: 23 / 50",
+        "externalStr": "Ext: 45 / 100",
+        "totalStr": "Tot: 68 / 100",
+        "grade": "O",
+        "credit": 2
+      },
+      {
+        "code": "CHEMICAL-ENG",
+        "name": "CHEMICAL ENGINEERING OPERATION LAB",
+        "internalStr": "Int: 34 / 50",
+        "externalStr": "Ext: 54 / 100",
+        "totalStr": "Tot: 88 / 100",
+        "grade": "A+",
+        "credit": 2
+      },
+      {
+        "code": "GENETICS-AND",
+        "name": "GENETICS AND MOLECULAR BIOLOGY LAB",
+        "internalStr": "Int: 20 / 50",
+        "externalStr": "Ext: 38 / 100",
+        "totalStr": "Tot: 58 / 100",
+        "grade": "A",
+        "credit": 2
+      },
+      {
+        "code": "GENERAL-PROF",
+        "name": "GENERAL PROFECIENCY",
+        "internalStr": "Int: --",
+        "externalStr": "Ext: 40 / 100",
+        "totalStr": "Tot: 40 / 150",
+        "grade": "A",
+        "credit": 3
+      }
+    ]
+  },
+  {
+    "rollNo": "231411029002",
+    "enrollNo": "BU0230651968",
+    "name": "ABHYA SINGH",
+    "fatherName": "ABHAY NARAIN SINGH",
+    "motherName": "POONAM SINGH",
+    "examCategory": "REGULAR",
+    "courseName": "B.TECH (BIOTECHNOLOGY ENGG) IV SEMESTER",
+    "sem": 4,
+    "sgpa": 6.24,
+    "resultStatus": "BACK PAPER",
+    "subjects": [
+      {
+        "code": "IMMUNOLOGY",
+        "name": "IMMUNOLOGY",
+        "internalStr": "Int: 34 / 50",
+        "externalStr": "Ext: 54 / 100",
+        "totalStr": "Tot: 88 / 150",
+        "grade": "B",
+        "credit": 3
+      },
+      {
+        "code": "GENETICS-AND",
+        "name": "GENETICS AND MOLECULAR BIOLOGY",
+        "internalStr": "Int: 46 / 50",
+        "externalStr": "Ext: 57 / 100",
+        "totalStr": "Tot: 103 / 150",
+        "grade": "B+",
+        "credit": 3
+      },
+      {
+        "code": "PROTEIN-AND-",
+        "name": "PROTEIN AND ENZYME ENGINEERING",
+        "internalStr": "Int: 32 / 50",
+        "externalStr": "Ext: 52 / 100",
+        "totalStr": "Tot: 84 / 150",
+        "grade": "B",
+        "credit": 3
+      },
+      {
+        "code": "CHEMICAL-ENG",
+        "name": "CHEMICAL ENGINEERING THERMODYNAMICS",
+        "internalStr": "Int: 41 / 50",
+        "externalStr": "Ext: 42 / 100",
+        "totalStr": "Tot: 83 / 150",
+        "grade": "B",
+        "credit": 3
+      },
+      {
+        "code": "HEAT-AND-MAS",
+        "name": "HEAT AND MASS TRANSFER OPERATION",
+        "internalStr": "Int: 37 / 50",
+        "externalStr": "Ext: 37 / 100",
+        "totalStr": "Tot: 74 / 150",
+        "grade": "F",
+        "credit": 3
+      },
+      {
+        "code": "IMMUNOLOGY-L",
+        "name": "IMMUNOLOGY LAB",
+        "internalStr": "Int: 23 / 50",
+        "externalStr": "Ext: 45 / 100",
+        "totalStr": "Tot: 68 / 100",
+        "grade": "O",
+        "credit": 2
+      },
+      {
+        "code": "CHEMICAL-ENG",
+        "name": "CHEMICAL ENGINEERING OPERATION LAB",
+        "internalStr": "Int: 33 / 50",
+        "externalStr": "Ext: 52 / 100",
+        "totalStr": "Tot: 85 / 100",
+        "grade": "A+",
+        "credit": 2
+      },
+      {
+        "code": "GENETICS-AND",
+        "name": "GENETICS AND MOLECULAR BIOLOGY LAB",
+        "internalStr": "Int: 21 / 50",
+        "externalStr": "Ext: 39 / 100",
+        "totalStr": "Tot: 60 / 100",
+        "grade": "A+",
+        "credit": 2
+      },
+      {
+        "code": "GENERAL-PROF",
+        "name": "GENERAL PROFECIENCY",
+        "internalStr": "Int: --",
+        "externalStr": "Ext: 40 / 100",
+        "totalStr": "Tot: 40 / 150",
+        "grade": "A",
+        "credit": 3
+      }
+    ]
+  },
+  {
+    "rollNo": "231411029003",
+    "enrollNo": "BU0230596186",
+    "name": "ADITYA KUSHWAHA",
+    "fatherName": "JAI CHAND KUSHWAHA",
+    "motherName": "SUNITA KUSHWAHA",
+    "examCategory": "REGULAR",
+    "courseName": "B.TECH (BIOTECHNOLOGY ENGG) IV SEMESTER",
+    "sem": 4,
+    "sgpa": 5.29,
+    "resultStatus": "BACK PAPER",
+    "subjects": [
+      {
+        "code": "IMMUNOLOGY",
+        "name": "IMMUNOLOGY",
+        "internalStr": "Int: 27 / 50",
+        "externalStr": "Ext: 57 / 100",
+        "totalStr": "Tot: 84 / 150",
+        "grade": "B",
+        "credit": 3
+      },
+      {
+        "code": "GENETICS-AND",
+        "name": "GENETICS AND MOLECULAR BIOLOGY",
+        "internalStr": "Int: 35 / 50",
+        "externalStr": "Ext: 57 / 100",
+        "totalStr": "Tot: 92 / 150",
+        "grade": "B+",
+        "credit": 3
+      },
+      {
+        "code": "PROTEIN-AND-",
+        "name": "PROTEIN AND ENZYME ENGINEERING",
+        "internalStr": "Int: 28 / 50",
+        "externalStr": "Ext: 61 / 100",
+        "totalStr": "Tot: 89 / 150",
+        "grade": "B",
+        "credit": 3
+      },
+      {
+        "code": "CHEMICAL-ENG",
+        "name": "CHEMICAL ENGINEERING THERMODYNAMICS",
+        "internalStr": "Int: 39 / 50",
+        "externalStr": "Ext: 37 / 100",
+        "totalStr": "Tot: 76 / 150",
+        "grade": "F",
+        "credit": 3
+      },
+      {
+        "code": "HEAT-AND-MAS",
+        "name": "HEAT AND MASS TRANSFER OPERATION",
+        "internalStr": "Int: 35 / 50",
+        "externalStr": "Ext: 37 / 100",
+        "totalStr": "Tot: 72 / 150",
+        "grade": "F",
+        "credit": 3
+      },
+      {
+        "code": "IMMUNOLOGY-L",
+        "name": "IMMUNOLOGY LAB",
+        "internalStr": "Int: 23 / 50",
+        "externalStr": "Ext: 45 / 100",
+        "totalStr": "Tot: 68 / 100",
+        "grade": "O",
+        "credit": 2
+      },
+      {
+        "code": "CHEMICAL-ENG",
+        "name": "CHEMICAL ENGINEERING OPERATION LAB",
+        "internalStr": "Int: 30 / 50",
+        "externalStr": "Ext: 50 / 100",
+        "totalStr": "Tot: 80 / 100",
+        "grade": "A+",
+        "credit": 2
+      },
+      {
+        "code": "GENETICS-AND",
+        "name": "GENETICS AND MOLECULAR BIOLOGY LAB",
+        "internalStr": "Int: 18 / 50",
+        "externalStr": "Ext: 38 / 100",
+        "totalStr": "Tot: 56 / 100",
+        "grade": "A",
+        "credit": 2
+      },
+      {
+        "code": "GENERAL-PROF",
+        "name": "GENERAL PROFECIENCY",
+        "internalStr": "Int: --",
+        "externalStr": "Ext: 38 / 100",
+        "totalStr": "Tot: 38 / 150",
+        "grade": "A",
+        "credit": 3
+      }
+    ]
+  },
+  {
+    "rollNo": "231411029004",
+    "enrollNo": "BU0230596707",
+    "name": "AMAN KUMAR SINGH",
+    "fatherName": "ADITYA PRAKASH SINGH",
+    "motherName": "RANJU SINGH",
+    "examCategory": "REGULAR",
+    "courseName": "B.TECH (BIOTECHNOLOGY ENGG) IV SEMESTER",
+    "sem": 4,
+    "sgpa": 7.14,
+    "resultStatus": "PASSED",
+    "subjects": [
+      {
+        "code": "IMMUNOLOGY",
+        "name": "IMMUNOLOGY",
+        "internalStr": "Int: 24 / 50",
+        "externalStr": "Ext: 61 / 100",
+        "totalStr": "Tot: 85 / 150",
+        "grade": "B",
+        "credit": 3
+      },
+      {
+        "code": "GENETICS-AND",
+        "name": "GENETICS AND MOLECULAR BIOLOGY",
+        "internalStr": "Int: 35 / 50",
+        "externalStr": "Ext: 61 / 100",
+        "totalStr": "Tot: 96 / 150",
+        "grade": "B+",
+        "credit": 3
+      },
+      {
+        "code": "PROTEIN-AND-",
+        "name": "PROTEIN AND ENZYME ENGINEERING",
+        "internalStr": "Int: 25 / 50",
+        "externalStr": "Ext: 59 / 100",
+        "totalStr": "Tot: 84 / 150",
+        "grade": "B",
+        "credit": 3
+      },
+      {
+        "code": "CHEMICAL-ENG",
+        "name": "CHEMICAL ENGINEERING THERMODYNAMICS",
+        "internalStr": "Int: 41 / 50",
+        "externalStr": "Ext: 49 / 100",
+        "totalStr": "Tot: 90 / 150",
+        "grade": "B+",
+        "credit": 3
+      },
+      {
+        "code": "HEAT-AND-MAS",
+        "name": "HEAT AND MASS TRANSFER OPERATION",
+        "internalStr": "Int: 36 / 50",
+        "externalStr": "Ext: 40 / 100",
+        "totalStr": "Tot: 76 / 150",
+        "grade": "B",
+        "credit": 3
+      },
+      {
+        "code": "IMMUNOLOGY-L",
+        "name": "IMMUNOLOGY LAB",
+        "internalStr": "Int: 22 / 50",
+        "externalStr": "Ext: 46 / 100",
+        "totalStr": "Tot: 68 / 100",
+        "grade": "O",
+        "credit": 2
+      },
+      {
+        "code": "CHEMICAL-ENG",
+        "name": "CHEMICAL ENGINEERING OPERATION LAB",
+        "internalStr": "Int: 32 / 50",
+        "externalStr": "Ext: 53 / 100",
+        "totalStr": "Tot: 85 / 100",
+        "grade": "A+",
+        "credit": 2
+      },
+      {
+        "code": "GENETICS-AND",
+        "name": "GENETICS AND MOLECULAR BIOLOGY LAB",
+        "internalStr": "Int: 17 / 50",
+        "externalStr": "Ext: 37 / 100",
+        "totalStr": "Tot: 54 / 100",
+        "grade": "A",
+        "credit": 2
+      },
+      {
+        "code": "GENERAL-PROF",
+        "name": "GENERAL PROFECIENCY",
+        "internalStr": "Int: --",
+        "externalStr": "Ext: 37 / 100",
+        "totalStr": "Tot: 37 / 150",
+        "grade": "A",
+        "credit": 3
+      }
+    ]
+  },
+  {
+    "rollNo": "231411029005",
+    "enrollNo": "BU0230651690",
+    "name": "ASHUTOSH SAINI",
+    "fatherName": "RAVINDRA KUMAR SAINI",
+    "motherName": "VANDANA PUSHKER",
+    "examCategory": "REGULAR",
+    "courseName": "B.TECH (BIOTECHNOLOGY ENGG) IV SEMESTER",
+    "sem": 4,
+    "sgpa": 6.9,
+    "resultStatus": "PASSED",
+    "subjects": [
+      {
+        "code": "IMMUNOLOGY",
+        "name": "IMMUNOLOGY",
+        "internalStr": "Int: 22 / 50",
+        "externalStr": "Ext: 57 / 100",
+        "totalStr": "Tot: 79 / 150",
+        "grade": "B",
+        "credit": 3
+      },
+      {
+        "code": "GENETICS-AND",
+        "name": "GENETICS AND MOLECULAR BIOLOGY",
+        "internalStr": "Int: 35 / 50",
+        "externalStr": "Ext: 59 / 100",
+        "totalStr": "Tot: 94 / 150",
+        "grade": "B+",
+        "credit": 3
+      },
+      {
+        "code": "PROTEIN-AND-",
+        "name": "PROTEIN AND ENZYME ENGINEERING",
+        "internalStr": "Int: 30 / 50",
+        "externalStr": "Ext: 57 / 100",
+        "totalStr": "Tot: 87 / 150",
+        "grade": "B",
+        "credit": 3
+      },
+      {
+        "code": "CHEMICAL-ENG",
+        "name": "CHEMICAL ENGINEERING THERMODYNAMICS",
+        "internalStr": "Int: 40 / 50",
+        "externalStr": "Ext: 50 / 100",
+        "totalStr": "Tot: 90 / 150",
+        "grade": "B+",
+        "credit": 3
+      },
+      {
+        "code": "HEAT-AND-MAS",
+        "name": "HEAT AND MASS TRANSFER OPERATION",
+        "internalStr": "Int: 34 / 50",
+        "externalStr": "Ext: 40 / 100",
+        "totalStr": "Tot: 74 / 150",
+        "grade": "C",
+        "credit": 3
+      },
+      {
+        "code": "IMMUNOLOGY-L",
+        "name": "IMMUNOLOGY LAB",
+        "internalStr": "Int: 22 / 50",
+        "externalStr": "Ext: 44 / 100",
+        "totalStr": "Tot: 66 / 100",
+        "grade": "A+",
+        "credit": 2
+      },
+      {
+        "code": "CHEMICAL-ENG",
+        "name": "CHEMICAL ENGINEERING OPERATION LAB",
+        "internalStr": "Int: 31 / 50",
+        "externalStr": "Ext: 52 / 100",
+        "totalStr": "Tot: 83 / 100",
+        "grade": "A+",
+        "credit": 2
+      },
+      {
+        "code": "GENETICS-AND",
+        "name": "GENETICS AND MOLECULAR BIOLOGY LAB",
+        "internalStr": "Int: 17 / 50",
+        "externalStr": "Ext: 38 / 100",
+        "totalStr": "Tot: 55 / 100",
+        "grade": "A",
+        "credit": 2
+      },
+      {
+        "code": "GENERAL-PROF",
+        "name": "GENERAL PROFECIENCY",
+        "internalStr": "Int: --",
+        "externalStr": "Ext: 37 / 100",
+        "totalStr": "Tot: 37 / 150",
+        "grade": "A",
+        "credit": 3
+      }
+    ]
+  },
+  {
+    "rollNo": "231411029006",
+    "enrollNo": "BU0230596709",
+    "name": "GAGAN SIKHANAYA",
+    "fatherName": "RAM LAL SIKHANAYA",
+    "motherName": "PUSHPA SIKHANAYA",
+    "examCategory": "REGULAR",
+    "courseName": "B.TECH (BIOTECHNOLOGY ENGG) IV SEMESTER",
+    "sem": 4,
+    "sgpa": 7.81,
+    "resultStatus": "PASSED",
+    "subjects": [
+      {
+        "code": "IMMUNOLOGY",
+        "name": "IMMUNOLOGY",
+        "internalStr": "Int: 26 / 50",
+        "externalStr": "Ext: 73 / 100",
+        "totalStr": "Tot: 99 / 150",
+        "grade": "B+",
+        "credit": 3
+      },
+      {
+        "code": "GENETICS-AND",
+        "name": "GENETICS AND MOLECULAR BIOLOGY",
+        "internalStr": "Int: 37 / 50",
+        "externalStr": "Ext: 69 / 100",
+        "totalStr": "Tot: 106 / 150",
+        "grade": "A",
+        "credit": 3
+      },
+      {
+        "code": "PROTEIN-AND-",
+        "name": "PROTEIN AND ENZYME ENGINEERING",
+        "internalStr": "Int: 36 / 50",
+        "externalStr": "Ext: 63 / 100",
+        "totalStr": "Tot: 99 / 150",
+        "grade": "B+",
+        "credit": 3
+      },
+      {
+        "code": "CHEMICAL-ENG",
+        "name": "CHEMICAL ENGINEERING THERMODYNAMICS",
+        "internalStr": "Int: 41 / 50",
+        "externalStr": "Ext: 65 / 100",
+        "totalStr": "Tot: 106 / 150",
+        "grade": "A",
+        "credit": 3
+      },
+      {
+        "code": "HEAT-AND-MAS",
+        "name": "HEAT AND MASS TRANSFER OPERATION",
+        "internalStr": "Int: 40 / 50",
+        "externalStr": "Ext: 41 / 100",
+        "totalStr": "Tot: 81 / 150",
+        "grade": "B",
+        "credit": 3
+      },
+      {
+        "code": "IMMUNOLOGY-L",
+        "name": "IMMUNOLOGY LAB",
+        "internalStr": "Int: 24 / 50",
+        "externalStr": "Ext: 47 / 100",
+        "totalStr": "Tot: 71 / 100",
+        "grade": "O",
+        "credit": 2
+      },
+      {
+        "code": "CHEMICAL-ENG",
+        "name": "CHEMICAL ENGINEERING OPERATION LAB",
+        "internalStr": "Int: 32 / 50",
+        "externalStr": "Ext: 52 / 100",
+        "totalStr": "Tot: 84 / 100",
+        "grade": "A+",
+        "credit": 2
+      },
+      {
+        "code": "GENETICS-AND",
+        "name": "GENETICS AND MOLECULAR BIOLOGY LAB",
+        "internalStr": "Int: 22 / 50",
+        "externalStr": "Ext: 42 / 100",
+        "totalStr": "Tot: 64 / 100",
+        "grade": "A+",
+        "credit": 2
+      },
+      {
+        "code": "GENERAL-PROF",
+        "name": "GENERAL PROFECIENCY",
+        "internalStr": "Int: --",
+        "externalStr": "Ext: 40 / 100",
+        "totalStr": "Tot: 40 / 150",
+        "grade": "A",
+        "credit": 3
+      }
+    ]
+  },
+  {
+    "rollNo": "231411029007",
+    "enrollNo": "BU0230596641",
+    "name": "PRIYAVADA YADAV",
+    "fatherName": "MADAN YADAV",
+    "motherName": "SUBHAWATI DEVI",
+    "examCategory": "REGULAR",
+    "courseName": "B.TECH (BIOTECHNOLOGY ENGG) IV SEMESTER",
+    "sem": 4,
+    "sgpa": 7.76,
+    "resultStatus": "PASSED",
+    "subjects": [
+      {
+        "code": "IMMUNOLOGY",
+        "name": "IMMUNOLOGY",
+        "internalStr": "Int: 36 / 50",
+        "externalStr": "Ext: 65 / 100",
+        "totalStr": "Tot: 101 / 150",
+        "grade": "B+",
+        "credit": 3
+      },
+      {
+        "code": "GENETICS-AND",
+        "name": "GENETICS AND MOLECULAR BIOLOGY",
+        "internalStr": "Int: 44 / 50",
+        "externalStr": "Ext: 60 / 100",
+        "totalStr": "Tot: 104 / 150",
+        "grade": "B+",
+        "credit": 3
+      },
+      {
+        "code": "PROTEIN-AND-",
+        "name": "PROTEIN AND ENZYME ENGINEERING",
+        "internalStr": "Int: 34 / 50",
+        "externalStr": "Ext: 56 / 100",
+        "totalStr": "Tot: 90 / 150",
+        "grade": "B+",
+        "credit": 3
+      },
+      {
+        "code": "CHEMICAL-ENG",
+        "name": "CHEMICAL ENGINEERING THERMODYNAMICS",
+        "internalStr": "Int: 43 / 50",
+        "externalStr": "Ext: 47 / 100",
+        "totalStr": "Tot: 90 / 150",
+        "grade": "B+",
+        "credit": 3
+      },
+      {
+        "code": "HEAT-AND-MAS",
+        "name": "HEAT AND MASS TRANSFER OPERATION",
+        "internalStr": "Int: 42 / 50",
+        "externalStr": "Ext: 57 / 100",
+        "totalStr": "Tot: 99 / 150",
+        "grade": "B+",
+        "credit": 3
+      },
+      {
+        "code": "IMMUNOLOGY-L",
+        "name": "IMMUNOLOGY LAB",
+        "internalStr": "Int: 23 / 50",
+        "externalStr": "Ext: 47 / 100",
+        "totalStr": "Tot: 70 / 100",
+        "grade": "O",
+        "credit": 2
+      },
+      {
+        "code": "CHEMICAL-ENG",
+        "name": "CHEMICAL ENGINEERING OPERATION LAB",
+        "internalStr": "Int: 34 / 50",
+        "externalStr": "Ext: 54 / 100",
+        "totalStr": "Tot: 88 / 100",
+        "grade": "A+",
+        "credit": 2
+      },
+      {
+        "code": "GENETICS-AND",
+        "name": "GENETICS AND MOLECULAR BIOLOGY LAB",
+        "internalStr": "Int: 23 / 50",
+        "externalStr": "Ext: 45 / 100",
+        "totalStr": "Tot: 68 / 100",
+        "grade": "O",
+        "credit": 2
+      },
+      {
+        "code": "GENERAL-PROF",
+        "name": "GENERAL PROFECIENCY",
+        "internalStr": "Int: --",
+        "externalStr": "Ext: 44 / 100",
+        "totalStr": "Tot: 44 / 150",
+        "grade": "A",
+        "credit": 3
+      }
+    ]
+  },
+  {
+    "rollNo": "231411029008",
+    "enrollNo": "BU0230600167",
+    "name": "SAUD AHMAD KHAN",
+    "fatherName": "ZUBER AHMAD",
+    "motherName": "JANNATUN NISHA",
+    "examCategory": "REGULAR",
+    "courseName": "B.TECH (BIOTECHNOLOGY ENGG) IV SEMESTER",
+    "sem": 4,
+    "sgpa": 7.05,
+    "resultStatus": "PASSED",
+    "subjects": [
+      {
+        "code": "IMMUNOLOGY",
+        "name": "IMMUNOLOGY",
+        "internalStr": "Int: 26 / 50",
+        "externalStr": "Ext: 57 / 100",
+        "totalStr": "Tot: 83 / 150",
+        "grade": "B",
+        "credit": 3
+      },
+      {
+        "code": "GENETICS-AND",
+        "name": "GENETICS AND MOLECULAR BIOLOGY",
+        "internalStr": "Int: 34 / 50",
+        "externalStr": "Ext: 57 / 100",
+        "totalStr": "Tot: 91 / 150",
+        "grade": "B+",
+        "credit": 3
+      },
+      {
+        "code": "PROTEIN-AND-",
+        "name": "PROTEIN AND ENZYME ENGINEERING",
+        "internalStr": "Int: 30 / 50",
+        "externalStr": "Ext: 48 / 100",
+        "totalStr": "Tot: 78 / 150",
+        "grade": "B",
+        "credit": 3
+      },
+      {
+        "code": "CHEMICAL-ENG",
+        "name": "CHEMICAL ENGINEERING THERMODYNAMICS",
+        "internalStr": "Int: 40 / 50",
+        "externalStr": "Ext: 43 / 100",
+        "totalStr": "Tot: 83 / 150",
+        "grade": "B",
+        "credit": 3
+      },
+      {
+        "code": "HEAT-AND-MAS",
+        "name": "HEAT AND MASS TRANSFER OPERATION",
+        "internalStr": "Int: 38 / 50",
+        "externalStr": "Ext: 52 / 100",
+        "totalStr": "Tot: 90 / 150",
+        "grade": "B+",
+        "credit": 3
+      },
+      {
+        "code": "IMMUNOLOGY-L",
+        "name": "IMMUNOLOGY LAB",
+        "internalStr": "Int: 22 / 50",
+        "externalStr": "Ext: 44 / 100",
+        "totalStr": "Tot: 66 / 100",
+        "grade": "A+",
+        "credit": 2
+      },
+      {
+        "code": "CHEMICAL-ENG",
+        "name": "CHEMICAL ENGINEERING OPERATION LAB",
+        "internalStr": "Int: 32 / 50",
+        "externalStr": "Ext: 51 / 100",
+        "totalStr": "Tot: 83 / 100",
+        "grade": "A+",
+        "credit": 2
+      },
+      {
+        "code": "GENETICS-AND",
+        "name": "GENETICS AND MOLECULAR BIOLOGY LAB",
+        "internalStr": "Int: 20 / 50",
+        "externalStr": "Ext: 39 / 100",
+        "totalStr": "Tot: 59 / 100",
+        "grade": "A",
+        "credit": 2
+      },
+      {
+        "code": "GENERAL-PROF",
+        "name": "GENERAL PROFECIENCY",
+        "internalStr": "Int: --",
+        "externalStr": "Ext: 40 / 100",
+        "totalStr": "Tot: 40 / 150",
+        "grade": "A",
+        "credit": 3
+      }
+    ]
+  },
+  {
+    "rollNo": "231411029009",
+    "enrollNo": "BU0230603227",
+    "name": "VIPIN YADAV",
+    "fatherName": "RAKESH YADAV",
+    "motherName": "VIMLESH YADAV",
+    "examCategory": "REGULAR",
+    "courseName": "B.TECH (BIOTECHNOLOGY ENGG) IV SEMESTER",
+    "sem": 4,
+    "sgpa": 7.05,
+    "resultStatus": "PASSED",
+    "subjects": [
+      {
+        "code": "IMMUNOLOGY",
+        "name": "IMMUNOLOGY",
+        "internalStr": "Int: 27 / 50",
+        "externalStr": "Ext: 61 / 100",
+        "totalStr": "Tot: 88 / 150",
+        "grade": "B",
+        "credit": 3
+      },
+      {
+        "code": "GENETICS-AND",
+        "name": "GENETICS AND MOLECULAR BIOLOGY",
+        "internalStr": "Int: 44 / 50",
+        "externalStr": "Ext: 62 / 100",
+        "totalStr": "Tot: 106 / 150",
+        "grade": "A",
+        "credit": 3
+      },
+      {
+        "code": "PROTEIN-AND-",
+        "name": "PROTEIN AND ENZYME ENGINEERING",
+        "internalStr": "Int: 31 / 50",
+        "externalStr": "Ext: 50 / 100",
+        "totalStr": "Tot: 81 / 150",
+        "grade": "B",
+        "credit": 3
+      },
+      {
+        "code": "CHEMICAL-ENG",
+        "name": "CHEMICAL ENGINEERING THERMODYNAMICS",
+        "internalStr": "Int: 41 / 50",
+        "externalStr": "Ext: 42 / 100",
+        "totalStr": "Tot: 83 / 150",
+        "grade": "B",
+        "credit": 3
+      },
+      {
+        "code": "HEAT-AND-MAS",
+        "name": "HEAT AND MASS TRANSFER OPERATION",
+        "internalStr": "Int: 36 / 50",
+        "externalStr": "Ext: 48 / 100",
+        "totalStr": "Tot: 84 / 150",
+        "grade": "B",
+        "credit": 3
+      },
+      {
+        "code": "IMMUNOLOGY-L",
+        "name": "IMMUNOLOGY LAB",
+        "internalStr": "Int: 22 / 50",
+        "externalStr": "Ext: 45 / 100",
+        "totalStr": "Tot: 67 / 100",
+        "grade": "A+",
+        "credit": 2
+      },
+      {
+        "code": "CHEMICAL-ENG",
+        "name": "CHEMICAL ENGINEERING OPERATION LAB",
+        "internalStr": "Int: 33 / 50",
+        "externalStr": "Ext: 53 / 100",
+        "totalStr": "Tot: 86 / 100",
+        "grade": "A+",
+        "credit": 2
+      },
+      {
+        "code": "GENETICS-AND",
+        "name": "GENETICS AND MOLECULAR BIOLOGY LAB",
+        "internalStr": "Int: 19 / 50",
+        "externalStr": "Ext: 38 / 100",
+        "totalStr": "Tot: 57 / 100",
+        "grade": "A",
+        "credit": 2
+      },
+      {
+        "code": "GENERAL-PROF",
+        "name": "GENERAL PROFECIENCY",
+        "internalStr": "Int: --",
+        "externalStr": "Ext: 39 / 100",
+        "totalStr": "Tot: 39 / 150",
+        "grade": "A",
+        "credit": 3
+      }
+    ]
+  }
+]
