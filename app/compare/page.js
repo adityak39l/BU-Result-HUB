@@ -5,8 +5,8 @@ import { STUDENTS } from '@/lib/data';
 import { Users, Swords, Award, TrendingUp, CheckCircle, XCircle } from 'lucide-react';
 
 export default function ComparePage() {
-  const [student1Roll, setStudent1Roll] = useState('210010501001');
-  const [student2Roll, setStudent2Roll] = useState('210010501002');
+  const [student1Roll, setStudent1Roll] = useState(STUDENTS[0]?.rollNo || '231351139001');
+  const [student2Roll, setStudent2Roll] = useState(STUDENTS[1]?.rollNo || '231351139002');
 
   const student1 = STUDENTS.find(s => s.rollNo === student1Roll) || STUDENTS[0];
   const student2 = STUDENTS.find(s => s.rollNo === student2Roll) || STUDENTS[1];

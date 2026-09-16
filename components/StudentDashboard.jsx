@@ -252,7 +252,7 @@ export default function StudentDashboard({ rollNo }) {
           <div className="p-3.5 rounded-xl bg-amber-500/10 border border-amber-500/30 text-center">
             <div className="text-[10px] text-amber-600 dark:text-amber-400 font-black uppercase tracking-wider">OVERALL RANK</div>
             <div className="text-2xl font-black text-amber-500 mt-0.5">#{student.rank}</div>
-            <div className="text-[9px] text-slate-500 dark:text-gray-400 font-bold">of 106 students</div>
+            <div className="text-[9px] text-slate-500 dark:text-gray-400 font-bold">of {STUDENTS.length} students</div>
           </div>
 
           {/* 5. Branch Rank Card */}
@@ -420,7 +420,7 @@ export default function StudentDashboard({ rollNo }) {
               </h3>
             </div>
             <div className="text-[11px] text-[#68c2e3] font-bold mt-0.5 ml-6">
-              Showing {displayedSubjects.length} subjects • Semester {currentActiveSem} SGPA: {student?.semesters?.find(s => s.sem === currentActiveSem)?.sgpa || calculatedAvgCgpa}
+              Showing {displayedSubjects.length} subjects • Semester {currentActiveSem} SGPA: {student?.semesters?.find(s => s.sem === currentActiveSem)?.sgpa || latestAvgCgpa}
             </div>
           </div>
 

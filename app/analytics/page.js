@@ -61,7 +61,7 @@ export default function AnalyticsPage() {
                 {branch.topStudent && (
                   <div className="text-xs text-slate-500 dark:text-gray-400 pt-1 flex justify-between border-t border-slate-200 dark:border-gray-800/60">
                     <span>Highest CGPA:</span>
-                    <span className="font-bold text-[#68c2e3]">{branch.topStudent.name} ({branch.topStudent.cgpa})</span>
+                    <span className="font-bold text-[#68c2e3]">{branch.topStudent}</span>
                   </div>
                 )}
               </div>
