@@ -21,43 +21,45 @@ def run_rechecks():
         print(f"  Branch {b:4s} -> {len(s_list)} students")
 
     # -------------------------------------------------------------
-    # RECHECK 1: FT Student Verification
+    # RECHECK 1: MOHD ASHZAD Verification
     # -------------------------------------------------------------
     print("\n-------------------------------------------------------------")
-    print("  RECHECK 1: FOOD TECHNOLOGY (FT) STUDENT DATA INTEGRITY")
+    print("  RECHECK 1: MOHD ASHZAD (231371028009) SEMESTER VI DATA")
     print("-------------------------------------------------------------")
-    ft_students = branch_map.get('FT', [])
-    for s in ft_students:
-        sems = s.get('semesters', [])
-        sems_info = ' | '.join([f"Sem {sm['sem']}: {sm['sgpa']} ({sm['status']})" for sm in sems])
-        sub_counts = {sem_k: len(subs) for sem_k, subs in s.get('semesterSubjects', {}).items()}
-        print(f"  Rank #{s['branchRank']:2d} (Overall #{s['rank']:3d}) | {s['name']:20s} ({s['rollNo']}) | CGPA: {s['cgpa']:.2f} | {sems_info}")
+    ashzad = next((s for s in students if s['rollNo'] == '231371028009'), None)
+    if ashzad:
+        sems = ashzad.get('semesters', [])
+        sems_info = ' | '.join([f"Sem {sm['sem']}: {sm['sgpa']} ({sm.get('status', 'PASSED')})" for sm in sems])
+        sub_counts = {sem_k: len(subs) for sem_k, subs in ashzad.get('semesterSubjects', {}).items()}
+        print(f"  Name: {ashzad['name']} ({ashzad['rollNo']})")
+        print(f"  Branch: {ashzad['branch']} | Branch Rank: #{ashzad['branchRank']} | Overall Rank: #{ashzad['rank']}")
+        print(f"  Cumulative CGPA: {ashzad['cgpa']:.2f}")
+        print(f"  Semesters: {sems_info}")
+        print(f"  Subjects Count per Sem: {sub_counts}")
+        print(f"  Sem 6 Subjects Count: {len(ashzad.get('semesterSubjects', {}).get('6', []))}")
 
     # -------------------------------------------------------------
-    # RECHECK 2: Existing Branches Safety Verification
+    # RECHECK 2: BME Branch Leaderboard
     # -------------------------------------------------------------
     print("\n-------------------------------------------------------------")
-    print("  RECHECK 2: EXISTING BRANCHES SAFETY & INTEGRITY")
+    print("  RECHECK 2: BME BRANCH LEADERBOARD RANKINGS")
     print("-------------------------------------------------------------")
-    for b in ['CSE', 'ECE', 'ME', 'EIE', 'BME', 'BTE']:
-        b_list = branch_map.get(b, [])
-        sample = b_list[0] if len(b_list) > 0 else None
-        print(f"  Branch {b:4s}: {len(b_list)} students | Top Student: {sample['name'] if sample else 'N/A'} (CGPA: {sample['cgpa'] if sample else 0})")
+    bme_list = branch_map.get('BME', [])
+    bme_list.sort(key=lambda s: sum([sm['sgpa'] for sm in s.get('semesters', []) if sm['sem'] in [5, 6]]) / max(len([sm for sm in s.get('semesters', []) if sm['sem'] in [5, 6]]), 1), reverse=True)
+    for idx, s in enumerate(bme_list):
+        s56 = [sm['sgpa'] for sm in s.get('semesters', []) if sm['sem'] in [5, 6]]
+        avg56 = (sum(s56) / len(s56)) if len(s56) > 0 else s['cgpa']
+        sems_str = ', '.join([f"S{sm['sem']}:{sm['sgpa']}" for sm in s.get('semesters', [])])
+        print(f"  Rank #{idx+1} | {s['name']:20s} ({s['rollNo']}) | Sem 5&6 Avg: {avg56:.2f} | CGPA: {s['cgpa']:.2f} | ({sems_str})")
 
-    # Check for duplicate roll numbers
+    # Duplicate check
     all_rolls = [s['rollNo'] for s in students]
     dup_rolls = set([r for r in all_rolls if all_rolls.count(r) > 1])
     print(f"\n  Duplicate Roll Numbers Check: {'FAIL - Found duplicates: ' + str(dup_rolls) if dup_rolls else 'PASS (0 duplicates)'}")
 
-    # Check for valid SGPA/CGPA ranges
+    # CGPA range check
     invalid_cgpa = [s for s in students if s['cgpa'] < 0.0 or s['cgpa'] > 10.0]
     print(f"  CGPA Range (0.0 to 10.0) Check: {'FAIL - Found invalid: ' + str(invalid_cgpa) if invalid_cgpa else 'PASS (All valid)'}")
-
-    # Check BRANCHES array in data.js
-    m_branches = re.search(r'export const BRANCHES = (\[.*?\]);', text, re.DOTALL)
-    if m_branches:
-        branches_list = eval(m_branches.group(1).replace('from-', '"from-').replace('to-', '"to-').replace('bg-', '"bg-'))
-        print(f"  BRANCHES definitions in lib/data.js: {len(branches_list)} branches registered")
 
     print("\n[OK] All Rechecks Passed 100% Successfully!")
 

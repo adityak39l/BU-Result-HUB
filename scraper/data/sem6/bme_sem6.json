@@ -1,0 +1,115 @@
+[
+  {
+    "rollNo": "231371028009",
+    "enrollNo": "BU0230639626",
+    "name": "MOHD ASHZAD",
+    "fatherName": "MOHD ZAFAR TAHIR",
+    "motherName": "ASMA BANO",
+    "examCategory": "REGULAR",
+    "courseName": "B.TECH (BIOMEDICAL ENGG) VI SEMESTER",
+    "sem": 6,
+    "sgpa": 8.57,
+    "resultStatus": "PASSED",
+    "subjects": [
+      {
+        "code": "PHYSIOLOGICA",
+        "name": "PHYSIOLOGICAL CONTROL SYSTEM MODELING",
+        "internalStr": "Int: 44 / 50",
+        "externalStr": "Ext: 71 / 100",
+        "totalStr": "Tot: 115 / 150",
+        "grade": "A",
+        "credit": 3
+      },
+      {
+        "code": "MICROCONTROL",
+        "name": "MICROCONTROLLER AND ITS APPLICATION",
+        "internalStr": "Int: 45 / 50",
+        "externalStr": "Ext: 49 / 100",
+        "totalStr": "Tot: 94 / 150",
+        "grade": "B+",
+        "credit": 3
+      },
+      {
+        "code": "BIOMEDICAL-S",
+        "name": "BIOMEDICAL SIGNAL PROCESSING",
+        "internalStr": "Int: 44 / 50",
+        "externalStr": "Ext: 71 / 100",
+        "totalStr": "Tot: 115 / 150",
+        "grade": "A",
+        "credit": 3
+      },
+      {
+        "code": "THERAPEUTIC-",
+        "name": "THERAPEUTIC INSTRUMENTS",
+        "internalStr": "Int: 46 / 50",
+        "externalStr": "Ext: 85 / 100",
+        "totalStr": "Tot: 131 / 150",
+        "grade": "A+",
+        "credit": 3
+      },
+      {
+        "code": "MEDICAL-IMAG",
+        "name": "MEDICAL IMAGING TECHNIQUES",
+        "internalStr": "Int: 21 / 50",
+        "externalStr": "Ext: 47 / 100",
+        "totalStr": "Tot: 68 / 150",
+        "grade": "O",
+        "credit": 3
+      },
+      {
+        "code": "BIOMECHANICS",
+        "name": "BIOMECHANICS (ELECTIVE-II)",
+        "internalStr": "Int: 20 / 50",
+        "externalStr": "Ext: 41 / 100",
+        "totalStr": "Tot: 61 / 50",
+        "grade": "A+",
+        "credit": 2
+      },
+      {
+        "code": "PCSM-LAB",
+        "name": "PCSM LAB",
+        "internalStr": "Int: 20 / 50",
+        "externalStr": "Ext: 45 / 100",
+        "totalStr": "Tot: 65 / 100",
+        "grade": "A+",
+        "credit": 1
+      },
+      {
+        "code": "MICROCONTROL",
+        "name": "MICROCONTROLLER LAB",
+        "internalStr": "Int: 21 / 50",
+        "externalStr": "Ext: 45 / 100",
+        "totalStr": "Tot: 66 / 100",
+        "grade": "A+",
+        "credit": 1
+      },
+      {
+        "code": "BIOMEDICAL-D",
+        "name": "BIOMEDICAL DIGITAL SIGNAL PROCESSING LAB",
+        "internalStr": "Int: 20 / 50",
+        "externalStr": "Ext: 43 / 100",
+        "totalStr": "Tot: 63 / 100",
+        "grade": "A+",
+        "credit": 1
+      },
+      {
+        "code": "SEMINAR",
+        "name": "SEMINAR",
+        "internalStr": "Int: 62 / 50",
+        "externalStr": "Ext: --",
+        "totalStr": "Tot: 62 / 75",
+        "grade": "A+",
+        "credit": 1
+      },
+      {
+        "code": "GENERAL-PROF",
+        "name": "GENERAL PROFECIENCY",
+        "internalStr": "Int: --",
+        "externalStr": "Ext: 44 / 100",
+        "totalStr": "Tot: 44 / 150",
+        "grade": "A",
+        "credit": 3
+      }
+    ]
+  }
+]
