@@ -41,11 +41,32 @@ export const metadata = {
     siteName: 'BU IET ResultHub',
     title: 'BU IET ResultHub — B.Tech Results & SGPA Leaderboard',
     description: 'Check B.Tech results, SGPA leaderboards & student rankings for Bundelkhand University (BU Jhansi) IET — CSE, ECE, ME, EIE, BME branches.',
+    images: [
+      {
+        url: 'https://bu-btech-resulthub.vercel.app/icon.png',
+        width: 512,
+        height: 512,
+        alt: 'BU IET ResultHub Logo',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'BU IET ResultHub — B.Tech Results & Analytics',
     description: 'Check BU Jhansi IET B.Tech results, SGPA leaderboard & student performance analytics.',
+    images: ['https://bu-btech-resulthub.vercel.app/icon.png'],
+  },
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/icon.png', type: 'image/png', sizes: '512x512' },
+      { url: '/favicon-32x32.png', type: 'image/png', sizes: '32x32' },
+      { url: '/favicon-16x16.png', type: 'image/png', sizes: '16x16' },
+    ],
+    apple: [
+      { url: '/apple-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+    shortcut: '/favicon.ico',
   },
   alternates: {
     canonical: 'https://bu-btech-resulthub.vercel.app',
@@ -59,6 +80,7 @@ export default function RootLayout({ children }) {
     name: 'BU IET ResultHub',
     alternateName: ['BU IET Result Hub', 'BU Jhansi Result Hub', 'IET BU Jhansi ResultHub'],
     url: 'https://bu-btech-resulthub.vercel.app',
+    image: 'https://bu-btech-resulthub.vercel.app/icon.png',
     description: 'Official student-focused B.Tech result & SGPA leaderboard portal for Bundelkhand University (BU Jhansi) IET.',
     potentialAction: {
       '@type': 'SearchAction',
