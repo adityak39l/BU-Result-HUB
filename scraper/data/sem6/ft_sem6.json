@@ -1,0 +1,938 @@
+[
+  {
+    "rollNo": "231401140002",
+    "enrollNo": "BU0230608732",
+    "name": "ANANYA SINGH",
+    "fatherName": "ARUN KUMAR SINGH",
+    "motherName": "GEETA SINGH",
+    "examCategory": "REGULAR",
+    "courseName": "B.TECH (FOOD ENGG. AND TECHNOLOGY) VI SEMESTER",
+    "sem": 6,
+    "sgpa": 8.52,
+    "resultStatus": "PASSED",
+    "subjects": [
+      {
+        "code": "DAIRY-TECHNO",
+        "name": "DAIRY TECHNOLOGY",
+        "internalStr": "Int: 25 / 50",
+        "externalStr": "Ext: 42 / 100",
+        "totalStr": "Tot: 67 / 50",
+        "grade": "A+",
+        "credit": 2
+      },
+      {
+        "code": "FLAVOUR-TECH",
+        "name": "FLAVOUR TECHNOLOGY",
+        "internalStr": "Int: 23 / 50",
+        "externalStr": "Ext: 46 / 100",
+        "totalStr": "Tot: 69 / 50",
+        "grade": "O",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-PRESERV",
+        "name": "FOOD PRESERVATION AND PROCESSING PRINCIPLES",
+        "internalStr": "Int: 45 / 50",
+        "externalStr": "Ext: 74 / 100",
+        "totalStr": "Tot: 119 / 150",
+        "grade": "A",
+        "credit": 3
+      },
+      {
+        "code": "MACHINE-DESI",
+        "name": "MACHINE DESIGN",
+        "internalStr": "Int: 45 / 50",
+        "externalStr": "Ext: 44 / 100",
+        "totalStr": "Tot: 89 / 150",
+        "grade": "B",
+        "credit": 3
+      },
+      {
+        "code": "CEREALS--PUL",
+        "name": "CEREALS, PULSES AND OIL SEED PRODUCTS",
+        "internalStr": "Int: 42 / 50",
+        "externalStr": "Ext: 94 / 100",
+        "totalStr": "Tot: 136 / 150",
+        "grade": "O",
+        "credit": 3
+      },
+      {
+        "code": "FOOD-ENGINEE",
+        "name": "FOOD ENGINEERING - III",
+        "internalStr": "Int: 43 / 50",
+        "externalStr": "Ext: 71 / 100",
+        "totalStr": "Tot: 114 / 150",
+        "grade": "A",
+        "credit": 3
+      },
+      {
+        "code": "FOOD-ENGINEE",
+        "name": "FOOD ENGINEERING - III LAB",
+        "internalStr": "Int: 18 / 50",
+        "externalStr": "Ext: 25 / 100",
+        "totalStr": "Tot: 43 / 100",
+        "grade": "A+",
+        "credit": 1
+      },
+      {
+        "code": "FOOD-PRESERV",
+        "name": "FOOD PRESERVATION AND PROCESSING PRINCIPLES LAB",
+        "internalStr": "Int: 46 / 50",
+        "externalStr": "Ext: 82 / 100",
+        "totalStr": "Tot: 128 / 150",
+        "grade": "A+",
+        "credit": 3
+      },
+      {
+        "code": "SEMINAR",
+        "name": "SEMINAR",
+        "internalStr": "Int: 43 / 50",
+        "externalStr": "Ext: --",
+        "totalStr": "Tot: 43 / 50",
+        "grade": "A+",
+        "credit": 1
+      },
+      {
+        "code": "GENERAL-PROF",
+        "name": "GENERAL PROFECIENCY",
+        "internalStr": "Int: --",
+        "externalStr": "Ext: 48 / 100",
+        "totalStr": "Tot: 48 / 150",
+        "grade": "A",
+        "credit": 3
+      }
+    ]
+  },
+  {
+    "rollNo": "231401140003",
+    "enrollNo": "BU0230646570",
+    "name": "ANCHAL",
+    "fatherName": "BHUAL",
+    "motherName": "SAROJ DEVI",
+    "examCategory": "REGULAR",
+    "courseName": "B.TECH (FOOD ENGG. AND TECHNOLOGY) VI SEMESTER",
+    "sem": 6,
+    "sgpa": 8.62,
+    "resultStatus": "PASSED",
+    "subjects": [
+      {
+        "code": "DAIRY-TECHNO",
+        "name": "DAIRY TECHNOLOGY",
+        "internalStr": "Int: 25 / 50",
+        "externalStr": "Ext: 39 / 100",
+        "totalStr": "Tot: 64 / 50",
+        "grade": "A+",
+        "credit": 2
+      },
+      {
+        "code": "FLAVOUR-TECH",
+        "name": "FLAVOUR TECHNOLOGY",
+        "internalStr": "Int: 19 / 50",
+        "externalStr": "Ext: 47 / 100",
+        "totalStr": "Tot: 66 / 50",
+        "grade": "A+",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-PRESERV",
+        "name": "FOOD PRESERVATION AND PROCESSING PRINCIPLES",
+        "internalStr": "Int: 44 / 50",
+        "externalStr": "Ext: 89 / 100",
+        "totalStr": "Tot: 133 / 150",
+        "grade": "A+",
+        "credit": 3
+      },
+      {
+        "code": "MACHINE-DESI",
+        "name": "MACHINE DESIGN",
+        "internalStr": "Int: 38 / 50",
+        "externalStr": "Ext: 50 / 100",
+        "totalStr": "Tot: 88 / 150",
+        "grade": "B",
+        "credit": 3
+      },
+      {
+        "code": "CEREALS--PUL",
+        "name": "CEREALS, PULSES AND OIL SEED PRODUCTS",
+        "internalStr": "Int: 40 / 50",
+        "externalStr": "Ext: 100 / 100",
+        "totalStr": "Tot: 140 / 150",
+        "grade": "O",
+        "credit": 3
+      },
+      {
+        "code": "FOOD-ENGINEE",
+        "name": "FOOD ENGINEERING - III",
+        "internalStr": "Int: 38 / 50",
+        "externalStr": "Ext: 79 / 100",
+        "totalStr": "Tot: 117 / 150",
+        "grade": "A",
+        "credit": 3
+      },
+      {
+        "code": "FOOD-ENGINEE",
+        "name": "FOOD ENGINEERING - III LAB",
+        "internalStr": "Int: 17 / 50",
+        "externalStr": "Ext: 26 / 100",
+        "totalStr": "Tot: 43 / 100",
+        "grade": "A+",
+        "credit": 1
+      },
+      {
+        "code": "FOOD-PRESERV",
+        "name": "FOOD PRESERVATION AND PROCESSING PRINCIPLES LAB",
+        "internalStr": "Int: 44 / 50",
+        "externalStr": "Ext: 78 / 100",
+        "totalStr": "Tot: 122 / 150",
+        "grade": "A+",
+        "credit": 3
+      },
+      {
+        "code": "SEMINAR",
+        "name": "SEMINAR",
+        "internalStr": "Int: 47 / 50",
+        "externalStr": "Ext: --",
+        "totalStr": "Tot: 47 / 50",
+        "grade": "O",
+        "credit": 1
+      },
+      {
+        "code": "GENERAL-PROF",
+        "name": "GENERAL PROFECIENCY",
+        "internalStr": "Int: --",
+        "externalStr": "Ext: 47 / 100",
+        "totalStr": "Tot: 47 / 150",
+        "grade": "A",
+        "credit": 3
+      }
+    ]
+  },
+  {
+    "rollNo": "231401140004",
+    "enrollNo": "BU0220444582",
+    "name": "ASTHA CHATURVEDI",
+    "fatherName": "DINESH CHATURVEDI",
+    "motherName": "KALPANA CHATURVEDI",
+    "examCategory": "REGULAR",
+    "courseName": "B.TECH (FOOD ENGG. AND TECHNOLOGY) VI SEMESTER",
+    "sem": 6,
+    "sgpa": 7.57,
+    "resultStatus": "BACK PAPER",
+    "subjects": [
+      {
+        "code": "DAIRY-TECHNO",
+        "name": "DAIRY TECHNOLOGY",
+        "internalStr": "Int: 19 / 50",
+        "externalStr": "Ext: 35 / 100",
+        "totalStr": "Tot: 54 / 50",
+        "grade": "A",
+        "credit": 2
+      },
+      {
+        "code": "FLAVOUR-TECH",
+        "name": "FLAVOUR TECHNOLOGY",
+        "internalStr": "Int: 22 / 50",
+        "externalStr": "Ext: 47 / 100",
+        "totalStr": "Tot: 69 / 50",
+        "grade": "O",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-PRESERV",
+        "name": "FOOD PRESERVATION AND PROCESSING PRINCIPLES",
+        "internalStr": "Int: 40 / 50",
+        "externalStr": "Ext: 77 / 100",
+        "totalStr": "Tot: 117 / 150",
+        "grade": "A",
+        "credit": 3
+      },
+      {
+        "code": "MACHINE-DESI",
+        "name": "MACHINE DESIGN",
+        "internalStr": "Int: 42 / 50",
+        "externalStr": "Ext: 37 / 100",
+        "totalStr": "Tot: 79 / 150",
+        "grade": "F",
+        "credit": 3
+      },
+      {
+        "code": "CEREALS--PUL",
+        "name": "CEREALS, PULSES AND OIL SEED PRODUCTS",
+        "internalStr": "Int: 40 / 50",
+        "externalStr": "Ext: 100 / 100",
+        "totalStr": "Tot: 140 / 150",
+        "grade": "O",
+        "credit": 3
+      },
+      {
+        "code": "FOOD-ENGINEE",
+        "name": "FOOD ENGINEERING - III",
+        "internalStr": "Int: 41 / 50",
+        "externalStr": "Ext: 67 / 100",
+        "totalStr": "Tot: 108 / 150",
+        "grade": "A",
+        "credit": 3
+      },
+      {
+        "code": "FOOD-ENGINEE",
+        "name": "FOOD ENGINEERING - III LAB",
+        "internalStr": "Int: 18 / 50",
+        "externalStr": "Ext: 25 / 100",
+        "totalStr": "Tot: 43 / 100",
+        "grade": "A+",
+        "credit": 1
+      },
+      {
+        "code": "FOOD-PRESERV",
+        "name": "FOOD PRESERVATION AND PROCESSING PRINCIPLES LAB",
+        "internalStr": "Int: 46 / 50",
+        "externalStr": "Ext: 80 / 100",
+        "totalStr": "Tot: 126 / 150",
+        "grade": "A+",
+        "credit": 3
+      },
+      {
+        "code": "SEMINAR",
+        "name": "SEMINAR",
+        "internalStr": "Int: 43 / 50",
+        "externalStr": "Ext: --",
+        "totalStr": "Tot: 43 / 50",
+        "grade": "A+",
+        "credit": 1
+      },
+      {
+        "code": "GENERAL-PROF",
+        "name": "GENERAL PROFECIENCY",
+        "internalStr": "Int: --",
+        "externalStr": "Ext: 48 / 100",
+        "totalStr": "Tot: 48 / 150",
+        "grade": "A",
+        "credit": 3
+      }
+    ]
+  },
+  {
+    "rollNo": "231401140005",
+    "enrollNo": "BU0230608010",
+    "name": "HARDIK PUROHIT",
+    "fatherName": "NIRDOSH PUROHIT",
+    "motherName": "ARCHANA PUROHIT",
+    "examCategory": "REGULAR",
+    "courseName": "B.TECH (FOOD ENGG. AND TECHNOLOGY) VI SEMESTER",
+    "sem": 6,
+    "sgpa": 6.9,
+    "resultStatus": "BACK PAPER",
+    "subjects": [
+      {
+        "code": "DAIRY-TECHNO",
+        "name": "DAIRY TECHNOLOGY",
+        "internalStr": "Int: 20 / 50",
+        "externalStr": "Ext: 37 / 100",
+        "totalStr": "Tot: 57 / 50",
+        "grade": "A",
+        "credit": 2
+      },
+      {
+        "code": "FLAVOUR-TECH",
+        "name": "FLAVOUR TECHNOLOGY",
+        "internalStr": "Int: 16 / 50",
+        "externalStr": "Ext: 45 / 100",
+        "totalStr": "Tot: 61 / 50",
+        "grade": "A+",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-PRESERV",
+        "name": "FOOD PRESERVATION AND PROCESSING PRINCIPLES",
+        "internalStr": "Int: 38 / 50",
+        "externalStr": "Ext: 74 / 100",
+        "totalStr": "Tot: 112 / 150",
+        "grade": "A",
+        "credit": 3
+      },
+      {
+        "code": "MACHINE-DESI",
+        "name": "MACHINE DESIGN",
+        "internalStr": "Int: 41 / 50",
+        "externalStr": "Ext: 30 / 100",
+        "totalStr": "Tot: 71 / 150",
+        "grade": "F",
+        "credit": 3
+      },
+      {
+        "code": "CEREALS--PUL",
+        "name": "CEREALS, PULSES AND OIL SEED PRODUCTS",
+        "internalStr": "Int: 38 / 50",
+        "externalStr": "Ext: 93 / 100",
+        "totalStr": "Tot: 131 / 150",
+        "grade": "A+",
+        "credit": 3
+      },
+      {
+        "code": "FOOD-ENGINEE",
+        "name": "FOOD ENGINEERING - III",
+        "internalStr": "Int: 34 / 50",
+        "externalStr": "Ext: 72 / 100",
+        "totalStr": "Tot: 106 / 150",
+        "grade": "A",
+        "credit": 3
+      },
+      {
+        "code": "FOOD-ENGINEE",
+        "name": "FOOD ENGINEERING - III LAB",
+        "internalStr": "Int: 13 / 50",
+        "externalStr": "Ext: 18 / 100",
+        "totalStr": "Tot: 31 / 100",
+        "grade": "B+",
+        "credit": 1
+      },
+      {
+        "code": "FOOD-PRESERV",
+        "name": "FOOD PRESERVATION AND PROCESSING PRINCIPLES LAB",
+        "internalStr": "Int: 35 / 50",
+        "externalStr": "Ext: 68 / 100",
+        "totalStr": "Tot: 103 / 150",
+        "grade": "B+",
+        "credit": 3
+      },
+      {
+        "code": "SEMINAR",
+        "name": "SEMINAR",
+        "internalStr": "Int: 37 / 50",
+        "externalStr": "Ext: --",
+        "totalStr": "Tot: 37 / 50",
+        "grade": "A",
+        "credit": 1
+      },
+      {
+        "code": "GENERAL-PROF",
+        "name": "GENERAL PROFECIENCY",
+        "internalStr": "Int: --",
+        "externalStr": "Ext: 40 / 100",
+        "totalStr": "Tot: 40 / 150",
+        "grade": "A",
+        "credit": 3
+      }
+    ]
+  },
+  {
+    "rollNo": "231401140006",
+    "enrollNo": "BU0230596591",
+    "name": "NIKHIL GIRI",
+    "fatherName": "LATE SANJU GIRI",
+    "motherName": "MANJU GIRI",
+    "examCategory": "REGULAR",
+    "courseName": "B.TECH (FOOD ENGG. AND TECHNOLOGY) VI SEMESTER",
+    "sem": 6,
+    "sgpa": 6.48,
+    "resultStatus": "BACK PAPER",
+    "subjects": [
+      {
+        "code": "DAIRY-TECHNO",
+        "name": "DAIRY TECHNOLOGY",
+        "internalStr": "Int: 19 / 50",
+        "externalStr": "Ext: 36 / 100",
+        "totalStr": "Tot: 55 / 50",
+        "grade": "A",
+        "credit": 2
+      },
+      {
+        "code": "FLAVOUR-TECH",
+        "name": "FLAVOUR TECHNOLOGY",
+        "internalStr": "Int: 15 / 50",
+        "externalStr": "Ext: 32 / 100",
+        "totalStr": "Tot: 47 / 50",
+        "grade": "B+",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-PRESERV",
+        "name": "FOOD PRESERVATION AND PROCESSING PRINCIPLES",
+        "internalStr": "Int: 37 / 50",
+        "externalStr": "Ext: 70 / 100",
+        "totalStr": "Tot: 107 / 150",
+        "grade": "A",
+        "credit": 3
+      },
+      {
+        "code": "MACHINE-DESI",
+        "name": "MACHINE DESIGN",
+        "internalStr": "Int: 40 / 50",
+        "externalStr": "Ext: 29 / 100",
+        "totalStr": "Tot: 69 / 150",
+        "grade": "F",
+        "credit": 3
+      },
+      {
+        "code": "CEREALS--PUL",
+        "name": "CEREALS, PULSES AND OIL SEED PRODUCTS",
+        "internalStr": "Int: 35 / 50",
+        "externalStr": "Ext: 81 / 100",
+        "totalStr": "Tot: 116 / 150",
+        "grade": "A",
+        "credit": 3
+      },
+      {
+        "code": "FOOD-ENGINEE",
+        "name": "FOOD ENGINEERING - III",
+        "internalStr": "Int: 32 / 50",
+        "externalStr": "Ext: 71 / 100",
+        "totalStr": "Tot: 103 / 150",
+        "grade": "B+",
+        "credit": 3
+      },
+      {
+        "code": "FOOD-ENGINEE",
+        "name": "FOOD ENGINEERING - III LAB",
+        "internalStr": "Int: 12 / 50",
+        "externalStr": "Ext: 18 / 100",
+        "totalStr": "Tot: 30 / 100",
+        "grade": "B+",
+        "credit": 1
+      },
+      {
+        "code": "FOOD-PRESERV",
+        "name": "FOOD PRESERVATION AND PROCESSING PRINCIPLES LAB",
+        "internalStr": "Int: 30 / 50",
+        "externalStr": "Ext: 68 / 100",
+        "totalStr": "Tot: 98 / 150",
+        "grade": "B+",
+        "credit": 3
+      },
+      {
+        "code": "SEMINAR",
+        "name": "SEMINAR",
+        "internalStr": "Int: 42 / 50",
+        "externalStr": "Ext: --",
+        "totalStr": "Tot: 42 / 50",
+        "grade": "A+",
+        "credit": 1
+      },
+      {
+        "code": "GENERAL-PROF",
+        "name": "GENERAL PROFECIENCY",
+        "internalStr": "Int: --",
+        "externalStr": "Ext: 40 / 100",
+        "totalStr": "Tot: 40 / 150",
+        "grade": "A",
+        "credit": 3
+      }
+    ]
+  },
+  {
+    "rollNo": "231401140009",
+    "enrollNo": "BU0230650035",
+    "name": "ROHINI SHRIVAS",
+    "fatherName": "AJAY KUMAR SHRIVAS",
+    "motherName": "SUMAN DEVI SHRIVAS",
+    "examCategory": "REGULAR",
+    "courseName": "B.TECH (FOOD ENGG. AND TECHNOLOGY) VI SEMESTER",
+    "sem": 6,
+    "sgpa": 8.19,
+    "resultStatus": "PASSED",
+    "subjects": [
+      {
+        "code": "DAIRY-TECHNO",
+        "name": "DAIRY TECHNOLOGY",
+        "internalStr": "Int: 20 / 50",
+        "externalStr": "Ext: 36 / 100",
+        "totalStr": "Tot: 56 / 50",
+        "grade": "A",
+        "credit": 2
+      },
+      {
+        "code": "FLAVOUR-TECH",
+        "name": "FLAVOUR TECHNOLOGY",
+        "internalStr": "Int: 19 / 50",
+        "externalStr": "Ext: 42 / 100",
+        "totalStr": "Tot: 61 / 50",
+        "grade": "A+",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-PRESERV",
+        "name": "FOOD PRESERVATION AND PROCESSING PRINCIPLES",
+        "internalStr": "Int: 42 / 50",
+        "externalStr": "Ext: 73 / 100",
+        "totalStr": "Tot: 115 / 150",
+        "grade": "A",
+        "credit": 3
+      },
+      {
+        "code": "MACHINE-DESI",
+        "name": "MACHINE DESIGN",
+        "internalStr": "Int: 38 / 50",
+        "externalStr": "Ext: 45 / 100",
+        "totalStr": "Tot: 83 / 150",
+        "grade": "B",
+        "credit": 3
+      },
+      {
+        "code": "CEREALS--PUL",
+        "name": "CEREALS, PULSES AND OIL SEED PRODUCTS",
+        "internalStr": "Int: 38 / 50",
+        "externalStr": "Ext: 96 / 100",
+        "totalStr": "Tot: 134 / 150",
+        "grade": "A+",
+        "credit": 3
+      },
+      {
+        "code": "FOOD-ENGINEE",
+        "name": "FOOD ENGINEERING - III",
+        "internalStr": "Int: 32 / 50",
+        "externalStr": "Ext: 74 / 100",
+        "totalStr": "Tot: 106 / 150",
+        "grade": "A",
+        "credit": 3
+      },
+      {
+        "code": "FOOD-ENGINEE",
+        "name": "FOOD ENGINEERING - III LAB",
+        "internalStr": "Int: 16 / 50",
+        "externalStr": "Ext: 25 / 100",
+        "totalStr": "Tot: 41 / 100",
+        "grade": "A+",
+        "credit": 1
+      },
+      {
+        "code": "FOOD-PRESERV",
+        "name": "FOOD PRESERVATION AND PROCESSING PRINCIPLES LAB",
+        "internalStr": "Int: 44 / 50",
+        "externalStr": "Ext: 78 / 100",
+        "totalStr": "Tot: 122 / 150",
+        "grade": "A+",
+        "credit": 3
+      },
+      {
+        "code": "SEMINAR",
+        "name": "SEMINAR",
+        "internalStr": "Int: 44 / 50",
+        "externalStr": "Ext: --",
+        "totalStr": "Tot: 44 / 50",
+        "grade": "A+",
+        "credit": 1
+      },
+      {
+        "code": "GENERAL-PROF",
+        "name": "GENERAL PROFECIENCY",
+        "internalStr": "Int: --",
+        "externalStr": "Ext: 46 / 100",
+        "totalStr": "Tot: 46 / 150",
+        "grade": "A",
+        "credit": 3
+      }
+    ]
+  },
+  {
+    "rollNo": "231401140010",
+    "enrollNo": "BU0230607927",
+    "name": "SALMAN KHAN",
+    "fatherName": "HAZI GHULAM",
+    "motherName": "IMRANA FARID",
+    "examCategory": "REGULAR",
+    "courseName": "B.TECH (FOOD ENGG. AND TECHNOLOGY) VI SEMESTER",
+    "sem": 6,
+    "sgpa": 6.71,
+    "resultStatus": "BACK PAPER",
+    "subjects": [
+      {
+        "code": "DAIRY-TECHNO",
+        "name": "DAIRY TECHNOLOGY",
+        "internalStr": "Int: 13 / 50",
+        "externalStr": "Ext: 37 / 100",
+        "totalStr": "Tot: 50 / 50",
+        "grade": "B+",
+        "credit": 2
+      },
+      {
+        "code": "FLAVOUR-TECH",
+        "name": "FLAVOUR TECHNOLOGY",
+        "internalStr": "Int: 14 / 50",
+        "externalStr": "Ext: 43 / 100",
+        "totalStr": "Tot: 57 / 50",
+        "grade": "A",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-PRESERV",
+        "name": "FOOD PRESERVATION AND PROCESSING PRINCIPLES",
+        "internalStr": "Int: 39 / 50",
+        "externalStr": "Ext: 71 / 100",
+        "totalStr": "Tot: 110 / 150",
+        "grade": "A",
+        "credit": 3
+      },
+      {
+        "code": "MACHINE-DESI",
+        "name": "MACHINE DESIGN",
+        "internalStr": "Int: 41 / 50",
+        "externalStr": "Ext: 35 / 100",
+        "totalStr": "Tot: 76 / 150",
+        "grade": "F",
+        "credit": 3
+      },
+      {
+        "code": "CEREALS--PUL",
+        "name": "CEREALS, PULSES AND OIL SEED PRODUCTS",
+        "internalStr": "Int: 35 / 50",
+        "externalStr": "Ext: 86 / 100",
+        "totalStr": "Tot: 121 / 150",
+        "grade": "A+",
+        "credit": 3
+      },
+      {
+        "code": "FOOD-ENGINEE",
+        "name": "FOOD ENGINEERING - III",
+        "internalStr": "Int: 30 / 50",
+        "externalStr": "Ext: 76 / 100",
+        "totalStr": "Tot: 106 / 150",
+        "grade": "A",
+        "credit": 3
+      },
+      {
+        "code": "FOOD-ENGINEE",
+        "name": "FOOD ENGINEERING - III LAB",
+        "internalStr": "Int: 12 / 50",
+        "externalStr": "Ext: 20 / 100",
+        "totalStr": "Tot: 32 / 100",
+        "grade": "B+",
+        "credit": 1
+      },
+      {
+        "code": "FOOD-PRESERV",
+        "name": "FOOD PRESERVATION AND PROCESSING PRINCIPLES LAB",
+        "internalStr": "Int: 30 / 50",
+        "externalStr": "Ext: 68 / 100",
+        "totalStr": "Tot: 98 / 150",
+        "grade": "B+",
+        "credit": 3
+      },
+      {
+        "code": "SEMINAR",
+        "name": "SEMINAR",
+        "internalStr": "Int: 38 / 50",
+        "externalStr": "Ext: --",
+        "totalStr": "Tot: 38 / 50",
+        "grade": "A",
+        "credit": 1
+      },
+      {
+        "code": "GENERAL-PROF",
+        "name": "GENERAL PROFECIENCY",
+        "internalStr": "Int: --",
+        "externalStr": "Ext: 38 / 100",
+        "totalStr": "Tot: 38 / 150",
+        "grade": "A",
+        "credit": 3
+      }
+    ]
+  },
+  {
+    "rollNo": "231401140013",
+    "enrollNo": "BU0230608617",
+    "name": "TANISHKA",
+    "fatherName": "SUNIL KUMAR",
+    "motherName": "BABITA",
+    "examCategory": "REGULAR",
+    "courseName": "B.TECH (FOOD ENGG. AND TECHNOLOGY) VI SEMESTER",
+    "sem": 6,
+    "sgpa": 8.57,
+    "resultStatus": "PASSED",
+    "subjects": [
+      {
+        "code": "DAIRY-TECHNO",
+        "name": "DAIRY TECHNOLOGY",
+        "internalStr": "Int: 20 / 50",
+        "externalStr": "Ext: 40 / 100",
+        "totalStr": "Tot: 60 / 50",
+        "grade": "A+",
+        "credit": 2
+      },
+      {
+        "code": "FLAVOUR-TECH",
+        "name": "FLAVOUR TECHNOLOGY",
+        "internalStr": "Int: 23 / 50",
+        "externalStr": "Ext: 44 / 100",
+        "totalStr": "Tot: 67 / 50",
+        "grade": "A+",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-PRESERV",
+        "name": "FOOD PRESERVATION AND PROCESSING PRINCIPLES",
+        "internalStr": "Int: 45 / 50",
+        "externalStr": "Ext: 80 / 100",
+        "totalStr": "Tot: 125 / 150",
+        "grade": "A+",
+        "credit": 3
+      },
+      {
+        "code": "MACHINE-DESI",
+        "name": "MACHINE DESIGN",
+        "internalStr": "Int: 41 / 50",
+        "externalStr": "Ext: 51 / 100",
+        "totalStr": "Tot: 92 / 150",
+        "grade": "B+",
+        "credit": 3
+      },
+      {
+        "code": "CEREALS--PUL",
+        "name": "CEREALS, PULSES AND OIL SEED PRODUCTS",
+        "internalStr": "Int: 40 / 50",
+        "externalStr": "Ext: 94 / 100",
+        "totalStr": "Tot: 134 / 150",
+        "grade": "A+",
+        "credit": 3
+      },
+      {
+        "code": "FOOD-ENGINEE",
+        "name": "FOOD ENGINEERING - III",
+        "internalStr": "Int: 37 / 50",
+        "externalStr": "Ext: 76 / 100",
+        "totalStr": "Tot: 113 / 150",
+        "grade": "A",
+        "credit": 3
+      },
+      {
+        "code": "FOOD-ENGINEE",
+        "name": "FOOD ENGINEERING - III LAB",
+        "internalStr": "Int: 18 / 50",
+        "externalStr": "Ext: 24 / 100",
+        "totalStr": "Tot: 42 / 100",
+        "grade": "A+",
+        "credit": 1
+      },
+      {
+        "code": "FOOD-PRESERV",
+        "name": "FOOD PRESERVATION AND PROCESSING PRINCIPLES LAB",
+        "internalStr": "Int: 46 / 50",
+        "externalStr": "Ext: 80 / 100",
+        "totalStr": "Tot: 126 / 150",
+        "grade": "A+",
+        "credit": 3
+      },
+      {
+        "code": "SEMINAR",
+        "name": "SEMINAR",
+        "internalStr": "Int: 44 / 50",
+        "externalStr": "Ext: --",
+        "totalStr": "Tot: 44 / 50",
+        "grade": "A+",
+        "credit": 1
+      },
+      {
+        "code": "GENERAL-PROF",
+        "name": "GENERAL PROFECIENCY",
+        "internalStr": "Int: --",
+        "externalStr": "Ext: 48 / 100",
+        "totalStr": "Tot: 48 / 150",
+        "grade": "A",
+        "credit": 3
+      }
+    ]
+  },
+  {
+    "rollNo": "231401140014",
+    "enrollNo": "BU0230601692",
+    "name": "VISHWAS SENGAR",
+    "fatherName": "SUBHASH SINGH SENGAR",
+    "motherName": "SARASVATI DEVI",
+    "examCategory": "REGULAR",
+    "courseName": "B.TECH (FOOD ENGG. AND TECHNOLOGY) VI SEMESTER",
+    "sem": 6,
+    "sgpa": 7.81,
+    "resultStatus": "PASSED",
+    "subjects": [
+      {
+        "code": "DAIRY-TECHNO",
+        "name": "DAIRY TECHNOLOGY",
+        "internalStr": "Int: 13 / 50",
+        "externalStr": "Ext: 35 / 100",
+        "totalStr": "Tot: 48 / 50",
+        "grade": "B+",
+        "credit": 2
+      },
+      {
+        "code": "FLAVOUR-TECH",
+        "name": "FLAVOUR TECHNOLOGY",
+        "internalStr": "Int: 17 / 50",
+        "externalStr": "Ext: 43 / 100",
+        "totalStr": "Tot: 60 / 50",
+        "grade": "A+",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-PRESERV",
+        "name": "FOOD PRESERVATION AND PROCESSING PRINCIPLES",
+        "internalStr": "Int: 37 / 50",
+        "externalStr": "Ext: 81 / 100",
+        "totalStr": "Tot: 118 / 150",
+        "grade": "A",
+        "credit": 3
+      },
+      {
+        "code": "MACHINE-DESI",
+        "name": "MACHINE DESIGN",
+        "internalStr": "Int: 40 / 50",
+        "externalStr": "Ext: 53 / 100",
+        "totalStr": "Tot: 93 / 150",
+        "grade": "B+",
+        "credit": 3
+      },
+      {
+        "code": "CEREALS--PUL",
+        "name": "CEREALS, PULSES AND OIL SEED PRODUCTS",
+        "internalStr": "Int: 34 / 50",
+        "externalStr": "Ext: 89 / 100",
+        "totalStr": "Tot: 123 / 150",
+        "grade": "A+",
+        "credit": 3
+      },
+      {
+        "code": "FOOD-ENGINEE",
+        "name": "FOOD ENGINEERING - III",
+        "internalStr": "Int: 31 / 50",
+        "externalStr": "Ext: 77 / 100",
+        "totalStr": "Tot: 108 / 150",
+        "grade": "A",
+        "credit": 3
+      },
+      {
+        "code": "FOOD-ENGINEE",
+        "name": "FOOD ENGINEERING - III LAB",
+        "internalStr": "Int: 12 / 50",
+        "externalStr": "Ext: 20 / 100",
+        "totalStr": "Tot: 32 / 100",
+        "grade": "B+",
+        "credit": 1
+      },
+      {
+        "code": "FOOD-PRESERV",
+        "name": "FOOD PRESERVATION AND PROCESSING PRINCIPLES LAB",
+        "internalStr": "Int: 30 / 50",
+        "externalStr": "Ext: 65 / 100",
+        "totalStr": "Tot: 95 / 150",
+        "grade": "B+",
+        "credit": 3
+      },
+      {
+        "code": "SEMINAR",
+        "name": "SEMINAR",
+        "internalStr": "Int: 37 / 50",
+        "externalStr": "Ext: --",
+        "totalStr": "Tot: 37 / 50",
+        "grade": "A",
+        "credit": 1
+      },
+      {
+        "code": "GENERAL-PROF",
+        "name": "GENERAL PROFECIENCY",
+        "internalStr": "Int: --",
+        "externalStr": "Ext: 40 / 100",
+        "totalStr": "Tot: 40 / 150",
+        "grade": "A",
+        "credit": 3
+      }
+    ]
+  }
+]

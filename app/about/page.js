@@ -12,12 +12,12 @@ export default function AboutPage() {
   const [makerImg, setMakerImg] = useState('/maker.jpg');
   const [kapilImg, setKapilImg] = useState('/kapil.jpg');
   const [ashzadImg, setAshzadImg] = useState('/ashzad.jpg');
-  const totalStudents = STUDENTS?.length || 176;
-  const totalBranches = BRANCHES?.length || 6;
+  const totalStudents = STUDENTS?.length || 189;
+  const totalBranches = BRANCHES?.length || 7;
 
   const features = [
     { icon: BarChart3, label: 'Result & SGPA Viewer', desc: 'Semester-wise performance dekho ek jagah' },
-    { icon: Users, label: 'Branch Leaderboard', desc: 'CSE, ECE, EIE, BME, ME, BTE — sabhi branches ki ranking ek saath' },
+    { icon: Users, label: 'Branch Leaderboard', desc: 'CSE, ECE, EIE, BME, ME, BTE, FT — sabhi branches ki ranking ek saath' },
     { icon: Zap, label: 'Academic Twin Finder', desc: 'Apna academic doppelganger dhundo' },
     { icon: Code2, label: 'CGPA Calculator', desc: 'Drop simulation ke saath future planning' },
     { icon: Cpu, label: 'Student Dashboard', desc: 'Personal profile with SGPA trend graph' },
@@ -37,7 +37,7 @@ export default function AboutPage() {
     'Designed & engineered full-stack responsive web UI in Next.js & Tailwind CSS',
     'Automated BU Jhansi marksheet web-scraping pipeline using Python & BeautifulSoup',
     'Built live SGPA leaderboard ranking and academic twin algorithms',
-    'Integrated comprehensive result dataset across CSE, ECE, ME, EIE, BME & BTE branches',
+    'Integrated comprehensive result dataset across CSE, ECE, ME, EIE, BME, BTE & FT branches',
     'Created interactive student dashboard with semester-wise performance visualizer',
     'Configured automated cloud deployment on Vercel with SEO sitemap indexing',
   ];

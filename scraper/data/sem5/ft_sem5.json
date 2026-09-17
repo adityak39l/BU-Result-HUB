@@ -1,0 +1,1250 @@
+[
+  {
+    "rollNo": "231401140002",
+    "enrollNo": "BU0230608732",
+    "name": "ANANYA SINGH",
+    "fatherName": "ARUN KUMAR SINGH",
+    "motherName": "GEETA SINGH",
+    "examCategory": "REGULAR",
+    "courseName": "B.TECH (FOOD ENGG. AND TECHNOLOGY) V SEMESTER",
+    "sem": 5,
+    "sgpa": 8.71,
+    "resultStatus": "PROMOTED",
+    "subjects": [
+      {
+        "code": "INDUSTRIAL-E",
+        "name": "INDUSTRIAL ECONOMICS AND PRINCIPLES OF MANAGEMENT",
+        "internalStr": "Int: 18 / 50",
+        "externalStr": "Ext: 37 / 100",
+        "totalStr": "Tot: 55 / 50",
+        "grade": "A",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-SAFETY-",
+        "name": "FOOD SAFETY AND FOOD LAWS",
+        "internalStr": "Int: 22 / 50",
+        "externalStr": "Ext: 39 / 100",
+        "totalStr": "Tot: 61 / 50",
+        "grade": "A+",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-ANALYSI",
+        "name": "FOOD ANALYSIS",
+        "internalStr": "Int: 47 / 50",
+        "externalStr": "Ext: 64 / 100",
+        "totalStr": "Tot: 111 / 150",
+        "grade": "A",
+        "credit": 3
+      },
+      {
+        "code": "TRADITIONAL-",
+        "name": "TRADITIONAL AND FERMENTED FOODS",
+        "internalStr": "Int: 46 / 50",
+        "externalStr": "Ext: 93 / 100",
+        "totalStr": "Tot: 139 / 150",
+        "grade": "O",
+        "credit": 3
+      },
+      {
+        "code": "FOOD-BIOCHEM",
+        "name": "FOOD BIOCHEMISTRY AND BIOTECHNOLOGY",
+        "internalStr": "Int: 42 / 50",
+        "externalStr": "Ext: 74 / 100",
+        "totalStr": "Tot: 116 / 150",
+        "grade": "A",
+        "credit": 3
+      },
+      {
+        "code": "FOOD-ENGINEE",
+        "name": "FOOD ENGINEERING - II",
+        "internalStr": "Int: 43 / 50",
+        "externalStr": "Ext: 72 / 100",
+        "totalStr": "Tot: 115 / 150",
+        "grade": "A",
+        "credit": 3
+      },
+      {
+        "code": "FOOD-BIOCHEM",
+        "name": "FOOD BIOCHEMISTRY AND BIOTECHNOLOGY LAB",
+        "internalStr": "Int: 36 / 50",
+        "externalStr": "Ext: 50 / 100",
+        "totalStr": "Tot: 86 / 100",
+        "grade": "A+",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-ANALYSI",
+        "name": "FOOD ANALYSIS LAB",
+        "internalStr": "Int: 35 / 50",
+        "externalStr": "Ext: 55 / 100",
+        "totalStr": "Tot: 90 / 100",
+        "grade": "O",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-ENGINEE",
+        "name": "FOOD ENGINEERING - II LAB",
+        "internalStr": "Int: 18 / 50",
+        "externalStr": "Ext: 26 / 100",
+        "totalStr": "Tot: 44 / 100",
+        "grade": "A+",
+        "credit": 1
+      },
+      {
+        "code": "GENERAL-PROF",
+        "name": "GENERAL PROFECIENCY",
+        "internalStr": "Int: --",
+        "externalStr": "Ext: 48 / 100",
+        "totalStr": "Tot: 48 / 150",
+        "grade": "A",
+        "credit": 3
+      }
+    ]
+  },
+  {
+    "rollNo": "231401140003",
+    "enrollNo": "BU0230646570",
+    "name": "ANCHAL",
+    "fatherName": "BHUAL",
+    "motherName": "SAROJ DEVI",
+    "examCategory": "REGULAR",
+    "courseName": "B.TECH (FOOD ENGG. AND TECHNOLOGY) V SEMESTER",
+    "sem": 5,
+    "sgpa": 8.76,
+    "resultStatus": "PROMOTED",
+    "subjects": [
+      {
+        "code": "INDUSTRIAL-E",
+        "name": "INDUSTRIAL ECONOMICS AND PRINCIPLES OF MANAGEMENT",
+        "internalStr": "Int: 18 / 50",
+        "externalStr": "Ext: 37 / 100",
+        "totalStr": "Tot: 55 / 50",
+        "grade": "A",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-SAFETY-",
+        "name": "FOOD SAFETY AND FOOD LAWS",
+        "internalStr": "Int: 22 / 50",
+        "externalStr": "Ext: 44 / 100",
+        "totalStr": "Tot: 66 / 50",
+        "grade": "A+",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-ANALYSI",
+        "name": "FOOD ANALYSIS",
+        "internalStr": "Int: 48 / 50",
+        "externalStr": "Ext: 68 / 100",
+        "totalStr": "Tot: 116 / 150",
+        "grade": "A",
+        "credit": 3
+      },
+      {
+        "code": "TRADITIONAL-",
+        "name": "TRADITIONAL AND FERMENTED FOODS",
+        "internalStr": "Int: 44 / 50",
+        "externalStr": "Ext: 96 / 100",
+        "totalStr": "Tot: 140 / 150",
+        "grade": "O",
+        "credit": 3
+      },
+      {
+        "code": "FOOD-BIOCHEM",
+        "name": "FOOD BIOCHEMISTRY AND BIOTECHNOLOGY",
+        "internalStr": "Int: 40 / 50",
+        "externalStr": "Ext: 70 / 100",
+        "totalStr": "Tot: 110 / 150",
+        "grade": "A",
+        "credit": 3
+      },
+      {
+        "code": "FOOD-ENGINEE",
+        "name": "FOOD ENGINEERING - II",
+        "internalStr": "Int: 45 / 50",
+        "externalStr": "Ext: 89 / 100",
+        "totalStr": "Tot: 134 / 150",
+        "grade": "A+",
+        "credit": 3
+      },
+      {
+        "code": "FOOD-BIOCHEM",
+        "name": "FOOD BIOCHEMISTRY AND BIOTECHNOLOGY LAB",
+        "internalStr": "Int: 37 / 50",
+        "externalStr": "Ext: 50 / 100",
+        "totalStr": "Tot: 87 / 100",
+        "grade": "A+",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-ANALYSI",
+        "name": "FOOD ANALYSIS LAB",
+        "internalStr": "Int: 35 / 50",
+        "externalStr": "Ext: 54 / 100",
+        "totalStr": "Tot: 89 / 100",
+        "grade": "A+",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-ENGINEE",
+        "name": "FOOD ENGINEERING - II LAB",
+        "internalStr": "Int: 18 / 50",
+        "externalStr": "Ext: 26 / 100",
+        "totalStr": "Tot: 44 / 100",
+        "grade": "A+",
+        "credit": 1
+      },
+      {
+        "code": "GENERAL-PROF",
+        "name": "GENERAL PROFECIENCY",
+        "internalStr": "Int: --",
+        "externalStr": "Ext: 46 / 100",
+        "totalStr": "Tot: 46 / 150",
+        "grade": "A",
+        "credit": 3
+      }
+    ]
+  },
+  {
+    "rollNo": "231401140004",
+    "enrollNo": "BU0220444582",
+    "name": "ASTHA CHATURVEDI",
+    "fatherName": "DINESH CHATURVEDI",
+    "motherName": "KALPANA CHATURVEDI",
+    "examCategory": "REGULAR",
+    "courseName": "B.TECH (FOOD ENGG. AND TECHNOLOGY) V SEMESTER",
+    "sem": 5,
+    "sgpa": 7.9,
+    "resultStatus": "PROMOTED",
+    "subjects": [
+      {
+        "code": "INDUSTRIAL-E",
+        "name": "INDUSTRIAL ECONOMICS AND PRINCIPLES OF MANAGEMENT",
+        "internalStr": "Int: 19 / 50",
+        "externalStr": "Ext: 41 / 100",
+        "totalStr": "Tot: 60 / 50",
+        "grade": "A+",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-SAFETY-",
+        "name": "FOOD SAFETY AND FOOD LAWS",
+        "internalStr": "Int: 21 / 50",
+        "externalStr": "Ext: 37 / 100",
+        "totalStr": "Tot: 58 / 50",
+        "grade": "A",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-ANALYSI",
+        "name": "FOOD ANALYSIS",
+        "internalStr": "Int: 42 / 50",
+        "externalStr": "Ext: 46 / 100",
+        "totalStr": "Tot: 88 / 150",
+        "grade": "B",
+        "credit": 3
+      },
+      {
+        "code": "TRADITIONAL-",
+        "name": "TRADITIONAL AND FERMENTED FOODS",
+        "internalStr": "Int: 43 / 50",
+        "externalStr": "Ext: 86 / 100",
+        "totalStr": "Tot: 129 / 150",
+        "grade": "A+",
+        "credit": 3
+      },
+      {
+        "code": "FOOD-BIOCHEM",
+        "name": "FOOD BIOCHEMISTRY AND BIOTECHNOLOGY",
+        "internalStr": "Int: 42 / 50",
+        "externalStr": "Ext: 57 / 100",
+        "totalStr": "Tot: 99 / 150",
+        "grade": "B+",
+        "credit": 3
+      },
+      {
+        "code": "FOOD-ENGINEE",
+        "name": "FOOD ENGINEERING - II",
+        "internalStr": "Int: 40 / 50",
+        "externalStr": "Ext: 57 / 100",
+        "totalStr": "Tot: 97 / 150",
+        "grade": "B+",
+        "credit": 3
+      },
+      {
+        "code": "FOOD-BIOCHEM",
+        "name": "FOOD BIOCHEMISTRY AND BIOTECHNOLOGY LAB",
+        "internalStr": "Int: 36 / 50",
+        "externalStr": "Ext: 48 / 100",
+        "totalStr": "Tot: 84 / 100",
+        "grade": "A+",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-ANALYSI",
+        "name": "FOOD ANALYSIS LAB",
+        "internalStr": "Int: 34 / 50",
+        "externalStr": "Ext: 50 / 100",
+        "totalStr": "Tot: 84 / 100",
+        "grade": "A+",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-ENGINEE",
+        "name": "FOOD ENGINEERING - II LAB",
+        "internalStr": "Int: 18 / 50",
+        "externalStr": "Ext: 25 / 100",
+        "totalStr": "Tot: 43 / 100",
+        "grade": "A+",
+        "credit": 1
+      },
+      {
+        "code": "GENERAL-PROF",
+        "name": "GENERAL PROFECIENCY",
+        "internalStr": "Int: --",
+        "externalStr": "Ext: 48 / 100",
+        "totalStr": "Tot: 48 / 150",
+        "grade": "A",
+        "credit": 3
+      }
+    ]
+  },
+  {
+    "rollNo": "231401140005",
+    "enrollNo": "BU0230608010",
+    "name": "HARDIK PUROHIT",
+    "fatherName": "NIRDOSH PUROHIT",
+    "motherName": "ARCHANA PUROHIT",
+    "examCategory": "REGULAR",
+    "courseName": "B.TECH (FOOD ENGG. AND TECHNOLOGY) V SEMESTER",
+    "sem": 5,
+    "sgpa": 6.62,
+    "resultStatus": "PROMOTED",
+    "subjects": [
+      {
+        "code": "INDUSTRIAL-E",
+        "name": "INDUSTRIAL ECONOMICS AND PRINCIPLES OF MANAGEMENT",
+        "internalStr": "Int: 17 / 50",
+        "externalStr": "Ext: 41 / 100",
+        "totalStr": "Tot: 58 / 50",
+        "grade": "A",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-SAFETY-",
+        "name": "FOOD SAFETY AND FOOD LAWS",
+        "internalStr": "Int: 13 / 50",
+        "externalStr": "Ext: 33 / 100",
+        "totalStr": "Tot: 46 / 50",
+        "grade": "B+",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-ANALYSI",
+        "name": "FOOD ANALYSIS",
+        "internalStr": "Int: 37 / 50",
+        "externalStr": "Ext: 40 / 100",
+        "totalStr": "Tot: 77 / 150",
+        "grade": "B",
+        "credit": 3
+      },
+      {
+        "code": "TRADITIONAL-",
+        "name": "TRADITIONAL AND FERMENTED FOODS",
+        "internalStr": "Int: 25 / 50",
+        "externalStr": "Ext: 57 / 100",
+        "totalStr": "Tot: 82 / 150",
+        "grade": "B",
+        "credit": 3
+      },
+      {
+        "code": "FOOD-BIOCHEM",
+        "name": "FOOD BIOCHEMISTRY AND BIOTECHNOLOGY",
+        "internalStr": "Int: 38 / 50",
+        "externalStr": "Ext: 56 / 100",
+        "totalStr": "Tot: 94 / 150",
+        "grade": "B+",
+        "credit": 3
+      },
+      {
+        "code": "FOOD-ENGINEE",
+        "name": "FOOD ENGINEERING - II",
+        "internalStr": "Int: 38 / 50",
+        "externalStr": "Ext: 49 / 100",
+        "totalStr": "Tot: 87 / 150",
+        "grade": "B",
+        "credit": 3
+      },
+      {
+        "code": "FOOD-BIOCHEM",
+        "name": "FOOD BIOCHEMISTRY AND BIOTECHNOLOGY LAB",
+        "internalStr": "Int: 28 / 50",
+        "externalStr": "Ext: 40 / 100",
+        "totalStr": "Tot: 68 / 100",
+        "grade": "B+",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-ANALYSI",
+        "name": "FOOD ANALYSIS LAB",
+        "internalStr": "Int: 26 / 50",
+        "externalStr": "Ext: 36 / 100",
+        "totalStr": "Tot: 62 / 100",
+        "grade": "B+",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-ENGINEE",
+        "name": "FOOD ENGINEERING - II LAB",
+        "internalStr": "Int: 11 / 50",
+        "externalStr": "Ext: 18 / 100",
+        "totalStr": "Tot: 29 / 100",
+        "grade": "B",
+        "credit": 1
+      },
+      {
+        "code": "GENERAL-PROF",
+        "name": "GENERAL PROFECIENCY",
+        "internalStr": "Int: --",
+        "externalStr": "Ext: 25 / 100",
+        "totalStr": "Tot: 25 / 150",
+        "grade": "A",
+        "credit": 3
+      }
+    ]
+  },
+  {
+    "rollNo": "231401140006",
+    "enrollNo": "BU0230596591",
+    "name": "NIKHIL GIRI",
+    "fatherName": "LATE SANJU GIRI",
+    "motherName": "MANJU GIRI",
+    "examCategory": "REGULAR",
+    "courseName": "B.TECH (FOOD ENGG. AND TECHNOLOGY) V SEMESTER",
+    "sem": 5,
+    "sgpa": 6.76,
+    "resultStatus": "PROMOTED",
+    "subjects": [
+      {
+        "code": "INDUSTRIAL-E",
+        "name": "INDUSTRIAL ECONOMICS AND PRINCIPLES OF MANAGEMENT",
+        "internalStr": "Int: 20 / 50",
+        "externalStr": "Ext: 30 / 100",
+        "totalStr": "Tot: 50 / 50",
+        "grade": "B+",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-SAFETY-",
+        "name": "FOOD SAFETY AND FOOD LAWS",
+        "internalStr": "Int: 15 / 50",
+        "externalStr": "Ext: 30 / 100",
+        "totalStr": "Tot: 45 / 50",
+        "grade": "B+",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-ANALYSI",
+        "name": "FOOD ANALYSIS",
+        "internalStr": "Int: 40 / 50",
+        "externalStr": "Ext: 40 / 100",
+        "totalStr": "Tot: 80 / 150",
+        "grade": "B",
+        "credit": 3
+      },
+      {
+        "code": "TRADITIONAL-",
+        "name": "TRADITIONAL AND FERMENTED FOODS",
+        "internalStr": "Int: 28 / 50",
+        "externalStr": "Ext: 47 / 100",
+        "totalStr": "Tot: 75 / 150",
+        "grade": "B",
+        "credit": 3
+      },
+      {
+        "code": "FOOD-BIOCHEM",
+        "name": "FOOD BIOCHEMISTRY AND BIOTECHNOLOGY",
+        "internalStr": "Int: 40 / 50",
+        "externalStr": "Ext: 53 / 100",
+        "totalStr": "Tot: 93 / 150",
+        "grade": "B+",
+        "credit": 3
+      },
+      {
+        "code": "FOOD-ENGINEE",
+        "name": "FOOD ENGINEERING - II",
+        "internalStr": "Int: 35 / 50",
+        "externalStr": "Ext: 42 / 100",
+        "totalStr": "Tot: 77 / 150",
+        "grade": "B",
+        "credit": 3
+      },
+      {
+        "code": "FOOD-BIOCHEM",
+        "name": "FOOD BIOCHEMISTRY AND BIOTECHNOLOGY LAB",
+        "internalStr": "Int: 30 / 50",
+        "externalStr": "Ext: 40 / 100",
+        "totalStr": "Tot: 70 / 100",
+        "grade": "A",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-ANALYSI",
+        "name": "FOOD ANALYSIS LAB",
+        "internalStr": "Int: 28 / 50",
+        "externalStr": "Ext: 42 / 100",
+        "totalStr": "Tot: 70 / 100",
+        "grade": "A",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-ENGINEE",
+        "name": "FOOD ENGINEERING - II LAB",
+        "internalStr": "Int: 12 / 50",
+        "externalStr": "Ext: 20 / 100",
+        "totalStr": "Tot: 32 / 100",
+        "grade": "B+",
+        "credit": 1
+      },
+      {
+        "code": "GENERAL-PROF",
+        "name": "GENERAL PROFECIENCY",
+        "internalStr": "Int: --",
+        "externalStr": "Ext: 30 / 100",
+        "totalStr": "Tot: 30 / 150",
+        "grade": "A",
+        "credit": 3
+      }
+    ]
+  },
+  {
+    "rollNo": "231401140008",
+    "enrollNo": "BU0230627543",
+    "name": "RISHABH SINGH",
+    "fatherName": "NARENDRA KUMAR SINGH",
+    "motherName": "POONAM SINGH",
+    "examCategory": "REGULAR",
+    "courseName": "B.TECH (FOOD ENGG. AND TECHNOLOGY) V SEMESTER",
+    "sem": 5,
+    "sgpa": 6.81,
+    "resultStatus": "PROMOTED",
+    "subjects": [
+      {
+        "code": "INDUSTRIAL-E",
+        "name": "INDUSTRIAL ECONOMICS AND PRINCIPLES OF MANAGEMENT",
+        "internalStr": "Int: 21 / 50",
+        "externalStr": "Ext: 30 / 100",
+        "totalStr": "Tot: 51 / 50",
+        "grade": "B+",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-SAFETY-",
+        "name": "FOOD SAFETY AND FOOD LAWS",
+        "internalStr": "Int: 18 / 50",
+        "externalStr": "Ext: 33 / 100",
+        "totalStr": "Tot: 51 / 50",
+        "grade": "B+",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-ANALYSI",
+        "name": "FOOD ANALYSIS",
+        "internalStr": "Int: 45 / 50",
+        "externalStr": "Ext: 42 / 100",
+        "totalStr": "Tot: 87 / 150",
+        "grade": "B",
+        "credit": 3
+      },
+      {
+        "code": "TRADITIONAL-",
+        "name": "TRADITIONAL AND FERMENTED FOODS",
+        "internalStr": "Int: 36 / 50",
+        "externalStr": "Ext: 64 / 100",
+        "totalStr": "Tot: 100 / 150",
+        "grade": "B+",
+        "credit": 3
+      },
+      {
+        "code": "FOOD-BIOCHEM",
+        "name": "FOOD BIOCHEMISTRY AND BIOTECHNOLOGY",
+        "internalStr": "Int: 39 / 50",
+        "externalStr": "Ext: 40 / 100",
+        "totalStr": "Tot: 79 / 150",
+        "grade": "B",
+        "credit": 3
+      },
+      {
+        "code": "FOOD-ENGINEE",
+        "name": "FOOD ENGINEERING - II",
+        "internalStr": "Int: 36 / 50",
+        "externalStr": "Ext: 40 / 100",
+        "totalStr": "Tot: 76 / 150",
+        "grade": "B",
+        "credit": 3
+      },
+      {
+        "code": "FOOD-BIOCHEM",
+        "name": "FOOD BIOCHEMISTRY AND BIOTECHNOLOGY LAB",
+        "internalStr": "Int: 32 / 50",
+        "externalStr": "Ext: 45 / 100",
+        "totalStr": "Tot: 77 / 100",
+        "grade": "A",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-ANALYSI",
+        "name": "FOOD ANALYSIS LAB",
+        "internalStr": "Int: 31 / 50",
+        "externalStr": "Ext: 45 / 100",
+        "totalStr": "Tot: 76 / 100",
+        "grade": "A",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-ENGINEE",
+        "name": "FOOD ENGINEERING - II LAB",
+        "internalStr": "Int: 15 / 50",
+        "externalStr": "Ext: 22 / 100",
+        "totalStr": "Tot: 37 / 100",
+        "grade": "A",
+        "credit": 1
+      },
+      {
+        "code": "GENERAL-PROF",
+        "name": "GENERAL PROFECIENCY",
+        "internalStr": "Int: --",
+        "externalStr": "Ext: 44 / 100",
+        "totalStr": "Tot: 44 / 150",
+        "grade": "A",
+        "credit": 3
+      }
+    ]
+  },
+  {
+    "rollNo": "231401140009",
+    "enrollNo": "BU0230650035",
+    "name": "ROHINI SHRIVAS",
+    "fatherName": "AJAY KUMAR SHRIVAS",
+    "motherName": "SUMAN DEVI SHRIVAS",
+    "examCategory": "REGULAR",
+    "courseName": "B.TECH (FOOD ENGG. AND TECHNOLOGY) V SEMESTER",
+    "sem": 5,
+    "sgpa": 8.48,
+    "resultStatus": "PROMOTED",
+    "subjects": [
+      {
+        "code": "INDUSTRIAL-E",
+        "name": "INDUSTRIAL ECONOMICS AND PRINCIPLES OF MANAGEMENT",
+        "internalStr": "Int: 22 / 50",
+        "externalStr": "Ext: 34 / 100",
+        "totalStr": "Tot: 56 / 50",
+        "grade": "A",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-SAFETY-",
+        "name": "FOOD SAFETY AND FOOD LAWS",
+        "internalStr": "Int: 22 / 50",
+        "externalStr": "Ext: 37 / 100",
+        "totalStr": "Tot: 59 / 50",
+        "grade": "A",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-ANALYSI",
+        "name": "FOOD ANALYSIS",
+        "internalStr": "Int: 45 / 50",
+        "externalStr": "Ext: 71 / 100",
+        "totalStr": "Tot: 116 / 150",
+        "grade": "A",
+        "credit": 3
+      },
+      {
+        "code": "TRADITIONAL-",
+        "name": "TRADITIONAL AND FERMENTED FOODS",
+        "internalStr": "Int: 43 / 50",
+        "externalStr": "Ext: 95 / 100",
+        "totalStr": "Tot: 138 / 150",
+        "grade": "O",
+        "credit": 3
+      },
+      {
+        "code": "FOOD-BIOCHEM",
+        "name": "FOOD BIOCHEMISTRY AND BIOTECHNOLOGY",
+        "internalStr": "Int: 42 / 50",
+        "externalStr": "Ext: 68 / 100",
+        "totalStr": "Tot: 110 / 150",
+        "grade": "A",
+        "credit": 3
+      },
+      {
+        "code": "FOOD-ENGINEE",
+        "name": "FOOD ENGINEERING - II",
+        "internalStr": "Int: 38 / 50",
+        "externalStr": "Ext: 70 / 100",
+        "totalStr": "Tot: 108 / 150",
+        "grade": "A",
+        "credit": 3
+      },
+      {
+        "code": "FOOD-BIOCHEM",
+        "name": "FOOD BIOCHEMISTRY AND BIOTECHNOLOGY LAB",
+        "internalStr": "Int: 35 / 50",
+        "externalStr": "Ext: 49 / 100",
+        "totalStr": "Tot: 84 / 100",
+        "grade": "A+",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-ANALYSI",
+        "name": "FOOD ANALYSIS LAB",
+        "internalStr": "Int: 31 / 50",
+        "externalStr": "Ext: 50 / 100",
+        "totalStr": "Tot: 81 / 100",
+        "grade": "A+",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-ENGINEE",
+        "name": "FOOD ENGINEERING - II LAB",
+        "internalStr": "Int: 16 / 50",
+        "externalStr": "Ext: 23 / 100",
+        "totalStr": "Tot: 39 / 100",
+        "grade": "A",
+        "credit": 1
+      },
+      {
+        "code": "GENERAL-PROF",
+        "name": "GENERAL PROFECIENCY",
+        "internalStr": "Int: --",
+        "externalStr": "Ext: 44 / 100",
+        "totalStr": "Tot: 44 / 150",
+        "grade": "A",
+        "credit": 3
+      }
+    ]
+  },
+  {
+    "rollNo": "231401140010",
+    "enrollNo": "BU0230607927",
+    "name": "SALMAN KHAN",
+    "fatherName": "HAZI GHULAM",
+    "motherName": "IMRANA FARID",
+    "examCategory": "REGULAR",
+    "courseName": "B.TECH (FOOD ENGG. AND TECHNOLOGY) V SEMESTER",
+    "sem": 5,
+    "sgpa": 6.24,
+    "resultStatus": "PROMOTED",
+    "subjects": [
+      {
+        "code": "INDUSTRIAL-E",
+        "name": "INDUSTRIAL ECONOMICS AND PRINCIPLES OF MANAGEMENT",
+        "internalStr": "Int: 11 / 50",
+        "externalStr": "Ext: 33 / 100",
+        "totalStr": "Tot: 44 / 50",
+        "grade": "B",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-SAFETY-",
+        "name": "FOOD SAFETY AND FOOD LAWS",
+        "internalStr": "Int: 13 / 50",
+        "externalStr": "Ext: 25 / 100",
+        "totalStr": "Tot: 38 / 50",
+        "grade": "B",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-ANALYSI",
+        "name": "FOOD ANALYSIS",
+        "internalStr": "Int: 31 / 50",
+        "externalStr": "Ext: 47 / 100",
+        "totalStr": "Tot: 78 / 150",
+        "grade": "B",
+        "credit": 3
+      },
+      {
+        "code": "TRADITIONAL-",
+        "name": "TRADITIONAL AND FERMENTED FOODS",
+        "internalStr": "Int: 27 / 50",
+        "externalStr": "Ext: 67 / 100",
+        "totalStr": "Tot: 94 / 150",
+        "grade": "B+",
+        "credit": 3
+      },
+      {
+        "code": "FOOD-BIOCHEM",
+        "name": "FOOD BIOCHEMISTRY AND BIOTECHNOLOGY",
+        "internalStr": "Int: 37 / 50",
+        "externalStr": "Ext: 41 / 100",
+        "totalStr": "Tot: 78 / 150",
+        "grade": "B",
+        "credit": 3
+      },
+      {
+        "code": "FOOD-ENGINEE",
+        "name": "FOOD ENGINEERING - II",
+        "internalStr": "Int: 36 / 50",
+        "externalStr": "Ext: 45 / 100",
+        "totalStr": "Tot: 81 / 150",
+        "grade": "B",
+        "credit": 3
+      },
+      {
+        "code": "FOOD-BIOCHEM",
+        "name": "FOOD BIOCHEMISTRY AND BIOTECHNOLOGY LAB",
+        "internalStr": "Int: 25 / 50",
+        "externalStr": "Ext: 38 / 100",
+        "totalStr": "Tot: 63 / 100",
+        "grade": "B+",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-ANALYSI",
+        "name": "FOOD ANALYSIS LAB",
+        "internalStr": "Int: 22 / 50",
+        "externalStr": "Ext: 33 / 100",
+        "totalStr": "Tot: 55 / 100",
+        "grade": "B",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-ENGINEE",
+        "name": "FOOD ENGINEERING - II LAB",
+        "internalStr": "Int: 10 / 50",
+        "externalStr": "Ext: 16 / 100",
+        "totalStr": "Tot: 26 / 100",
+        "grade": "B",
+        "credit": 1
+      },
+      {
+        "code": "GENERAL-PROF",
+        "name": "GENERAL PROFECIENCY",
+        "internalStr": "Int: --",
+        "externalStr": "Ext: 25 / 100",
+        "totalStr": "Tot: 25 / 150",
+        "grade": "A",
+        "credit": 3
+      }
+    ]
+  },
+  {
+    "rollNo": "231401140011",
+    "enrollNo": "BU0230611965",
+    "name": "SAMEER AHIRWAR",
+    "fatherName": "MAHESH AHIRWAR",
+    "motherName": "MURTI DEVI",
+    "examCategory": "REGULAR",
+    "courseName": "B.TECH (FOOD ENGG. AND TECHNOLOGY) V SEMESTER",
+    "sem": 5,
+    "sgpa": 8.1,
+    "resultStatus": "PROMOTED",
+    "subjects": [
+      {
+        "code": "INDUSTRIAL-E",
+        "name": "INDUSTRIAL ECONOMICS AND PRINCIPLES OF MANAGEMENT",
+        "internalStr": "Int: 16 / 50",
+        "externalStr": "Ext: 42 / 100",
+        "totalStr": "Tot: 58 / 50",
+        "grade": "A",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-SAFETY-",
+        "name": "FOOD SAFETY AND FOOD LAWS",
+        "internalStr": "Int: 20 / 50",
+        "externalStr": "Ext: 35 / 100",
+        "totalStr": "Tot: 55 / 50",
+        "grade": "A",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-ANALYSI",
+        "name": "FOOD ANALYSIS",
+        "internalStr": "Int: 46 / 50",
+        "externalStr": "Ext: 59 / 100",
+        "totalStr": "Tot: 105 / 150",
+        "grade": "A",
+        "credit": 3
+      },
+      {
+        "code": "TRADITIONAL-",
+        "name": "TRADITIONAL AND FERMENTED FOODS",
+        "internalStr": "Int: 41 / 50",
+        "externalStr": "Ext: 90 / 100",
+        "totalStr": "Tot: 131 / 150",
+        "grade": "A+",
+        "credit": 3
+      },
+      {
+        "code": "FOOD-BIOCHEM",
+        "name": "FOOD BIOCHEMISTRY AND BIOTECHNOLOGY",
+        "internalStr": "Int: 39 / 50",
+        "externalStr": "Ext: 62 / 100",
+        "totalStr": "Tot: 101 / 150",
+        "grade": "B+",
+        "credit": 3
+      },
+      {
+        "code": "FOOD-ENGINEE",
+        "name": "FOOD ENGINEERING - II",
+        "internalStr": "Int: 42 / 50",
+        "externalStr": "Ext: 56 / 100",
+        "totalStr": "Tot: 98 / 150",
+        "grade": "B+",
+        "credit": 3
+      },
+      {
+        "code": "FOOD-BIOCHEM",
+        "name": "FOOD BIOCHEMISTRY AND BIOTECHNOLOGY LAB",
+        "internalStr": "Int: 34 / 50",
+        "externalStr": "Ext: 48 / 100",
+        "totalStr": "Tot: 82 / 100",
+        "grade": "A+",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-ANALYSI",
+        "name": "FOOD ANALYSIS LAB",
+        "internalStr": "Int: 33 / 50",
+        "externalStr": "Ext: 52 / 100",
+        "totalStr": "Tot: 85 / 100",
+        "grade": "A+",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-ENGINEE",
+        "name": "FOOD ENGINEERING - II LAB",
+        "internalStr": "Int: 17 / 50",
+        "externalStr": "Ext: 25 / 100",
+        "totalStr": "Tot: 42 / 100",
+        "grade": "A+",
+        "credit": 1
+      },
+      {
+        "code": "GENERAL-PROF",
+        "name": "GENERAL PROFECIENCY",
+        "internalStr": "Int: --",
+        "externalStr": "Ext: 48 / 100",
+        "totalStr": "Tot: 48 / 150",
+        "grade": "A",
+        "credit": 3
+      }
+    ]
+  },
+  {
+    "rollNo": "231401140012",
+    "enrollNo": "BU0230596794",
+    "name": "SATYAM KUMAR",
+    "fatherName": "KAMLESH KUMAR",
+    "motherName": "BEBEE",
+    "examCategory": "REGULAR",
+    "courseName": "B.TECH (FOOD ENGG. AND TECHNOLOGY) V SEMESTER",
+    "sem": 5,
+    "sgpa": 7.48,
+    "resultStatus": "PROMOTED",
+    "subjects": [
+      {
+        "code": "INDUSTRIAL-E",
+        "name": "INDUSTRIAL ECONOMICS AND PRINCIPLES OF MANAGEMENT",
+        "internalStr": "Int: 18 / 50",
+        "externalStr": "Ext: 36 / 100",
+        "totalStr": "Tot: 54 / 50",
+        "grade": "A",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-SAFETY-",
+        "name": "FOOD SAFETY AND FOOD LAWS",
+        "internalStr": "Int: 18 / 50",
+        "externalStr": "Ext: 29 / 100",
+        "totalStr": "Tot: 47 / 50",
+        "grade": "B+",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-ANALYSI",
+        "name": "FOOD ANALYSIS",
+        "internalStr": "Int: 42 / 50",
+        "externalStr": "Ext: 44 / 100",
+        "totalStr": "Tot: 86 / 150",
+        "grade": "B",
+        "credit": 3
+      },
+      {
+        "code": "TRADITIONAL-",
+        "name": "TRADITIONAL AND FERMENTED FOODS",
+        "internalStr": "Int: 40 / 50",
+        "externalStr": "Ext: 82 / 100",
+        "totalStr": "Tot: 122 / 150",
+        "grade": "A+",
+        "credit": 3
+      },
+      {
+        "code": "FOOD-BIOCHEM",
+        "name": "FOOD BIOCHEMISTRY AND BIOTECHNOLOGY",
+        "internalStr": "Int: 36 / 50",
+        "externalStr": "Ext: 64 / 100",
+        "totalStr": "Tot: 100 / 150",
+        "grade": "B+",
+        "credit": 3
+      },
+      {
+        "code": "FOOD-ENGINEE",
+        "name": "FOOD ENGINEERING - II",
+        "internalStr": "Int: 36 / 50",
+        "externalStr": "Ext: 56 / 100",
+        "totalStr": "Tot: 92 / 150",
+        "grade": "B+",
+        "credit": 3
+      },
+      {
+        "code": "FOOD-BIOCHEM",
+        "name": "FOOD BIOCHEMISTRY AND BIOTECHNOLOGY LAB",
+        "internalStr": "Int: 32 / 50",
+        "externalStr": "Ext: 45 / 100",
+        "totalStr": "Tot: 77 / 100",
+        "grade": "A",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-ANALYSI",
+        "name": "FOOD ANALYSIS LAB",
+        "internalStr": "Int: 30 / 50",
+        "externalStr": "Ext: 44 / 100",
+        "totalStr": "Tot: 74 / 100",
+        "grade": "A",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-ENGINEE",
+        "name": "FOOD ENGINEERING - II LAB",
+        "internalStr": "Int: 14 / 50",
+        "externalStr": "Ext: 21 / 100",
+        "totalStr": "Tot: 35 / 100",
+        "grade": "A",
+        "credit": 1
+      },
+      {
+        "code": "GENERAL-PROF",
+        "name": "GENERAL PROFECIENCY",
+        "internalStr": "Int: --",
+        "externalStr": "Ext: 44 / 100",
+        "totalStr": "Tot: 44 / 150",
+        "grade": "A",
+        "credit": 3
+      }
+    ]
+  },
+  {
+    "rollNo": "231401140013",
+    "enrollNo": "BU0230608617",
+    "name": "TANISHKA",
+    "fatherName": "SUNIL KUMAR",
+    "motherName": "BABITA",
+    "examCategory": "REGULAR",
+    "courseName": "B.TECH (FOOD ENGG. AND TECHNOLOGY) V SEMESTER",
+    "sem": 5,
+    "sgpa": 8.9,
+    "resultStatus": "PROMOTED",
+    "subjects": [
+      {
+        "code": "INDUSTRIAL-E",
+        "name": "INDUSTRIAL ECONOMICS AND PRINCIPLES OF MANAGEMENT",
+        "internalStr": "Int: 21 / 50",
+        "externalStr": "Ext: 37 / 100",
+        "totalStr": "Tot: 58 / 50",
+        "grade": "A",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-SAFETY-",
+        "name": "FOOD SAFETY AND FOOD LAWS",
+        "internalStr": "Int: 21 / 50",
+        "externalStr": "Ext: 45 / 100",
+        "totalStr": "Tot: 66 / 50",
+        "grade": "A+",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-ANALYSI",
+        "name": "FOOD ANALYSIS",
+        "internalStr": "Int: 45 / 50",
+        "externalStr": "Ext: 75 / 100",
+        "totalStr": "Tot: 120 / 150",
+        "grade": "A+",
+        "credit": 3
+      },
+      {
+        "code": "TRADITIONAL-",
+        "name": "TRADITIONAL AND FERMENTED FOODS",
+        "internalStr": "Int: 44 / 50",
+        "externalStr": "Ext: 95 / 100",
+        "totalStr": "Tot: 139 / 150",
+        "grade": "O",
+        "credit": 3
+      },
+      {
+        "code": "FOOD-BIOCHEM",
+        "name": "FOOD BIOCHEMISTRY AND BIOTECHNOLOGY",
+        "internalStr": "Int: 42 / 50",
+        "externalStr": "Ext: 71 / 100",
+        "totalStr": "Tot: 113 / 150",
+        "grade": "A",
+        "credit": 3
+      },
+      {
+        "code": "FOOD-ENGINEE",
+        "name": "FOOD ENGINEERING - II",
+        "internalStr": "Int: 38 / 50",
+        "externalStr": "Ext: 84 / 100",
+        "totalStr": "Tot: 122 / 150",
+        "grade": "A+",
+        "credit": 3
+      },
+      {
+        "code": "FOOD-BIOCHEM",
+        "name": "FOOD BIOCHEMISTRY AND BIOTECHNOLOGY LAB",
+        "internalStr": "Int: 35 / 50",
+        "externalStr": "Ext: 48 / 100",
+        "totalStr": "Tot: 83 / 100",
+        "grade": "A+",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-ANALYSI",
+        "name": "FOOD ANALYSIS LAB",
+        "internalStr": "Int: 34 / 50",
+        "externalStr": "Ext: 53 / 100",
+        "totalStr": "Tot: 87 / 100",
+        "grade": "A+",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-ENGINEE",
+        "name": "FOOD ENGINEERING - II LAB",
+        "internalStr": "Int: 17 / 50",
+        "externalStr": "Ext: 24 / 100",
+        "totalStr": "Tot: 41 / 100",
+        "grade": "A+",
+        "credit": 1
+      },
+      {
+        "code": "GENERAL-PROF",
+        "name": "GENERAL PROFECIENCY",
+        "internalStr": "Int: --",
+        "externalStr": "Ext: 45 / 100",
+        "totalStr": "Tot: 45 / 150",
+        "grade": "A",
+        "credit": 3
+      }
+    ]
+  },
+  {
+    "rollNo": "231401140014",
+    "enrollNo": "BU0230601692",
+    "name": "VISHWAS SENGAR",
+    "fatherName": "SUBHASH SINGH SENGAR",
+    "motherName": "SARASVATI DEVI",
+    "examCategory": "REGULAR",
+    "courseName": "B.TECH (FOOD ENGG. AND TECHNOLOGY) V SEMESTER",
+    "sem": 5,
+    "sgpa": 6.38,
+    "resultStatus": "PROMOTED",
+    "subjects": [
+      {
+        "code": "INDUSTRIAL-E",
+        "name": "INDUSTRIAL ECONOMICS AND PRINCIPLES OF MANAGEMENT",
+        "internalStr": "Int: 11 / 50",
+        "externalStr": "Ext: 36 / 100",
+        "totalStr": "Tot: 47 / 50",
+        "grade": "B+",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-SAFETY-",
+        "name": "FOOD SAFETY AND FOOD LAWS",
+        "internalStr": "Int: 13 / 50",
+        "externalStr": "Ext: 22 / 100",
+        "totalStr": "Tot: 35 / 50",
+        "grade": "C",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-ANALYSI",
+        "name": "FOOD ANALYSIS",
+        "internalStr": "Int: 36 / 50",
+        "externalStr": "Ext: 41 / 100",
+        "totalStr": "Tot: 77 / 150",
+        "grade": "B",
+        "credit": 3
+      },
+      {
+        "code": "TRADITIONAL-",
+        "name": "TRADITIONAL AND FERMENTED FOODS",
+        "internalStr": "Int: 33 / 50",
+        "externalStr": "Ext: 50 / 100",
+        "totalStr": "Tot: 83 / 150",
+        "grade": "B",
+        "credit": 3
+      },
+      {
+        "code": "FOOD-BIOCHEM",
+        "name": "FOOD BIOCHEMISTRY AND BIOTECHNOLOGY",
+        "internalStr": "Int: 39 / 50",
+        "externalStr": "Ext: 57 / 100",
+        "totalStr": "Tot: 96 / 150",
+        "grade": "B+",
+        "credit": 3
+      },
+      {
+        "code": "FOOD-ENGINEE",
+        "name": "FOOD ENGINEERING - II",
+        "internalStr": "Int: 35 / 50",
+        "externalStr": "Ext: 50 / 100",
+        "totalStr": "Tot: 85 / 150",
+        "grade": "B",
+        "credit": 3
+      },
+      {
+        "code": "FOOD-BIOCHEM",
+        "name": "FOOD BIOCHEMISTRY AND BIOTECHNOLOGY LAB",
+        "internalStr": "Int: 30 / 50",
+        "externalStr": "Ext: 38 / 100",
+        "totalStr": "Tot: 68 / 100",
+        "grade": "B+",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-ANALYSI",
+        "name": "FOOD ANALYSIS LAB",
+        "internalStr": "Int: 28 / 50",
+        "externalStr": "Ext: 40 / 100",
+        "totalStr": "Tot: 68 / 100",
+        "grade": "B+",
+        "credit": 2
+      },
+      {
+        "code": "FOOD-ENGINEE",
+        "name": "FOOD ENGINEERING - II LAB",
+        "internalStr": "Int: 13 / 50",
+        "externalStr": "Ext: 19 / 100",
+        "totalStr": "Tot: 32 / 100",
+        "grade": "B+",
+        "credit": 1
+      },
+      {
+        "code": "GENERAL-PROF",
+        "name": "GENERAL PROFECIENCY",
+        "internalStr": "Int: --",
+        "externalStr": "Ext: 34 / 100",
+        "totalStr": "Tot: 34 / 150",
+        "grade": "A",
+        "credit": 3
+      }
+    ]
+  }
+]
