@@ -247,6 +247,8 @@ export default function FeedbackModal() {
                         <option value="EIE">EIE</option>
                         <option value="BME">BME</option>
                         <option value="ME">ME</option>
+                        <option value="BTE">BTE</option>
+                        <option value="FT">FT</option>
                         <option value="Other">Other Branch</option>
                       </select>
                     </div>
