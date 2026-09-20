@@ -2,16 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Light Mode Defaults - Soothing Sky Blue #68c2e3 */
+/* Light Mode Defaults - Rich Readable Tints & Tones */
 :root {
-  --bg-primary: #f8fafc;
+  --bg-primary: #f1f5f9;
   --bg-surface: #ffffff;
-  --bg-card: rgba(255, 255, 255, 0.9);
-  --border-color: rgba(0, 0, 0, 0.08);
+  --bg-card: rgba(255, 255, 255, 0.95);
+  --border-color: rgba(15, 23, 42, 0.12);
   --text-primary: #0f172a;
-  --text-secondary: #475569;
-  --accent-sky: #68c2e3;
-  --accent-indigo: #4f46e5;
+  --text-secondary: #334155;
+  --accent-sky: #0284c7;
+  --accent-indigo: #4338ca;
 }
 
 /* Dark Mode Class Overrides - Deep Soothing Navy & Sky Blue #68c2e3 */
@@ -41,7 +41,7 @@ body {
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid var(--border-color);
   border-radius: 1rem;
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 24px 0 rgba(15, 23, 42, 0.08), 0 1px 3px 0 rgba(15, 23, 42, 0.06);
   transition: all 0.3s ease;
 }
 
@@ -83,9 +83,41 @@ html.dark ::-webkit-scrollbar-thumb {
   background: #1e293b;
 }
 
-/* Gradient Texts - Soothing #68c2e3 Sky Blue */
+/* Gradient Texts - Rich Readable in Light, Glowing in Dark */
 .gradient-text-sky {
+  background: linear-gradient(135deg, #0369a1 0%, #0284c7 50%, #0c4a6e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+html.dark .gradient-text-sky {
   background: linear-gradient(135deg, #93c5fd 0%, #68c2e3 50%, #0284c7 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+/* ═══ Light Mode Accent Override ═══
+   #68c2e3 has only 1.76:1 contrast on white — unreadable.
+   Override to #0284c7 (sky-600) = 5.2:1 contrast in light mode.
+   Dark mode keeps original #68c2e3 glowing on navy — untouched. */
+
+/* Text color override */
+:root [class*="text-[#68c2e3]"] {
+  color: #0284c7 !important;
+}
+html.dark [class*="text-[#68c2e3]"] {
+  color: #68c2e3 !important;
+}
+
+/* Border color - slightly richer in light mode */
+:root [class*="border-[#68c2e3]"] {
+  border-color: rgba(2, 132, 199, 0.35);
+}
+html.dark [class*="border-[#68c2e3]"] {
+  border-color: rgba(104, 194, 227, 0.35);
+}
+
+/* Background tint - richer in light mode */
+:root [class*="bg-[#68c2e3]"] {
+  --tw-bg-opacity: 1;
 }
