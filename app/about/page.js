@@ -25,12 +25,12 @@ export default function AboutPage() {
   ];
 
   const techStack = [
-    { name: 'Next.js 14', color: 'text-slate-100 bg-slate-800 border-slate-700' },
-    { name: 'Tailwind CSS', color: 'text-cyan-300 bg-cyan-900/30 border-cyan-700/50' },
-    { name: 'Python Scraper', color: 'text-yellow-300 bg-yellow-900/30 border-yellow-700/50' },
-    { name: 'BeautifulSoup', color: 'text-emerald-300 bg-emerald-900/30 border-emerald-700/50' },
-    { name: 'Vercel Cloud', color: 'text-violet-300 bg-violet-900/30 border-violet-700/50' },
-    { name: 'Lucide Icons', color: 'text-rose-300 bg-rose-900/30 border-rose-700/50' },
+    { name: 'Next.js 14', color: 'text-slate-900 dark:text-slate-100 bg-slate-100 dark:bg-slate-800 border-slate-300 dark:border-slate-700' },
+    { name: 'Tailwind CSS', color: 'text-cyan-800 dark:text-cyan-300 bg-cyan-50 dark:bg-cyan-900/30 border-cyan-200 dark:border-cyan-700/50' },
+    { name: 'Python Scraper', color: 'text-amber-800 dark:text-yellow-300 bg-amber-50 dark:bg-yellow-900/30 border-amber-200 dark:border-yellow-700/50' },
+    { name: 'BeautifulSoup', color: 'text-emerald-800 dark:text-emerald-300 bg-emerald-50 dark:bg-emerald-900/30 border-emerald-200 dark:border-emerald-700/50' },
+    { name: 'Vercel Cloud', color: 'text-violet-800 dark:text-violet-300 bg-violet-50 dark:bg-violet-900/30 border-violet-200 dark:border-violet-700/50' },
+    { name: 'Lucide Icons', color: 'text-rose-800 dark:text-rose-300 bg-rose-50 dark:bg-rose-900/30 border-rose-200 dark:border-rose-700/50' },
   ];
 
   const makerContributions = [
@@ -62,19 +62,19 @@ export default function AboutPage() {
     <div className="max-w-3xl mx-auto px-4 sm:px-6 py-10 space-y-10">
 
       {/* Back Link */}
-      <Link href="/" className="inline-flex items-center gap-1.5 text-sm font-medium text-slate-400 hover:text-[#68c2e3] transition-colors">
+      <Link href="/" className="inline-flex items-center gap-1.5 text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-sky-600 dark:hover:text-[#68c2e3] transition-colors">
         <ArrowLeft className="w-4 h-4" />
         Home
       </Link>
 
       {/* Hero */}
       <div className="text-center space-y-3">
-        <h1 className="text-5xl sm:text-6xl font-black tracking-tight text-white">
+        <h1 className="text-5xl sm:text-6xl font-black tracking-tight text-slate-900 dark:text-white">
           BU JHANSI
           <span className="text-[#68c2e3]"> RESULT HUB</span>
         </h1>
-        <p className="text-slate-400 text-sm font-medium">
-          IET — Institute of Engineering & Technology · Bundelkhand University
+        <p className="text-slate-600 dark:text-slate-400 text-sm font-medium">
+          IET — Institute of Engineering &amp; Technology · Bundelkhand University
         </p>
       </div>
 
@@ -87,7 +87,7 @@ export default function AboutPage() {
         ].map(({ val, label }) => (
           <div key={label} className="glass-card p-4 border-slate-200 dark:border-gray-800">
             <div className="text-2xl font-black text-[#68c2e3]">{val}</div>
-            <div className="text-xs text-slate-400 font-bold mt-1">{label}</div>
+            <div className="text-xs text-slate-600 dark:text-slate-400 font-bold mt-1">{label}</div>
           </div>
         ))}
       </div>
@@ -95,18 +95,18 @@ export default function AboutPage() {
       {/* The Makers Section */}
       <section className="space-y-4">
         <div className="flex items-center gap-2">
-          <span className="text-[11px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-[#68c2e3]/10 text-[#68c2e3] border border-[#68c2e3]/20 flex items-center gap-1.5">
+          <span className="text-[11px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full bg-sky-50 dark:bg-[#68c2e3]/10 text-sky-700 dark:text-[#68c2e3] border border-sky-200 dark:border-[#68c2e3]/20 flex items-center gap-1.5">
             <Sparkles className="w-3 h-3" />
             The Makers
           </span>
         </div>
 
         {/* 1. Aditya Kumar Verma Container */}
-        <div className="glass-card p-4 sm:p-5 rounded-xl border border-slate-200 dark:border-gray-800 bg-slate-900/60 backdrop-blur-xl space-y-3.5">
+        <div className="glass-card p-4 sm:p-5 rounded-xl border border-slate-200 dark:border-gray-800 bg-white dark:bg-slate-900/60 shadow-sm dark:shadow-none backdrop-blur-xl space-y-3.5">
           {/* Header */}
           <div className="flex flex-col sm:flex-row items-center sm:items-start gap-3.5 text-center sm:text-left">
             <div className="relative group shrink-0">
-              <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-xl overflow-hidden ring-2 ring-[#68c2e3]/40 shadow-lg shadow-[#68c2e3]/10 bg-slate-950 flex items-center justify-center">
+              <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-xl overflow-hidden ring-2 ring-sky-500/40 dark:ring-[#68c2e3]/40 shadow-md bg-slate-100 dark:bg-slate-950 flex items-center justify-center">
                 <img
                   src={makerImg}
                   alt="Aditya Kumar Verma"
@@ -120,46 +120,46 @@ export default function AboutPage() {
 
             <div className="space-y-1.5 flex-1 min-w-0">
               <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2">
-                <h2 className="text-lg sm:text-xl font-black text-white tracking-tight">Aditya Kumar Verma</h2>
-                <span className="inline-flex items-center gap-1 text-[10px] font-extrabold px-2.5 py-0.5 rounded-full bg-gradient-to-r from-emerald-600 via-emerald-500 to-teal-500 text-white shadow-md shadow-emerald-950/60 border border-emerald-300/40 tracking-wide uppercase">
+                <h2 className="text-lg sm:text-xl font-black text-slate-900 dark:text-white tracking-tight">Aditya Kumar Verma</h2>
+                <span className="inline-flex items-center gap-1 text-[10px] font-extrabold px-2.5 py-0.5 rounded-full bg-gradient-to-r from-emerald-600 via-emerald-500 to-teal-500 text-white shadow-md shadow-emerald-950/40 border border-emerald-300/40 tracking-wide uppercase">
                   <GraduationCap className="w-3 h-3 text-emerald-100 shrink-0" />
                   EIE Branch
                 </span>
               </div>
 
               <div className="flex flex-wrap items-center justify-center sm:justify-start gap-1.5">
-                <span className="text-[10px] px-2 py-0.5 rounded-md font-bold bg-sky-500/15 text-[#68c2e3] border border-sky-500/30 shadow-xs">
+                <span className="text-[10px] px-2 py-0.5 rounded-md font-bold bg-sky-50 dark:bg-sky-500/15 text-sky-700 dark:text-[#68c2e3] border border-sky-200 dark:border-sky-500/30 shadow-xs">
                   Full-Stack Dev
                 </span>
-                <span className="text-[10px] px-2 py-0.5 rounded-md font-bold bg-amber-500/15 text-amber-300 border border-amber-500/30 shadow-xs">
-                  Python & Automation
+                <span className="text-[10px] px-2 py-0.5 rounded-md font-bold bg-amber-50 dark:bg-amber-500/15 text-amber-800 dark:text-amber-300 border border-amber-200 dark:border-amber-500/30 shadow-xs">
+                  Python &amp; Automation
                 </span>
-                <span className="text-[10px] px-2 py-0.5 rounded-md font-bold bg-violet-500/15 text-violet-300 border border-violet-500/30 shadow-xs">
+                <span className="text-[10px] px-2 py-0.5 rounded-md font-bold bg-violet-50 dark:bg-violet-500/15 text-violet-800 dark:text-violet-300 border border-violet-200 dark:border-violet-500/30 shadow-xs">
                   Data Engineer
                 </span>
               </div>
 
-              <p className="text-xs font-semibold text-slate-300 flex items-center justify-center sm:justify-start gap-1.5">
-                <GraduationCap className="w-3.5 h-3.5 text-[#68c2e3] shrink-0" />
+              <p className="text-xs font-semibold text-slate-700 dark:text-slate-300 flex items-center justify-center sm:justify-start gap-1.5">
+                <GraduationCap className="w-3.5 h-3.5 text-sky-600 dark:text-[#68c2e3] shrink-0" />
                 IET Bundelkhand University, Jhansi · B.Tech (EIE)
               </p>
 
-              <p className="text-[11px] text-slate-400 leading-relaxed max-w-xl">
+              <p className="text-[11px] text-slate-600 dark:text-slate-400 leading-relaxed max-w-xl">
                 Created BU IET ResultHub to give BU Jhansi students fast, insightful, and beautifully organized academic analytics and semester leaderboards.
               </p>
             </div>
           </div>
 
           {/* Contributions */}
-          <div className="pt-2 border-t border-slate-800/70 space-y-2">
-            <div className="text-[10px] font-bold uppercase tracking-wider text-slate-400 flex items-center justify-center sm:justify-start gap-1.5">
-              <Award className="w-3 h-3 text-[#68c2e3]" />
-              Key Contributions & Engineering
+          <div className="pt-2 border-t border-slate-200 dark:border-slate-800/70 space-y-2">
+            <div className="text-[10px] font-bold uppercase tracking-wider text-slate-600 dark:text-slate-400 flex items-center justify-center sm:justify-start gap-1.5">
+              <Award className="w-3 h-3 text-sky-600 dark:text-[#68c2e3]" />
+              Key Contributions &amp; Engineering
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5 text-slate-300">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5 text-slate-700 dark:text-slate-300">
               {makerContributions.map((item, i) => (
-                <div key={i} className="flex items-start gap-1.5 p-1.5 px-2.5 rounded-lg bg-slate-950/30 border border-slate-800/50">
-                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" />
+                <div key={i} className="flex items-start gap-1.5 p-1.5 px-2.5 rounded-lg bg-slate-50 dark:bg-slate-950/30 border border-slate-200 dark:border-slate-800/50">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 shrink-0 mt-0.5" />
                   <span className="leading-tight text-[11px]">{item}</span>
                 </div>
               ))}
@@ -167,8 +167,8 @@ export default function AboutPage() {
           </div>
 
           {/* Connect */}
-          <div className="pt-2 border-t border-slate-800/70 space-y-2">
-            <div className="text-[10px] font-bold uppercase tracking-wider text-slate-400 text-center sm:text-left">
+          <div className="pt-2 border-t border-slate-200 dark:border-slate-800/70 space-y-2">
+            <div className="text-[10px] font-bold uppercase tracking-wider text-slate-600 dark:text-slate-400 text-center sm:text-left">
               Connect
             </div>
             <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2">
@@ -176,9 +176,9 @@ export default function AboutPage() {
                 href="https://youtube.com/@adityakverma-039?si=ynAmFVEJL8eBxs3e"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-red-500/10 hover:bg-red-500/20 text-red-400 border border-red-500/30 hover:border-red-500/50 transition-all shadow-sm hover:scale-[1.02]"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-red-50 hover:bg-red-100 dark:bg-red-500/10 dark:hover:bg-red-500/20 text-red-700 dark:text-red-400 border border-red-200 dark:border-red-500/30 hover:border-red-400 dark:hover:border-red-500/50 transition-all shadow-xs hover:scale-[1.02]"
               >
-                <Youtube className="w-3.5 h-3.5 text-red-400" />
+                <Youtube className="w-3.5 h-3.5 text-red-600 dark:text-red-400" />
                 <span>YouTube</span>
                 <ExternalLink className="w-3 h-3 opacity-60" />
               </a>
@@ -187,9 +187,9 @@ export default function AboutPage() {
                 href="https://github.com/adityak39l"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-800/90 hover:bg-slate-700 text-slate-200 border border-slate-700 hover:border-slate-600 transition-all shadow-sm hover:scale-[1.02]"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-slate-100 hover:bg-slate-200 dark:bg-slate-800/90 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 border border-slate-300 dark:border-slate-700 hover:border-slate-400 dark:hover:border-slate-600 transition-all shadow-xs hover:scale-[1.02]"
               >
-                <Github className="w-3.5 h-3.5 text-slate-300" />
+                <Github className="w-3.5 h-3.5 text-slate-700 dark:text-slate-300" />
                 <span>GitHub</span>
                 <ExternalLink className="w-3 h-3 opacity-60" />
               </a>
@@ -198,9 +198,9 @@ export default function AboutPage() {
                 href="https://www.linkedin.com/in/aditya-verma-0309l/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-sky-500/10 hover:bg-sky-500/20 text-sky-400 border border-sky-500/30 hover:border-sky-500/50 transition-all shadow-sm hover:scale-[1.02]"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-sky-50 hover:bg-sky-100 dark:bg-sky-500/10 dark:hover:bg-sky-500/20 text-sky-700 dark:text-sky-400 border border-sky-200 dark:border-sky-500/30 hover:border-sky-400 dark:hover:border-sky-500/50 transition-all shadow-xs hover:scale-[1.02]"
               >
-                <Linkedin className="w-3.5 h-3.5 text-sky-400" />
+                <Linkedin className="w-3.5 h-3.5 text-sky-600 dark:text-sky-400" />
                 <span>LinkedIn</span>
                 <ExternalLink className="w-3 h-3 opacity-60" />
               </a>
@@ -209,11 +209,11 @@ export default function AboutPage() {
         </div>
 
         {/* 2. Kapil Ahirwar Container */}
-        <div className="glass-card p-4 sm:p-5 rounded-xl border border-slate-200 dark:border-gray-800 bg-slate-900/60 backdrop-blur-xl space-y-3.5">
+        <div className="glass-card p-4 sm:p-5 rounded-xl border border-slate-200 dark:border-gray-800 bg-white dark:bg-slate-900/60 shadow-sm dark:shadow-none backdrop-blur-xl space-y-3.5">
           {/* Header */}
           <div className="flex flex-col sm:flex-row items-center sm:items-start gap-3.5 text-center sm:text-left">
             <div className="relative group shrink-0">
-              <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-xl overflow-hidden ring-2 ring-cyan-500/40 shadow-lg shadow-cyan-500/10 bg-slate-950 flex items-center justify-center">
+              <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-xl overflow-hidden ring-2 ring-cyan-500/40 shadow-md bg-slate-100 dark:bg-slate-950 flex items-center justify-center">
                 <img
                   src={kapilImg}
                   alt="Kapil Ahirwar"
@@ -227,43 +227,43 @@ export default function AboutPage() {
 
             <div className="space-y-1.5 flex-1 min-w-0">
               <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2">
-                <h2 className="text-lg sm:text-xl font-black text-white tracking-tight">Kapil Ahirwar</h2>
-                <span className="inline-flex items-center gap-1 text-[10px] font-extrabold px-2.5 py-0.5 rounded-full bg-gradient-to-r from-cyan-600 via-sky-500 to-blue-600 text-white shadow-md shadow-cyan-950/60 border border-cyan-300/40 tracking-wide uppercase">
+                <h2 className="text-lg sm:text-xl font-black text-slate-900 dark:text-white tracking-tight">Kapil Ahirwar</h2>
+                <span className="inline-flex items-center gap-1 text-[10px] font-extrabold px-2.5 py-0.5 rounded-full bg-gradient-to-r from-cyan-600 via-sky-500 to-blue-600 text-white shadow-md shadow-cyan-950/40 border border-cyan-300/40 tracking-wide uppercase">
                   <GraduationCap className="w-3 h-3 text-cyan-100 shrink-0" />
                   BME Branch
                 </span>
               </div>
 
               <div className="flex flex-wrap items-center justify-center sm:justify-start gap-1.5">
-                <span className="text-[10px] px-2 py-0.5 rounded-md font-bold bg-blue-500/15 text-blue-300 border border-blue-500/30 shadow-xs">
+                <span className="text-[10px] px-2 py-0.5 rounded-md font-bold bg-blue-50 dark:bg-blue-500/15 text-blue-700 dark:text-blue-300 border border-blue-200 dark:border-blue-500/30 shadow-xs">
                   Core Contributor
                 </span>
-                <span className="text-[10px] px-2 py-0.5 rounded-md font-bold bg-teal-500/15 text-teal-300 border border-teal-500/30 shadow-xs">
-                  Data & Research
+                <span className="text-[10px] px-2 py-0.5 rounded-md font-bold bg-teal-50 dark:bg-teal-500/15 text-teal-800 dark:text-teal-300 border border-teal-200 dark:border-teal-500/30 shadow-xs">
+                  Data &amp; Research
                 </span>
               </div>
 
-              <p className="text-xs font-semibold text-slate-300 flex items-center justify-center sm:justify-start gap-1.5">
-                <GraduationCap className="w-3.5 h-3.5 text-cyan-400 shrink-0" />
+              <p className="text-xs font-semibold text-slate-700 dark:text-slate-300 flex items-center justify-center sm:justify-start gap-1.5">
+                <GraduationCap className="w-3.5 h-3.5 text-cyan-600 dark:text-cyan-400 shrink-0" />
                 IET Bundelkhand University, Jhansi · B.Tech (BME)
               </p>
 
-              <p className="text-[11px] text-slate-400 leading-relaxed max-w-xl">
+              <p className="text-[11px] text-slate-600 dark:text-slate-400 leading-relaxed max-w-xl">
                 Contributed to BU IET ResultHub development, engineering result verification, and student experience optimization.
               </p>
             </div>
           </div>
 
           {/* Contributions */}
-          <div className="pt-2 border-t border-slate-800/70 space-y-2">
-            <div className="text-[10px] font-bold uppercase tracking-wider text-slate-400 flex items-center justify-center sm:justify-start gap-1.5">
-              <Award className="w-3 h-3 text-cyan-400" />
+          <div className="pt-2 border-t border-slate-200 dark:border-slate-800/70 space-y-2">
+            <div className="text-[10px] font-bold uppercase tracking-wider text-slate-600 dark:text-slate-400 flex items-center justify-center sm:justify-start gap-1.5">
+              <Award className="w-3 h-3 text-cyan-600 dark:text-cyan-400" />
               Key Contributions
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5 text-slate-300">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5 text-slate-700 dark:text-slate-300">
               {kapilContributions.map((item, i) => (
-                <div key={i} className="flex items-start gap-1.5 p-1.5 px-2.5 rounded-lg bg-slate-950/30 border border-slate-800/50">
-                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" />
+                <div key={i} className="flex items-start gap-1.5 p-1.5 px-2.5 rounded-lg bg-slate-50 dark:bg-slate-950/30 border border-slate-200 dark:border-slate-800/50">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 shrink-0 mt-0.5" />
                   <span className="leading-tight text-[11px]">{item}</span>
                 </div>
               ))}
@@ -271,8 +271,8 @@ export default function AboutPage() {
           </div>
 
           {/* Connect */}
-          <div className="pt-2 border-t border-slate-800/70 space-y-2">
-            <div className="text-[10px] font-bold uppercase tracking-wider text-slate-400 text-center sm:text-left">
+          <div className="pt-2 border-t border-slate-200 dark:border-slate-800/70 space-y-2">
+            <div className="text-[10px] font-bold uppercase tracking-wider text-slate-600 dark:text-slate-400 text-center sm:text-left">
               Connect
             </div>
             <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2">
@@ -280,9 +280,9 @@ export default function AboutPage() {
                 href="https://www.linkedin.com/in/kapil-gautam-2767202ba?utm_source=share_via&utm_content=profile&utm_medium=member_android"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-sky-500/10 hover:bg-sky-500/20 text-sky-400 border border-sky-500/30 hover:border-sky-500/50 transition-all shadow-sm hover:scale-[1.02]"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-sky-50 hover:bg-sky-100 dark:bg-sky-500/10 dark:hover:bg-sky-500/20 text-sky-700 dark:text-sky-400 border border-sky-200 dark:border-sky-500/30 hover:border-sky-400 dark:hover:border-sky-500/50 transition-all shadow-xs hover:scale-[1.02]"
               >
-                <Linkedin className="w-3.5 h-3.5 text-sky-400" />
+                <Linkedin className="w-3.5 h-3.5 text-sky-600 dark:text-sky-400" />
                 <span>LinkedIn</span>
                 <ExternalLink className="w-3 h-3 opacity-60" />
               </a>
@@ -291,9 +291,9 @@ export default function AboutPage() {
                 href="https://www.instagram.com/kapilgautamm/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-pink-500/10 hover:bg-pink-500/20 text-pink-400 border border-pink-500/30 hover:border-pink-500/50 transition-all shadow-sm hover:scale-[1.02]"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-pink-50 hover:bg-pink-100 dark:bg-pink-500/10 dark:hover:bg-pink-500/20 text-pink-700 dark:text-pink-400 border border-pink-200 dark:border-pink-500/30 hover:border-pink-400 dark:hover:border-pink-500/50 transition-all shadow-xs hover:scale-[1.02]"
               >
-                <Instagram className="w-3.5 h-3.5 text-pink-400" />
+                <Instagram className="w-3.5 h-3.5 text-pink-600 dark:text-pink-400" />
                 <span>Instagram</span>
                 <ExternalLink className="w-3 h-3 opacity-60" />
               </a>
@@ -302,11 +302,11 @@ export default function AboutPage() {
         </div>
 
         {/* 3. Mohd Ashzad Container */}
-        <div className="glass-card p-4 sm:p-5 rounded-xl border border-slate-200 dark:border-gray-800 bg-slate-900/60 backdrop-blur-xl space-y-3.5">
+        <div className="glass-card p-4 sm:p-5 rounded-xl border border-slate-200 dark:border-gray-800 bg-white dark:bg-slate-900/60 shadow-sm dark:shadow-none backdrop-blur-xl space-y-3.5">
           {/* Header */}
           <div className="flex flex-col sm:flex-row items-center sm:items-start gap-3.5 text-center sm:text-left">
             <div className="relative group shrink-0">
-              <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-xl overflow-hidden ring-2 ring-indigo-500/40 shadow-lg shadow-indigo-500/10 bg-slate-950 flex items-center justify-center">
+              <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-xl overflow-hidden ring-2 ring-indigo-500/40 shadow-md bg-slate-100 dark:bg-slate-950 flex items-center justify-center">
                 <img
                   src={ashzadImg}
                   alt="Mohd Ashzad"
@@ -320,46 +320,46 @@ export default function AboutPage() {
 
             <div className="space-y-1.5 flex-1 min-w-0">
               <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2">
-                <h2 className="text-lg sm:text-xl font-black text-white tracking-tight">Mohd Ashzad</h2>
-                <span className="inline-flex items-center gap-1 text-[10px] font-extrabold px-2.5 py-0.5 rounded-full bg-gradient-to-r from-cyan-600 via-sky-500 to-blue-600 text-white shadow-md shadow-cyan-950/60 border border-cyan-300/40 tracking-wide uppercase">
+                <h2 className="text-lg sm:text-xl font-black text-slate-900 dark:text-white tracking-tight">Mohd Ashzad</h2>
+                <span className="inline-flex items-center gap-1 text-[10px] font-extrabold px-2.5 py-0.5 rounded-full bg-gradient-to-r from-cyan-600 via-sky-500 to-blue-600 text-white shadow-md shadow-cyan-950/40 border border-cyan-300/40 tracking-wide uppercase">
                   <GraduationCap className="w-3 h-3 text-cyan-100 shrink-0" />
                   BME Branch
                 </span>
               </div>
 
               <div className="flex flex-wrap items-center justify-center sm:justify-start gap-1.5">
-                <span className="text-[10px] px-2 py-0.5 rounded-md font-bold bg-pink-500/15 text-pink-300 border border-pink-500/30 shadow-xs">
+                <span className="text-[10px] px-2 py-0.5 rounded-md font-bold bg-pink-50 dark:bg-pink-500/15 text-pink-700 dark:text-pink-300 border border-pink-200 dark:border-pink-500/30 shadow-xs">
                   UI/UX Designer
                 </span>
-                <span className="text-[10px] px-2 py-0.5 rounded-md font-bold bg-purple-500/15 text-purple-300 border border-purple-500/30 shadow-xs">
+                <span className="text-[10px] px-2 py-0.5 rounded-md font-bold bg-purple-50 dark:bg-purple-500/15 text-purple-800 dark:text-purple-300 border border-purple-200 dark:border-purple-500/30 shadow-xs">
                   Core Contributor
                 </span>
-                <span className="text-[10px] px-2 py-0.5 rounded-md font-bold bg-indigo-500/15 text-indigo-300 border border-indigo-500/30 shadow-xs">
-                  Quality & Analytics
+                <span className="text-[10px] px-2 py-0.5 rounded-md font-bold bg-indigo-50 dark:bg-indigo-500/15 text-indigo-800 dark:text-indigo-300 border border-indigo-200 dark:border-indigo-500/30 shadow-xs">
+                  Quality &amp; Analytics
                 </span>
               </div>
 
-              <p className="text-xs font-semibold text-slate-300 flex items-center justify-center sm:justify-start gap-1.5">
-                <GraduationCap className="w-3.5 h-3.5 text-indigo-400 shrink-0" />
+              <p className="text-xs font-semibold text-slate-700 dark:text-slate-300 flex items-center justify-center sm:justify-start gap-1.5">
+                <GraduationCap className="w-3.5 h-3.5 text-indigo-600 dark:text-indigo-400 shrink-0" />
                 IET Bundelkhand University, Jhansi · B.Tech (BME)
               </p>
 
-              <p className="text-[11px] text-slate-400 leading-relaxed max-w-xl">
+              <p className="text-[11px] text-slate-600 dark:text-slate-400 leading-relaxed max-w-xl">
                 Contributed to UI/UX design aesthetics, platform testing, student marksheet data auditing, and user experience enhancements for BU IET ResultHub.
               </p>
             </div>
           </div>
 
           {/* Contributions */}
-          <div className="pt-2 border-t border-slate-800/70 space-y-2">
-            <div className="text-[10px] font-bold uppercase tracking-wider text-slate-400 flex items-center justify-center sm:justify-start gap-1.5">
-              <Award className="w-3 h-3 text-indigo-400" />
+          <div className="pt-2 border-t border-slate-200 dark:border-slate-800/70 space-y-2">
+            <div className="text-[10px] font-bold uppercase tracking-wider text-slate-600 dark:text-slate-400 flex items-center justify-center sm:justify-start gap-1.5">
+              <Award className="w-3 h-3 text-indigo-600 dark:text-indigo-400" />
               Key Contributions
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5 text-slate-300">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-1.5 text-slate-700 dark:text-slate-300">
               {ashzadContributions.map((item, i) => (
-                <div key={i} className="flex items-start gap-1.5 p-1.5 px-2.5 rounded-lg bg-slate-950/30 border border-slate-800/50">
-                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0 mt-0.5" />
+                <div key={i} className="flex items-start gap-1.5 p-1.5 px-2.5 rounded-lg bg-slate-50 dark:bg-slate-950/30 border border-slate-200 dark:border-slate-800/50">
+                  <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400 shrink-0 mt-0.5" />
                   <span className="leading-tight text-[11px]">{item}</span>
                 </div>
               ))}
@@ -367,8 +367,8 @@ export default function AboutPage() {
           </div>
 
           {/* Connect */}
-          <div className="pt-2 border-t border-slate-800/70 space-y-2">
-            <div className="text-[10px] font-bold uppercase tracking-wider text-slate-400 text-center sm:text-left">
+          <div className="pt-2 border-t border-slate-200 dark:border-slate-800/70 space-y-2">
+            <div className="text-[10px] font-bold uppercase tracking-wider text-slate-600 dark:text-slate-400 text-center sm:text-left">
               Connect
             </div>
             <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2">
@@ -376,9 +376,9 @@ export default function AboutPage() {
                 href="https://www.linkedin.com/in/ashjad-khan-75b8a137b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-sky-500/10 hover:bg-sky-500/20 text-sky-400 border border-sky-500/30 hover:border-sky-500/50 transition-all shadow-sm hover:scale-[1.02]"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-sky-50 hover:bg-sky-100 dark:bg-sky-500/10 dark:hover:bg-sky-500/20 text-sky-700 dark:text-sky-400 border border-sky-200 dark:border-sky-500/30 hover:border-sky-400 dark:hover:border-sky-500/50 transition-all shadow-xs hover:scale-[1.02]"
               >
-                <Linkedin className="w-3.5 h-3.5 text-sky-400" />
+                <Linkedin className="w-3.5 h-3.5 text-sky-600 dark:text-sky-400" />
                 <span>LinkedIn</span>
                 <ExternalLink className="w-3 h-3 opacity-60" />
               </a>
@@ -387,9 +387,9 @@ export default function AboutPage() {
                 href="https://www.instagram.com/ashjadhere?stkn=Z2tqczNnZ2xpZTBi"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-pink-500/10 hover:bg-pink-500/20 text-pink-400 border border-pink-500/30 hover:border-pink-500/50 transition-all shadow-sm hover:scale-[1.02]"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold bg-pink-50 hover:bg-pink-100 dark:bg-pink-500/10 dark:hover:bg-pink-500/20 text-pink-700 dark:text-pink-400 border border-pink-200 dark:border-pink-500/30 hover:border-pink-400 dark:hover:border-pink-500/50 transition-all shadow-xs hover:scale-[1.02]"
               >
-                <Instagram className="w-3.5 h-3.5 text-pink-400" />
+                <Instagram className="w-3.5 h-3.5 text-pink-600 dark:text-pink-400" />
                 <span>Instagram</span>
                 <ExternalLink className="w-3 h-3 opacity-60" />
               </a>
@@ -399,16 +399,16 @@ export default function AboutPage() {
       </section>
 
       {/* Why we built this */}
-      <div className="glass-card p-6 sm:p-8 space-y-4">
-        <h2 className="font-black text-xl text-white">Why we built this</h2>
-        <div className="space-y-3 text-sm leading-relaxed text-slate-300">
+      <div className="glass-card p-6 sm:p-8 space-y-4 border-slate-200 dark:border-gray-800 bg-white dark:bg-transparent shadow-sm dark:shadow-none">
+        <h2 className="font-black text-xl text-slate-900 dark:text-white">Why we built this</h2>
+        <div className="space-y-3 text-sm leading-relaxed text-slate-700 dark:text-slate-300">
           <p>
             Every semester, BU Jhansi students get their results in a plain, hard-to-read format
             from the university portal. There was no way to compare performance, track SGPA trends,
             or see where you stand among your batchmates — so we decided to build something better.
           </p>
           <p>
-            <strong className="text-white">BU Jhansi Result Hub</strong> turns raw marksheet data
+            <strong className="text-slate-900 dark:text-white">BU Jhansi Result Hub</strong> turns raw marksheet data
             into something genuinely useful. View your detailed result, track your semester-wise
             SGPA graph, see your branch rank, find your academic twin, and compare yourself with
             any student across CSE, ECE, EIE, BME, or Mechanical Engineering.
@@ -426,16 +426,16 @@ export default function AboutPage() {
 
       {/* Features — What you can do */}
       <div>
-        <h2 className="font-black text-xl text-white mb-4">What you can do</h2>
+        <h2 className="font-black text-xl text-slate-900 dark:text-white mb-4">What you can do</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           {features.map(({ icon: Icon, label, desc }) => (
-            <div key={label} className="glass-card p-4 flex items-start gap-3 border-slate-200 dark:border-gray-800">
-              <div className="w-8 h-8 rounded-lg bg-[#68c2e3]/10 border border-[#68c2e3]/30 flex items-center justify-center shrink-0 mt-0.5">
-                <Icon className="w-4 h-4 text-[#68c2e3]" />
+            <div key={label} className="glass-card p-4 flex items-start gap-3 border-slate-200 dark:border-gray-800 bg-white dark:bg-transparent shadow-xs dark:shadow-none">
+              <div className="w-8 h-8 rounded-lg bg-sky-50 dark:bg-[#68c2e3]/10 border border-sky-200 dark:border-[#68c2e3]/30 flex items-center justify-center shrink-0 mt-0.5">
+                <Icon className="w-4 h-4 text-sky-600 dark:text-[#68c2e3]" />
               </div>
               <div>
-                <div className="text-sm font-black text-white">{label}</div>
-                <div className="text-xs text-slate-400 mt-0.5">{desc}</div>
+                <div className="text-sm font-black text-slate-900 dark:text-white">{label}</div>
+                <div className="text-xs text-slate-600 dark:text-slate-400 mt-0.5">{desc}</div>
               </div>
             </div>
           ))}
@@ -444,7 +444,7 @@ export default function AboutPage() {
 
       {/* Tech Stack */}
       <div>
-        <h2 className="font-black text-xl text-white mb-4">Built with</h2>
+        <h2 className="font-black text-xl text-slate-900 dark:text-white mb-4">Built with</h2>
         <div className="flex flex-wrap gap-2">
           {techStack.map(({ name, color }) => (
             <span key={name} className={`text-xs px-3 py-1.5 rounded-full font-bold border ${color}`}>
@@ -455,18 +455,18 @@ export default function AboutPage() {
       </div>
 
       {/* Disclaimer */}
-      <div className="rounded-xl p-5 space-y-2 border border-amber-700/40 bg-amber-900/10">
+      <div className="rounded-xl p-5 space-y-2 border border-amber-300 dark:border-amber-700/40 bg-amber-50/80 dark:bg-amber-900/10">
         <div className="flex items-center gap-2 mb-1">
-          <AlertTriangle className="w-4 h-4 text-amber-400" />
-          <h3 className="font-bold text-sm text-white">Data Accuracy Disclaimer</h3>
+          <AlertTriangle className="w-4 h-4 text-amber-600 dark:text-amber-400" />
+          <h3 className="font-bold text-sm text-amber-950 dark:text-white">Data Accuracy Disclaimer</h3>
         </div>
-        <p className="text-xs leading-relaxed text-slate-300">
+        <p className="text-xs leading-relaxed text-slate-700 dark:text-slate-300">
           All academic data on this platform has been collected directly from the official
           BU Jhansi examination portal using automated scraping. While we strive for accuracy,
           there may be occasional discrepancies. This data is provided for informational and
           analytical purposes only.
         </p>
-        <p className="text-xs leading-relaxed text-slate-400">
+        <p className="text-xs leading-relaxed text-slate-600 dark:text-slate-400">
           If you spot an inaccuracy in your data, please cross-check with your official marksheet
           from BU Jhansi. We are not officially affiliated with Bundelkhand University in any capacity.
         </p>
