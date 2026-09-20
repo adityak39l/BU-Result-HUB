@@ -184,7 +184,7 @@ export default function TwinPage() {
               </div>
             </div>
             <div className="text-right shrink-0">
-              <div className="text-xl font-black text-[#68c2e3]">{myStudent.cgpa}</div>
+              <div className="text-xl font-black text-emerald-600 dark:text-emerald-400">{myStudent.cgpa}</div>
               <div className="text-[9px] text-slate-500 dark:text-gray-400 font-bold">Overall CGPA</div>
             </div>
           </div>

@@ -312,7 +312,7 @@ export default function ResultsPage() {
                     <span className={`inline-block px-2.5 py-0.5 rounded text-xs font-bold border ${getBranchBadge(s.branch)}`}>
                       {s.branch}
                     </span>
-                    <div className="text-[11px] text-[#68c2e3] mt-1 font-bold">CGPA: {s.cgpa}</div>
+                    <div className="text-[11px] text-emerald-600 dark:text-emerald-400 mt-1 font-bold">CGPA: {s.cgpa}</div>
                   </div>
                 </button>
               ))
@@ -371,7 +371,7 @@ export default function ResultsPage() {
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center text-xs">
                 <div className="p-3.5 rounded-xl bg-slate-100 dark:bg-gray-900 border border-slate-200 dark:border-gray-800">
                   <div className="text-slate-500 dark:text-gray-400 font-medium">Branch Rank</div>
-                  <div className="text-lg font-black text-[#68c2e3] mt-0.5">#{currentStudent.branchRank} in {currentStudent.branch}</div>
+                  <div className="text-lg font-black text-amber-500 mt-0.5">#{currentStudent.branchRank} in {currentStudent.branch}</div>
                 </div>
                 <div className="p-3.5 rounded-xl bg-slate-100 dark:bg-gray-900 border border-slate-200 dark:border-gray-800">
                   <div className="text-slate-500 dark:text-gray-400 font-medium">Overall B.Tech Rank</div>

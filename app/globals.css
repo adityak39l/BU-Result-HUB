@@ -18,10 +18,11 @@
 html.dark {
   --bg-primary: #060c1a;
   --bg-surface: #0f172a;
-  --bg-card: rgba(15, 23, 42, 0.75);
+  --bg-card: rgba(17, 24, 45, 0.8);
   --border-color: rgba(255, 255, 255, 0.08);
-  --text-primary: #f8fafc;
+  --text-primary: #f1f5f9;
   --text-secondary: #94a3b8;
+  --text-muted: #64748b;
   --accent-sky: #68c2e3;
   --accent-indigo: #6366f1;
 }

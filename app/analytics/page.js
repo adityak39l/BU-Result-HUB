@@ -46,7 +46,7 @@ export default function AnalyticsPage() {
                 </div>
 
                 <div className="flex items-baseline justify-between">
-                  <span className="text-2xl font-black text-[#68c2e3]">{branch.avgCgpa}</span>
+                  <span className="text-2xl font-black text-emerald-600 dark:text-emerald-400">{branch.avgCgpa}</span>
                   <span className="text-xs text-slate-500 dark:text-gray-400 font-semibold">Scale 10.0</span>
                 </div>
 

@@ -65,7 +65,7 @@ export default function ComparePage() {
               <p className="text-xs font-mono text-slate-500 dark:text-gray-400">{student1.rollNo}</p>
             </div>
             <div className="text-right">
-              <div className="text-3xl font-black text-[#68c2e3]">{student1.cgpa}</div>
+              <div className="text-3xl font-black text-emerald-600 dark:text-emerald-400">{student1.cgpa}</div>
               <div className="text-[10px] text-slate-500 dark:text-gray-400 font-bold uppercase">CGPA</div>
             </div>
           </div>
@@ -73,7 +73,7 @@ export default function ComparePage() {
           <div className="grid grid-cols-2 gap-2 text-center text-xs">
             <div className="p-3 rounded-xl bg-slate-100 dark:bg-gray-900 border border-slate-200 dark:border-gray-800">
               <div className="text-slate-500 dark:text-gray-400">Branch Rank</div>
-              <div className="text-base font-bold text-[#68c2e3] mt-0.5">#{student1.branchRank}</div>
+              <div className="text-base font-bold text-amber-500 mt-0.5">#{student1.branchRank}</div>
             </div>
             <div className="p-3 rounded-xl bg-slate-100 dark:bg-gray-900 border border-slate-200 dark:border-gray-800">
               <div className="text-slate-500 dark:text-gray-400">Overall Rank</div>
@@ -87,7 +87,7 @@ export default function ComparePage() {
               {student1.semesters.map(s => (
                 <div key={s.sem} className="p-2 rounded bg-slate-100 dark:bg-gray-900 text-center">
                   <div className="text-[10px] text-slate-500 dark:text-gray-400">Sem {s.sem}</div>
-                  <div className="font-bold text-[#68c2e3]">{s.sgpa}</div>
+                  <div className="font-bold text-emerald-600 dark:text-emerald-400">{s.sgpa}</div>
                 </div>
               ))}
             </div>
@@ -105,7 +105,7 @@ export default function ComparePage() {
               <p className="text-xs font-mono text-slate-500 dark:text-gray-400">{student2.rollNo}</p>
             </div>
             <div className="text-right">
-              <div className="text-3xl font-black text-blue-600 dark:text-blue-400">{student2.cgpa}</div>
+              <div className="text-3xl font-black text-emerald-600 dark:text-emerald-400">{student2.cgpa}</div>
               <div className="text-[10px] text-slate-500 dark:text-gray-400 font-bold uppercase">CGPA</div>
             </div>
           </div>
@@ -113,7 +113,7 @@ export default function ComparePage() {
           <div className="grid grid-cols-2 gap-2 text-center text-xs">
             <div className="p-3 rounded-xl bg-slate-100 dark:bg-gray-900 border border-slate-200 dark:border-gray-800">
               <div className="text-slate-500 dark:text-gray-400">Branch Rank</div>
-              <div className="text-base font-bold text-blue-600 dark:text-blue-400 mt-0.5">#{student2.branchRank}</div>
+              <div className="text-base font-bold text-amber-500 mt-0.5">#{student2.branchRank}</div>
             </div>
             <div className="p-3 rounded-xl bg-slate-100 dark:bg-gray-900 border border-slate-200 dark:border-gray-800">
               <div className="text-slate-500 dark:text-gray-400">Overall Rank</div>
@@ -127,7 +127,7 @@ export default function ComparePage() {
               {student2.semesters.map(s => (
                 <div key={s.sem} className="p-2 rounded bg-slate-100 dark:bg-gray-900 text-center">
                   <div className="text-[10px] text-slate-500 dark:text-gray-400">Sem {s.sem}</div>
-                  <div className="font-bold text-blue-600 dark:text-blue-400">{s.sgpa}</div>
+                  <div className="font-bold text-emerald-600 dark:text-emerald-400">{s.sgpa}</div>
                 </div>
               ))}
             </div>

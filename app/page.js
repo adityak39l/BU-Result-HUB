@@ -62,7 +62,7 @@ export default function Home() {
             href="/leaderboard"
             className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-slate-100 dark:bg-gray-900 text-slate-800 dark:text-gray-200 border border-slate-200 dark:border-gray-800 font-bold text-sm hover:bg-slate-200 dark:hover:bg-gray-800 transition-all flex items-center justify-center gap-2"
           >
-            <Trophy className="w-4 h-4 text-[#68c2e3]" />
+            <Trophy className="w-4 h-4 text-amber-600 dark:text-amber-400" />
             <span>View Leaderboard</span>
           </Link>
         </div>
@@ -114,7 +114,7 @@ export default function Home() {
               <div className="space-y-2 pt-2 border-t border-slate-200 dark:border-gray-800 text-xs">
                 <div className="flex justify-between text-slate-700 dark:text-gray-300">
                   <span className="text-slate-500 dark:text-gray-400">Average CGPA:</span>
-                  <span className="font-bold text-[#68c2e3]">{branch.avgCgpa}</span>
+                  <span className="font-bold text-emerald-600 dark:text-emerald-400">{branch.avgCgpa}</span>
                 </div>
                 <div className="flex justify-between text-slate-700 dark:text-gray-300">
                   <span className="text-slate-500 dark:text-gray-400">Branch Leader:</span>
@@ -147,7 +147,7 @@ export default function Home() {
         </div>
 
         <div className="glass-card p-6 space-y-3 border-slate-200 dark:border-gray-800">
-          <div className="w-10 h-10 rounded-xl bg-blue-500/15 text-blue-500 flex items-center justify-center">
+          <div className="w-10 h-10 rounded-xl bg-amber-500/15 text-amber-500 flex items-center justify-center">
             <Trophy className="w-5 h-5" />
           </div>
           <h3 className="font-bold text-base text-slate-900 dark:text-white">Branch & Overall Leaderboards</h3>
@@ -178,7 +178,7 @@ export default function Home() {
           {faqs.map((faq, idx) => (
             <div key={idx} className="p-4 rounded-xl bg-slate-50 dark:bg-gray-900/60 border border-slate-200 dark:border-gray-800 space-y-1.5">
               <h3 className="font-bold text-sm text-slate-900 dark:text-white flex items-center gap-2">
-                <CheckCircle2 className="w-4 h-4 text-[#68c2e3]" />
+                <CheckCircle2 className="w-4 h-4 text-emerald-500 dark:text-emerald-400" />
                 {faq.q}
               </h3>
               <p className="text-xs text-slate-600 dark:text-gray-400 pl-6 leading-relaxed">

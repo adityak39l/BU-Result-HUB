@@ -228,10 +228,10 @@ export default function StudentDashboard({ rollNo }) {
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 pt-2 border-t border-slate-200 dark:border-gray-800">
           
           {/* 1. Latest Session CGPA Card */}
-          <div className="p-3.5 rounded-xl bg-[#68c2e3]/10 border border-[#68c2e3]/30 text-center">
-            <div className="text-[10px] text-[#68c2e3] font-black uppercase tracking-wider">LATEST CGPA</div>
+          <div className="p-3.5 rounded-xl bg-emerald-500/10 border border-emerald-500/30 text-center">
+            <div className="text-[10px] text-emerald-600 dark:text-emerald-400 font-black uppercase tracking-wider">LATEST CGPA</div>
             <div className="text-2xl font-black text-slate-900 dark:text-white mt-0.5">{latestAvgCgpa}</div>
-            <div className="text-[9px] text-[#68c2e3] font-bold">Sem 5 & 6 Avg</div>
+            <div className="text-[9px] text-emerald-600/80 dark:text-emerald-400/80 font-bold">Sem 5 & 6 Avg</div>
           </div>
 
           {/* 2. Cumulative 4-Sem CGPA Card */}

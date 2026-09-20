@@ -216,7 +216,7 @@ export default function LeaderboardPage() {
                       {student.branch}
                     </span>
                   </td>
-                  <td className="p-3.5 text-center font-black text-[#68c2e3] text-sm">{(student.effectiveCgpa ?? student.cgpa).toFixed(2)}</td>
+                  <td className="p-3.5 text-center font-black text-emerald-600 dark:text-emerald-400 text-sm">{(student.effectiveCgpa ?? student.cgpa).toFixed(2)}</td>
                   <td className="p-3.5 text-center font-bold text-slate-900 dark:text-white">
                     {student.semesters[student.semesters.length - 1]?.sgpa || 'N/A'}
                   </td>
