@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation';
 import { useState, useEffect } from 'react';
 import { 
   GraduationCap, Award, BarChart3, Users, BookOpen, Calculator, 
-  Search, Menu, X, Sun, Moon, Info
+  Search, Menu, X, Sun, Moon, Info, Briefcase
 } from 'lucide-react';
 
 export default function Navbar() {
@@ -45,6 +45,7 @@ export default function Navbar() {
     { href: '/subjects', label: 'Subjects', icon: BookOpen },
     { href: '/twin', label: 'Twin', icon: Users, special: true },
     { href: '/tools/cgpa', label: 'CGPA Calc', icon: Calculator },
+    { href: '/jobs', label: 'Jobs', icon: Briefcase, special: true, hideBadge: true },
     { href: '/about', label: 'About', icon: Info },
   ];
 
@@ -71,7 +72,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop Navigation Links */}
-        <nav className="hidden lg:flex items-center gap-1">
+        <nav className="hidden lg:flex items-center gap-0.5">
           {navLinks.map((link) => {
             const Icon = link.icon;
             const isActive = pathname === link.href;
@@ -80,7 +81,7 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`flex items-center gap-1.5 px-3 py-2 rounded-lg text-xs font-bold transition-all whitespace-nowrap ${
+                className={`flex items-center gap-1 px-2 py-2 rounded-lg text-xs font-bold transition-all whitespace-nowrap ${
                   isActive
                     ? 'bg-[#68c2e3]/15 text-[#68c2e3] border border-[#68c2e3]/30 shadow-sm'
                     : link.special
@@ -90,7 +91,7 @@ export default function Navbar() {
               >
                 <Icon className="w-4 h-4" />
                 {link.label}
-                {link.special && <span className="text-[9px] font-black bg-[#68c2e3] text-slate-950 px-1 rounded uppercase">New</span>}
+                {link.special && !link.hideBadge && <span className="text-[9px] font-black bg-[#68c2e3] text-slate-950 px-1 rounded uppercase">New</span>}
               </Link>
             );
           })}

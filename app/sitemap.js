@@ -58,6 +58,12 @@ export default function sitemap() {
       changeFrequency: 'monthly',
       priority: 0.5,
     },
+    {
+      url: `${baseUrl}/jobs`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.7,
+    },
   ];
 
   const studentPages = (STUDENTS || []).map((s) => ({
